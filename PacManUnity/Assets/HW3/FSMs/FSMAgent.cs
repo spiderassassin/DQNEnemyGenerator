@@ -18,6 +18,10 @@ public class FSMAgent : MonoBehaviour
     private int pathIndex;
     private Vector3 target;
     private bool movingTowardTarget;
+    private float moveDuration;
+
+    // Actions
+    public enum Action { Up, Down, Left, Right, Stay };
 
     //Speed modifier
     private float speedModifer = 1.0f;
@@ -50,13 +54,15 @@ public class FSMAgent : MonoBehaviour
             }
             else
             {
-                Vector3 potentialNewPosition = GetPosition() + (target - GetPosition()).normalized * Time.deltaTime * AgentConstants.GHOST_SPEED* speedModifer;
-                if (ObstacleHandler.Instance.AnyIntersect(new Vector2(GetPosition().x, GetPosition().y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
+                // If moveDuration is set, then move at speed such that you reach the target in moveDuration seconds.
+                if (moveDuration != -1)
                 {
-                    movingTowardTarget = false;
+                    Vector3 potentialNewPosition = GetPosition() + (target - GetPosition()).normalized * Time.deltaTime * (target - GetPosition()).magnitude / moveDuration * speedModifer;
+                    SetPosition(potentialNewPosition);
                 }
                 else
                 {
+                    Vector3 potentialNewPosition = GetPosition() + (target - GetPosition()).normalized * Time.deltaTime * AgentConstants.GHOST_SPEED * speedModifer;
                     SetPosition(potentialNewPosition);
                 }
             }
@@ -99,8 +105,12 @@ public class FSMAgent : MonoBehaviour
         return timer <= 0;
     }
 
+    // ACTIONS
+    
+    public virtual void TakeAction(Action action){ }
+
     //Set target location and begin pathing towards the target
-    public void SetTarget(Vector3 _target)
+    public void SetTarget(Vector3 _target, float duration = -1)
     {
         GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(GetPosition());
         GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(_target);
@@ -110,12 +120,14 @@ public class FSMAgent : MonoBehaviour
         {
             target = _target;
             movingTowardTarget = true;
+            moveDuration = duration;
         }
         else
         {
             pathIndex = 0;
             target = path[0];
             movingTowardTarget = true;
+            moveDuration = duration;
         }
 
     }
