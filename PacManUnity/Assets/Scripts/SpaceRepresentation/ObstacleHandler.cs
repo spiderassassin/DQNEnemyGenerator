@@ -81,6 +81,11 @@ public class ObstacleHandler : MonoBehaviour
 		return false;
 	}
 
+	public bool PointInObstacles(Vector3 pnt)
+	{
+		return PointInObstacles(new Vector2(pnt.x, pnt.y));
+	}
+
     //Returns the corners of the map
     public Vector2[] GetMapCorners()
     {

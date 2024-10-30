@@ -7,10 +7,8 @@ using UnityEngine.SceneManagement;
 //Assignment 1 Part A Script
 public class GridHandler : NodeHandler
 {
-
-    
-    //Size of grid points
-    private float gridSize = 0.2f;
+    // Distance between nodes.
+    public static float gridInterval = 0.2f;
 
     //Holds all of the nodes
     private Dictionary<string, GraphNode> nodeDictionary;
@@ -21,6 +19,7 @@ public class GridHandler : NodeHandler
         
         if (activeScene.Equals("Scene1"))
         {
+            // What is this monstrosity?
             nodeDictionary.Add("(-1.8, -2.1, 0.0)", new GraphNode(new Vector3(-1.8f, -2.1f, 0f)));
             nodeDictionary.Add("(-1.8, -1.9, 0.0)", new GraphNode(new Vector3(-1.8f, -1.9f, 0f)));
             nodeDictionary.Add("(-1.8, -1.7, 0.0)", new GraphNode(new Vector3(-1.8f, -1.7f, 0f)));
@@ -235,24 +234,24 @@ public class GridHandler : NodeHandler
         foreach (KeyValuePair<string, GraphNode> kvp in nodeDictionary)
         {
             //Left
-            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.left * gridSize)).ToString()))
+            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.left * gridInterval)).ToString()))
             {
-                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.left * gridSize)).ToString()]);
+                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.left * gridInterval)).ToString()]);
             }
             //Right
-            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.right * gridSize)).ToString()))
+            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.right * gridInterval)).ToString()))
             {
-                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.right * gridSize)).ToString()]);
+                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.right * gridInterval)).ToString()]);
             }
             //Up
-            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.up * gridSize)).ToString()))
+            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.up * gridInterval)).ToString()))
             {
-                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.up * gridSize)).ToString()]);
+                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.up * gridInterval)).ToString()]);
             }
             //Down
-            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.down * gridSize)).ToString()))
+            if (nodeDictionary.ContainsKey((kvp.Value.Location + (Vector3.down * gridInterval)).ToString()))
             {
-                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.down * gridSize)).ToString()]);
+                kvp.Value.AddNeighbor(nodeDictionary[(kvp.Value.Location + (Vector3.down * gridInterval)).ToString()]);
             }
         }
     }
@@ -263,13 +262,13 @@ public class GridHandler : NodeHandler
         foreach (KeyValuePair<string, GraphNode> kvp in nodeDictionary)
         {
             //Draw left line
-            Debug.DrawLine(kvp.Value.Location + Vector3.left * gridSize / 2f + Vector3.up * gridSize / 2f, kvp.Value.Location + Vector3.left * gridSize / 2f + Vector3.down * gridSize / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.left * gridInterval / 2f + Vector3.up * gridInterval / 2f, kvp.Value.Location + Vector3.left * gridInterval / 2f + Vector3.down * gridInterval / 2f, Color.white);
             //Draw right line
-            Debug.DrawLine(kvp.Value.Location + Vector3.right * gridSize / 2f + Vector3.up * gridSize / 2f, kvp.Value.Location + Vector3.right * gridSize / 2f + Vector3.down * gridSize / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.right * gridInterval / 2f + Vector3.up * gridInterval / 2f, kvp.Value.Location + Vector3.right * gridInterval / 2f + Vector3.down * gridInterval / 2f, Color.white);
             //Draw top line
-            Debug.DrawLine(kvp.Value.Location + Vector3.up * gridSize / 2f + Vector3.left * gridSize / 2f, kvp.Value.Location + Vector3.up * gridSize / 2f + Vector3.right * gridSize / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.up * gridInterval / 2f + Vector3.left * gridInterval / 2f, kvp.Value.Location + Vector3.up * gridInterval / 2f + Vector3.right * gridInterval / 2f, Color.white);
             //Draw bottom line
-            Debug.DrawLine(kvp.Value.Location + Vector3.down * gridSize / 2f + Vector3.left * gridSize / 2f, kvp.Value.Location + Vector3.down * gridSize / 2f + Vector3.right * gridSize / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.down * gridInterval / 2f + Vector3.left * gridInterval / 2f, kvp.Value.Location + Vector3.down * gridInterval / 2f + Vector3.right * gridInterval / 2f, Color.white);
         }
     }
 
