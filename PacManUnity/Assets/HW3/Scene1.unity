@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghosts:
-  - {fileID: 6712184599910977976, guid: 6c63480bacc78cf48ad5f38b13a21ec7, type: 3}
+  - {fileID: 6712184599910977976, guid: 75693b9ed59d96b48aa89409dbb89e9f, type: 3}
   ghostSpawnerMax: 10
 --- !u!850595691 &1225052189
 LightingSettings:
