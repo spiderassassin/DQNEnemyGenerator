@@ -48,12 +48,12 @@ public class FrameActionBasedAgent: FSMAgent
     }
 
     // Check if the next node in the direction of the action is on the path.
-    private bool LegalAction(Vector3 nextNode)
+    public override bool LegalAction(Vector3 nextNode)
     {
         return ObstacleHandler.Instance.CheckPointOnPath(new Vector2(nextNode.x, nextNode.y), new Vector2(GetPosition().x, GetPosition().y));
     }
 
-    public bool LegalAction(Action action)
+    public override bool LegalAction(Action action)
     {
         Vector3 direction = Vector3.zero;
         switch (action)

@@ -10,19 +10,20 @@ public class FrameActionState : State
     public override State Update(FSMAgent agent)
     {
         // Pick randomly for now.
-        FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)Random.Range(0, 5);
+        // FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)Random.Range(0, 5);
 
         // More intelligent version, only pick from legal actions. (TODO: FIX)
-        // List<int> possibleActions = new List<int>();
-        // for (int i = 0; i < 5; i++)
-        // {
-        //     if (agent.LegalAction((FrameActionBasedAgent.Action)i))
-        //     {
-        //         possibleActions.Add(i);
-        //     }
-        // }
-        // System.Random rnd = new System.Random();
-        // FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)possibleActions[rnd.Next(possibleActions.Count)];
+        List<int> possibleActions = new List<int>();
+        for (int i = 0; i < 5; i++)
+        {
+            if (agent.LegalAction((FrameActionBasedAgent.Action)i))
+            {
+                possibleActions.Add(i);
+            }
+        }
+        System.Random rnd = new System.Random();
+        int index = rnd.Next(possibleActions.Count);
+        FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)possibleActions[index];
 
         // Take the action.
         agent.TakeAction(action);
