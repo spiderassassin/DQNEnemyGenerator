@@ -186,111 +186,30 @@ public class ObstacleHandler : MonoBehaviour
 	}
 
 	// Check if the point is on any of the lines that are part of the path.
-	public bool CheckPointOnPath(Vector2 point)
+	public bool CheckPointOnPath(Vector2 point, Vector2 src)
 	{
-		float float_tol = 0.0001f;
+		// Create line perpendicular to direction of travel and see if it intersects with the path.
+		Vector2 direction = point - src;
+		Vector2 perp = new Vector2(-direction.y, direction.x);
+		// Have some tolerance for being on the path.
+		Vector2 start = point - perp * Config.PATH_TOL;
+		Vector2 end = point + perp * Config.PATH_TOL;
 		foreach(Vector2[] line in path)
 		{
-			// line has the start and end points of the line, so we need to check if the point is on the line.
-			if (line[0].x > line[1].x)
+			// Convert to a polygon to use the existing intersection function.
+			Vector2[] poly = new Vector2[4];
+			poly[0] = line[0];
+			poly[1] = line[1];
+			poly[2] = line[1];
+			poly[3] = line[0];
+			Polygon p = new Polygon(poly, obstacleLineMaterial);
+			if (p.AnyIntersect(start, end))
 			{
-				// If within range, or if they're approximately equal.
-				if ((point.x <= line[0].x && point.x >= line[1].x) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
-				{
-					if (line[0].y > line[1].y)
-					{
-						if ((point.y <= line[0].y && point.y >= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-						{
-							return true;
-						}
-					}
-					else
-					{
-						if ((point.y >= line[0].y && point.y <= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-						{
-							return true;
-						}
-					}
-				}
-			}
-			else
-			{
-				if ((point.x >= line[0].x && point.x <= line[1].x) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
-				{
-					if (line[0].y > line[1].y)
-					{
-						if ((point.y <= line[0].y && point.y >= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-						{
-							return true;
-						}
-					}
-					else
-					{
-						if ((point.y >= line[0].y && point.y <= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-						{
-							return true;
-						}
-					}
-				}
+				return true;
 			}
 		}
 		return false;
 	}
-
-	// Check if the point is on any of the lines that are part of the path.
-	// public bool CheckPointOnPath(Vector2 point)
-	// {
-	// 	float float_tol = 0.0001f;
-	// 	float tol = 0.05f;
-	// 	Debug.Log("Point: " + point);
-	// 	foreach(Vector2[] line in path)
-	// 	{
-	// 		// line has the start and end points of the line, so we need to check if the point is on the line.
-	// 		if (line[0].x > line[1].x)
-	// 		{
-	// 			// If within range, or if they're approximately equal.
-	// 			if ((point.x - line[0].x < tol && point.x - line[1].x > -tol) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
-	// 			{
-	// 				if (line[0].y > line[1].y)
-	// 				{
-	// 					if ((point.y - line[0].y < tol && point.y - line[1].y > -tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-	// 					{
-	// 						return true;
-	// 					}
-	// 				}
-	// 				else
-	// 				{
-	// 					if ((point.y - line[0].y > -tol && point.y - line[1].y < tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-	// 					{
-	// 						return true;
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 		else
-	// 		{
-	// 			if ((point.x - line[0].x > -tol && point.x - line[1].x < tol) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
-	// 			{
-	// 				if (line[0].y > line[1].y)
-	// 				{
-	// 					if ((point.y - line[0].y < tol && point.y - line[1].y > -tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-	// 					{
-	// 						return true;
-	// 					}
-	// 				}
-	// 				else
-	// 				{
-	// 					if ((point.y - line[0].y > -tol && point.y - line[1].y < tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
-	// 					{
-	// 						return true;
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// 	Debug.Log("Not on path");
-	// 	return false;
-	// }
 
 	// Get nearest point on the path to the given point.
 	public Vector3 GetCorrectedTarget(Vector3 direction, Vector3 nextNode)

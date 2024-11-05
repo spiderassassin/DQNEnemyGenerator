@@ -12,4 +12,6 @@ public class Config
     public static float PELLET_INTERVAL = 0.15f;
 
     public static float AGENT_MOVE_INTERVAL = 0.01f;
+
+    public static float PATH_TOL = 0.05f;
 }

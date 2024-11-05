@@ -40,7 +40,6 @@ public class FSMAgent : MonoBehaviour
         //Pathing Logic
         if (movingTowardTarget)
         {
-            Debug.Log("Moving toward target: " + target);
             if ((target - GetPosition()).sqrMagnitude < AgentConstants.THRESHOLD)
             {
                 movingTowardTarget = false;
@@ -65,15 +64,15 @@ public class FSMAgent : MonoBehaviour
                 {
                     Vector3 potentialNewPosition = GetPosition() + (target - GetPosition()).normalized * Time.deltaTime * AgentConstants.GHOST_SPEED * speedModifer;
                     // If the position is not on the path, stop moving.
-                    // if (!ObstacleHandler.Instance.CheckPointOnPath(potentialNewPosition))
-                    // {
-                    //     movingTowardTarget = false;
-                    // }
-                    // else
-                    // {
-                    //     SetPosition(potentialNewPosition);
-                    // }
-                    SetPosition(potentialNewPosition);
+                    if (!ObstacleHandler.Instance.CheckPointOnPath(potentialNewPosition, new Vector2(GetPosition().x, GetPosition().y)))
+                    {
+                        movingTowardTarget = false;
+                    }
+                    else
+                    {
+                        SetPosition(potentialNewPosition);
+                    }
+                    // SetPosition(potentialNewPosition);
                 }
             }
 
@@ -120,6 +119,11 @@ public class FSMAgent : MonoBehaviour
     public virtual void TakeAction(Action action){ }
 
     public virtual bool LegalAction(Vector3 direction)
+    {
+        return false;
+    }
+
+    public virtual bool LegalAction(Action action)
     {
         return false;
     }
