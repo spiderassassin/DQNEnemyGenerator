@@ -16,7 +16,7 @@ public class ObstacleHandler : MonoBehaviour
 	public float YBound { get { return obstacleDefiner.YBound; } }
 
 	//Size of grid points
-	private float gridSize = 0.2f;
+	private float gridSize = 0.12f;
 	public float GridSize { get { return gridSize; } }
 
 	//Initialize this singleton
@@ -69,6 +69,19 @@ public class ObstacleHandler : MonoBehaviour
     }
 
     //Returns true if this point is in any obstacle
+    public bool PointInObstacles(Vector2 pnt, Vector2 src)
+	{
+		foreach (Polygon obst in obstacles)
+		{
+			if (obst.ContainsPoint(pnt, src))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	//Returns true if this point is in any obstacle
     public bool PointInObstacles(Vector2 pnt)
 	{
 		foreach (Polygon obst in obstacles)
@@ -81,9 +94,9 @@ public class ObstacleHandler : MonoBehaviour
 		return false;
 	}
 
-	public bool PointInObstacles(Vector3 pnt)
+	public bool PointInObstacles(Vector3 pnt, Vector3 src)
 	{
-		return PointInObstacles(new Vector2(pnt.x, pnt.y));
+		return PointInObstacles(new Vector2(pnt.x, pnt.y), new Vector2(src.x, src.y));
 	}
 
     //Returns the corners of the map

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FrameActionBasedAgent: FSMAgent
 {
+    private float agentSize = 0.1f;
     void Start()
     {
         Initialize();
@@ -42,10 +43,21 @@ public class FrameActionBasedAgent: FSMAgent
     }
 
     // Check if the next node in the direction of the action is a wall or not.
-    private bool LegalAction(Vector3 direction)
+    public override bool LegalAction(Vector3 direction)
     {
-        Vector3 nextNode = GetPosition() + direction * GridHandler.gridInterval;
-        return !ObstacleHandler.Instance.PointInObstacles(nextNode);
+        Vector3 currentNode = GetPosition();
+        Vector3 nextNodeMin = GetPosition() + direction * 2 * GridHandler.gridInterval;
+        Vector3 agentSizeVector;
+        if (direction == Vector3.up || direction == Vector3.down)
+        {
+            agentSizeVector = new Vector3(agentSize, 0, 0);
+        }
+        else
+        {
+            agentSizeVector = new Vector3(0, agentSize, 0);
+        }
+        Vector3 nextNodeMax = GetPosition() - agentSizeVector + direction * 2 * GridHandler.gridInterval;
+        return (!ObstacleHandler.Instance.PointInObstacles(nextNodeMin, currentNode) && !ObstacleHandler.Instance.PointInObstacles(nextNodeMax, currentNode));
     }
 
     // Move towards the next node in the specified direction.

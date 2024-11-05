@@ -56,6 +56,9 @@ public class ObstacleTest1Points : ObstacleDefiner
         float startX = -(gridWidth / 2) * gridInterval - gridInterval / 2;
         float startY = (gridHeight / 2) * gridInterval - gridInterval / 2;
 
+        xBound = (gridWidth / 2 - 1) * gridInterval;
+        yBound = (gridHeight / 2 - 2) * gridInterval;
+
         // Loop through each cell in the grid.
         for (int y = 0; y < gridHeight; y++)
         {

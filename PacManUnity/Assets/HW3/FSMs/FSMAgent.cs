@@ -63,6 +63,15 @@ public class FSMAgent : MonoBehaviour
                 else
                 {
                     Vector3 potentialNewPosition = GetPosition() + (target - GetPosition()).normalized * Time.deltaTime * AgentConstants.GHOST_SPEED * speedModifer;
+                    // If the position is within a certain distance of an obstacle, stop moving.
+                    // if (potentialNewPosition + gridInterval / 2 * Vector3.up)
+                    // {
+                    //     movingTowardTarget = false;
+                    // }
+                    // else
+                    // {
+                    //     SetPosition(potentialNewPosition);
+                    // }
                     SetPosition(potentialNewPosition);
                 }
             }
@@ -108,6 +117,11 @@ public class FSMAgent : MonoBehaviour
     // ACTIONS
     
     public virtual void TakeAction(Action action){ }
+
+    public virtual bool LegalAction(Vector3 direction)
+    {
+        return true;
+    }
 
     //Set target location and begin pathing towards the target
     public void SetTarget(Vector3 _target, float duration = -1)

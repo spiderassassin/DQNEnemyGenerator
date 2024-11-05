@@ -11,6 +11,7 @@ public class GridHandler : NodeHandler
     public static float gridWidth = 28;
     public static float gridHeight = 32;
     public static float gridInterval = 0.12f;
+    public static float inset = 0.06f;
     public float gridStartX = (gridWidth / 2 * -gridInterval);
     public float gridEndX = (gridWidth / 2 * gridInterval);
     public float gridStartY = (gridHeight / 2 * -gridInterval);
