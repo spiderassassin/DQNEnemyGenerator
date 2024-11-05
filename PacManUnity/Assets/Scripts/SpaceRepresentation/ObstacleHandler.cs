@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class ObstacleHandler : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class ObstacleHandler : MonoBehaviour
 	private List<Polygon> obstacles = new List<Polygon>();
 	public Polygon[] Obstacles{ get { return obstacles.ToArray(); } }
 	private ObstacleDefiner obstacleDefiner;
+
+	private Vector2[][] path;
     
 	public float XBound { get { return obstacleDefiner.XBound; } }
 	public float YBound { get { return obstacleDefiner.YBound; } }
 
 	//Size of grid points
-	private float gridSize = 0.12f;
+	private float gridSize = 0.2f;
 	public float GridSize { get { return gridSize; } }
 
 	//Initialize this singleton
@@ -24,6 +27,7 @@ public class ObstacleHandler : MonoBehaviour
 	{
 		ObstacleHandler.Instance = this;
 		obstacleDefiner = _obstacleDefiner;
+		path = obstacleDefiner.GetWalkablePath();
 	}
 
 	//Creates and renders an individual obstacle
@@ -69,19 +73,6 @@ public class ObstacleHandler : MonoBehaviour
     }
 
     //Returns true if this point is in any obstacle
-    public bool PointInObstacles(Vector2 pnt, Vector2 src)
-	{
-		foreach (Polygon obst in obstacles)
-		{
-			if (obst.ContainsPoint(pnt, src))
-			{
-				return true;
-			}
-		}
-		return false;
-	}
-
-	//Returns true if this point is in any obstacle
     public bool PointInObstacles(Vector2 pnt)
 	{
 		foreach (Polygon obst in obstacles)
@@ -94,9 +85,9 @@ public class ObstacleHandler : MonoBehaviour
 		return false;
 	}
 
-	public bool PointInObstacles(Vector3 pnt, Vector3 src)
+	public bool PointInObstacles(Vector3 pnt)
 	{
-		return PointInObstacles(new Vector2(pnt.x, pnt.y), new Vector2(src.x, src.y));
+		return PointInObstacles(new Vector2(pnt.x, pnt.y));
 	}
 
     //Returns the corners of the map
@@ -124,4 +115,219 @@ public class ObstacleHandler : MonoBehaviour
         return pointsList.ToArray();
     }
 
+	public Vector2[][] GetWalkablePath()
+	{
+		return path;
+	}
+
+	// Draw a line representing the path.
+	public void VisualizePath()
+	{
+		foreach(Vector2[] line in path)
+		{
+			Debug.DrawLine(new Vector3(line[0].x, line[0].y, 0), new Vector3(line[1].x, line[1].y, 0), Color.green);
+		}
+	}
+
+	// First return value is the min X value, second is the max X value.
+	public float[] GetPathXBounds()
+	{
+		float[] bounds = new float[2];
+		bounds[0] = path[0][0].x;
+		bounds[1] = path[0][0].x;
+		foreach(Vector2[] line in path)
+		{
+			if (line[0].x < bounds[0])
+			{
+				bounds[0] = line[0].x;
+			}
+			if (line[0].x > bounds[1])
+			{
+				bounds[1] = line[0].x;
+			}
+			if (line[1].x < bounds[0])
+			{
+				bounds[0] = line[1].x;
+			}
+			if (line[1].x > bounds[1])
+			{
+				bounds[1] = line[1].x;
+			}
+		}
+		return bounds;
+	}
+
+	// First return value is the min Y value, second is the max Y value.
+	public float[] GetPathYBounds()
+	{
+		float[] bounds = new float[2];
+		bounds[0] = path[0][0].y;
+		bounds[1] = path[0][0].y;
+		foreach(Vector2[] line in path)
+		{
+			if (line[0].y < bounds[0])
+			{
+				bounds[0] = line[0].y;
+			}
+			if (line[0].y > bounds[1])
+			{
+				bounds[1] = line[0].y;
+			}
+			if (line[1].y < bounds[0])
+			{
+				bounds[0] = line[1].y;
+			}
+			if (line[1].y > bounds[1])
+			{
+				bounds[1] = line[1].y;
+			}
+		}
+		return bounds;
+	}
+
+	// Check if the point is on any of the lines that are part of the path.
+	public bool CheckPointOnPath(Vector2 point)
+	{
+		float float_tol = 0.0001f;
+		foreach(Vector2[] line in path)
+		{
+			// line has the start and end points of the line, so we need to check if the point is on the line.
+			if (line[0].x > line[1].x)
+			{
+				// If within range, or if they're approximately equal.
+				if ((point.x <= line[0].x && point.x >= line[1].x) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
+				{
+					if (line[0].y > line[1].y)
+					{
+						if ((point.y <= line[0].y && point.y >= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+						{
+							return true;
+						}
+					}
+					else
+					{
+						if ((point.y >= line[0].y && point.y <= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+						{
+							return true;
+						}
+					}
+				}
+			}
+			else
+			{
+				if ((point.x >= line[0].x && point.x <= line[1].x) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
+				{
+					if (line[0].y > line[1].y)
+					{
+						if ((point.y <= line[0].y && point.y >= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+						{
+							return true;
+						}
+					}
+					else
+					{
+						if ((point.y >= line[0].y && point.y <= line[1].y) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+						{
+							return true;
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+
+	// Check if the point is on any of the lines that are part of the path.
+	// public bool CheckPointOnPath(Vector2 point)
+	// {
+	// 	float float_tol = 0.0001f;
+	// 	float tol = 0.05f;
+	// 	Debug.Log("Point: " + point);
+	// 	foreach(Vector2[] line in path)
+	// 	{
+	// 		// line has the start and end points of the line, so we need to check if the point is on the line.
+	// 		if (line[0].x > line[1].x)
+	// 		{
+	// 			// If within range, or if they're approximately equal.
+	// 			if ((point.x - line[0].x < tol && point.x - line[1].x > -tol) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
+	// 			{
+	// 				if (line[0].y > line[1].y)
+	// 				{
+	// 					if ((point.y - line[0].y < tol && point.y - line[1].y > -tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+	// 					{
+	// 						return true;
+	// 					}
+	// 				}
+	// 				else
+	// 				{
+	// 					if ((point.y - line[0].y > -tol && point.y - line[1].y < tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+	// 					{
+	// 						return true;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 		else
+	// 		{
+	// 			if ((point.x - line[0].x > -tol && point.x - line[1].x < tol) || Math.Abs(point.x - line[0].x) < float_tol || Math.Abs(point.x - line[1].x) < float_tol)
+	// 			{
+	// 				if (line[0].y > line[1].y)
+	// 				{
+	// 					if ((point.y - line[0].y < tol && point.y - line[1].y > -tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+	// 					{
+	// 						return true;
+	// 					}
+	// 				}
+	// 				else
+	// 				{
+	// 					if ((point.y - line[0].y > -tol && point.y - line[1].y < tol) || Math.Abs(point.y - line[0].y) < float_tol || Math.Abs(point.y - line[1].y) < float_tol)
+	// 					{
+	// 						return true;
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	Debug.Log("Not on path");
+	// 	return false;
+	// }
+
+	// Get nearest point on the path to the given point.
+	public Vector3 GetCorrectedTarget(Vector3 direction, Vector3 nextNode)
+	{
+		// If direction is up or down, find nearest point by looking at the nearest x value.
+		if (direction == Vector3.up || direction == Vector3.down)
+		{
+			float nearestX = 0;
+			float nearestDist = float.MaxValue;
+			foreach(Vector2[] line in path)
+			{
+				float x = line[0].x;
+				float dist = Math.Abs(x - nextNode.x);
+				if (dist < nearestDist)
+				{
+					nearestDist = dist;
+					nearestX = x;
+				}
+			}
+			return new Vector3(nearestX, nextNode.y, 0);
+		}
+		// If direction is left or right, find nearest point by looking at the nearest y value.
+		else
+		{
+			float nearestY = 0;
+			float nearestDist = float.MaxValue;
+			foreach(Vector2[] line in path)
+			{
+				float y = line[0].y;
+				float dist = Math.Abs(y - nextNode.y);
+				if (dist < nearestDist)
+				{
+					nearestDist = dist;
+					nearestY = y;
+				}
+			}
+			return new Vector3(nextNode.x, nearestY, 0);
+		}
+	}
 }

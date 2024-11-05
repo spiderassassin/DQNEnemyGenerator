@@ -9,6 +9,10 @@ public class ObstacleDefiner : MonoBehaviour
 
 	public float XBound { get { return xBound; } }
 	public float YBound { get { return yBound; } }
+	public virtual Vector2[][] GetWalkablePath()
+	{
+		return null;
+	}
 	public virtual Vector2[][] GetObstaclePoints()
 	{
 		return null;

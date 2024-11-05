@@ -170,28 +170,13 @@ public class Polygon
 	}
 
 	//Does this obstacle contain the Vector2 point passed in.
-	public bool ContainsPoint(Vector2 pnt, Vector2 src)
-	{
-		Vector2[][] lines = GetLines();
-		foreach (Vector2[] line in lines)
-		{
-			if (doIntersect(src, pnt, line[0], line[1]))
-			{
-				return true;
-			}
-		}
-
-		return false;
-	}
-
-	//Does this obstacle contain the Vector2 point passed in.
 	public bool ContainsPoint(Vector2 pnt)
 	{
 		Vector2[][] lines = GetLines();
 		int numIntersections = 0;
 		foreach (Vector2[] line in lines)
 		{
-			if (doIntersect(new Vector2(-100, -100), pnt, line[0], line[1]))
+			if (doIntersect(new Vector2(-4.2f, -20.1f), pnt, line[0], line[1]))
 			{
 				numIntersections += 1;
 			}
