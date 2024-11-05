@@ -4,79 +4,252 @@ using UnityEngine;
 
 public class ObstacleTest1Points : ObstacleDefiner
 {
+	// Grid representation, array of strings, where "X" is a wall, "O" is a path.
+	// Careful, for visual clarity here, coordinates are stored as (y, x) instead of (x, y).
+	string[] grid = new string[]
+    {
+        "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "XOOOOOOOOOOOOXXOOOOOOOOOOOOX",
+        "XOXXXXOXXXXXOXXOXXXXXOXXXXOX",
+        "XOXXXXOXXXXXOXXOXXXXXOXXXXOX",
+        "XOXXXXOXXXXXOXXOXXXXXOXXXXOX",
+        "XOOOOOOOOOOOOOOOOOOOOOOOOOOX",
+        "XOXXXXOXXOXXXXXXXXOXXOXXXXOX",
+        "XOXXXXOXXOXXXXXXXXOXXOXXXXOX",
+        "XOOOOOOXXOOOOXXOOOOXXOOOOOOX",
+        "XXXXXXOXXXXXOXXOXXXXXOXXXXXX",
+        "XXXXXXOXXXXXOXXOXXXXXOXXXXXX",
+        "XXXXXXOXXOOOOOOOOOOXXOXXXXXX",
+        "XXXXXXOXXOXXXXXXXXOXXOXXXXXX",
+        "XXXXXXOXXOXXXXXXXXOXXOXXXXXX",
+        "XOOOOOOOOOXXXXXXXXOOOOOOOOOX",
+        "XXXXXXOXXOXXXXXXXXOXXOXXXXXX",
+        "XXXXXXOXXOXXXXXXXXOXXOXXXXXX",
+        "XXXXXXOXXOOOOOOOOOOXXOXXXXXX",
+        "XXXXXXOXXOXXXXXXXXOXXOXXXXXX",
+        "XXXXXXOXXOXXXXXXXXOXXOXXXXXX",
+        "XOOOOOOOOOOOOXXOOOOOOOOOOOOX",
+        "XOXXXXOXXXXXOXXOXXXXXOXXXXOX",
+        "XOXXXXOXXXXXOXXOXXXXXOXXXXOX",
+        "XOOOXXOOOOOOOOOOOOOOOOXXOOOX",
+        "XXXOXXOXXOXXXXXXXXOXXOXXOXXX",
+        "XXXOXXOXXOXXXXXXXXOXXOXXOXXX",
+        "XOOOOOOXXOOOOXXOOOOXXOOOOOOX",
+        "XOXXXXXXXXXXOXXOXXXXXXXXXXOX",
+        "XOXXXXXXXXXXOXXOXXXXXXXXXXOX",
+        "XOOOOOOOOOOOOOOOOOOOOOOOOOOX",
+        "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    };
 
+    public override Vector2[][] GetWalkablePath()
+    {
+        List<Vector2[]> arrayOfWalkablePaths = new List<Vector2[]>();
+
+        // Calculate the starting node position.
+        float startX = -(Config.GRID_WIDTH / 2) * Config.GRID_INTERVAL;
+        float startY = (Config.GRID_HEIGHT / 2) * Config.GRID_INTERVAL - Config.GRID_INTERVAL;
+
+        // Loop through each node in the grid.
+        for (int y = 0; y < Config.GRID_HEIGHT; y++)
+        {
+            for (int x = 0; x < Config.GRID_WIDTH; x++)
+            {
+                // Only process nodes that contain paths.
+                if (grid[y][x] == 'O')
+                {
+                    // Add vectors representing straight line segments within the node.
+                    // This changes depending on whether the neighbouring nodes are walls or paths.
+                    // Check top. If node above is a path, add a line segment from the center of the node to the top.
+                    if (y != 0 && grid[y - 1][x] == 'O')
+                    {
+                        arrayOfWalkablePaths.Add(new Vector2[]
+                        {
+                            new Vector2(startX + x * Config.GRID_INTERVAL, startY - y * Config.GRID_INTERVAL),
+                            new Vector2(startX + x * Config.GRID_INTERVAL, startY - y * Config.GRID_INTERVAL + Config.GRID_INTERVAL / 2)
+                        });
+                    }
+                    // Check bottom. If node below is a path, add a line segment from the center of the node to the bottom.
+                    if (y != Config.GRID_HEIGHT - 1 && grid[y + 1][x] == 'O')
+                    {
+                        arrayOfWalkablePaths.Add(new Vector2[]
+                        {
+                            new Vector2(startX + x * Config.GRID_INTERVAL, startY - y * Config.GRID_INTERVAL),
+                            new Vector2(startX + x * Config.GRID_INTERVAL, startY - y * Config.GRID_INTERVAL - Config.GRID_INTERVAL / 2)
+                        });
+                    }
+                    // Check left. If node to the left is a path, add a line segment from the center of the node to the left.
+                    if (x != 0 && grid[y][x - 1] == 'O')
+                    {
+                        arrayOfWalkablePaths.Add(new Vector2[]
+                        {
+                            new Vector2(startX + x * Config.GRID_INTERVAL, startY - y * Config.GRID_INTERVAL),
+                            new Vector2(startX + x * Config.GRID_INTERVAL - Config.GRID_INTERVAL / 2, startY - y * Config.GRID_INTERVAL)
+                        });
+                    }
+                    // Check right. If node to the right is a path, add a line segment from the center of the node to the right.
+                    if (x != Config.GRID_WIDTH - 1 && grid[y][x + 1] == 'O')
+                    {
+                        arrayOfWalkablePaths.Add(new Vector2[]
+                        {
+                            new Vector2(startX + x * Config.GRID_INTERVAL, startY - y * Config.GRID_INTERVAL),
+                            new Vector2(startX + x * Config.GRID_INTERVAL + Config.GRID_INTERVAL / 2, startY - y * Config.GRID_INTERVAL)
+                        });
+                    }
+                }
+            }
+        }
+
+        return arrayOfWalkablePaths.ToArray();
+    }
 
 	public override Vector2[][] GetObstaclePoints()
 	{
-		float width = 2;
-		float height = 2.5f;
-		xBound = width;
-		yBound = height;
-		Vector2[] topObstacle = new Vector2[] { new Vector2(-1*width, height-0.2f), new Vector2(width, height - 0.2f), new Vector2(width,height-0.25f), new Vector2(-1*width, height - 0.25f) };
-		Vector2[] rightObstacle = new Vector2[] { new Vector2(width, height - 0.25f), new Vector2(width+0.05f, height - 0.25f), new Vector2(width + 0.05f, -1*height + 0.25f), new Vector2(width, -1 * height + 0.25f) };
-		Vector2[] leftObstacle = new Vector2[] { new Vector2(-1*width, height - 0.25f), new Vector2(-1 * width - 0.05f, height - 0.25f), new Vector2(-1 * width - 0.05f, -1 * height + 0.25f), new Vector2(-1 * width, -1 * height + 0.25f) };
-		Vector2[] downObstacle = new Vector2[] { new Vector2(-1 * width, -1*height + 0.2f), new Vector2(width, -1 * height + 0.2f), new Vector2(width, -1 * height + 0.25f), new Vector2(-1 * width, -1 * height + 0.25f) };
+        List<Vector2[]> arrayOfObstaclePoints = new List<Vector2[]>();
 
+        // Calculate the starting offset to center the grid in the world.
+        float startX = -(Config.GRID_WIDTH / 2) * Config.GRID_INTERVAL - Config.GRID_INTERVAL / 2;
+        float startY = (Config.GRID_HEIGHT / 2) * Config.GRID_INTERVAL - Config.GRID_INTERVAL / 2;
 
-		Vector2[] ghostHouse = new Vector2[] { new Vector2(-0.3f, 0.05f), new Vector2(-0.3f, 0.4f), new Vector2(0.3f, 0.4f), new Vector2(0.3f, 0.05f) };
+        xBound = (Config.GRID_WIDTH / 2 - 1) * Config.GRID_INTERVAL;
+        yBound = (Config.GRID_HEIGHT / 2 - 2) * Config.GRID_INTERVAL;
 
-		List<Vector2[]> arrayOfObstaclePoints = new List<Vector2[]>();
-		arrayOfObstaclePoints.Add(topObstacle);
-		arrayOfObstaclePoints.Add(rightObstacle);
-		arrayOfObstaclePoints.Add(leftObstacle);
-		arrayOfObstaclePoints.Add(downObstacle);
-
-		arrayOfObstaclePoints.Add(ghostHouse);
-
-        for (float i = -1; i<= 1; i++)
+        // Loop through each cell in the grid.
+        for (int y = 0; y < Config.GRID_HEIGHT; y++)
         {
-            if (i != 0)
+            for (int x = 0; x < Config.GRID_WIDTH; x++)
             {
-                //Top two
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i*width-0.3f*i, height-0.5f), new Vector2(i * width - 0.8f * i, height - 0.5f), new Vector2(i * width - 0.8f * i, height - 0.9f), new Vector2(i * width - 0.3f * i, height - 0.9f) });
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width - 1.1f * i, height - 0.5f), new Vector2(i * width - 1.85f * i, height - 0.5f), new Vector2(i * width - 1.85f * i, height - 0.9f), new Vector2(i * width - 1.1f * i, height - 0.9f) });
+                // Only process cells that contain obstacles.
+                if (grid[y][x] == 'X')
+                {
+                    float posX = startX + x * Config.GRID_INTERVAL;
+                    float posY = startY - y * Config.GRID_INTERVAL;
 
-                //Little one
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width - 0.3f * i, height - 1.15f), new Vector2(i * width - 0.8f * i, height - 1.15f), new Vector2(i * width - 0.8f * i, height - 1.5f), new Vector2(i * width - 0.3f * i, height - 1.5f) });
+                    // Check neighboring cells to add line segments where needed, with inset adjustments.
+                    // Top edge.
+                    if (y == 0 || grid[y - 1][x] == 'O'
+						|| (x != 0 && grid[y - 1][x] == 'X' && grid[y][x - 1] == 'X' && grid[y - 1][x - 1] == 'O')  // Diagonally to the left.
+						|| (x != Config.GRID_WIDTH - 1 && grid[y - 1][x] == 'X' && grid[y][x + 1] == 'X' && grid[y - 1][x + 1] == 'O'))  // Diagonally to the right.
+                    {
+						float startPosX = posX;
+						float endPosX = posX + Config.GRID_INTERVAL;
+						// Check if this is a corner and account for inset if so.
+						if (x == 0 || grid[y][x - 1] == 'O')
+						{
+							startPosX += Config.GRID_INSET;
+						}
+						if (x == Config.GRID_WIDTH - 1 || grid[y][x + 1] == 'O')
+						{
+							endPosX -= Config.GRID_INSET;
+						}
+						if (y != 0 && x != 0 && grid[y - 1][x] == 'X' && grid[y][x - 1] == 'X' && grid[y - 1][x - 1] == 'O')
+						{
+							endPosX = posX + Config.GRID_INSET;
+						}
+						if (y != 0 && x != Config.GRID_WIDTH - 1 && grid[y - 1][x] == 'X' && grid[y][x + 1] == 'X' && grid[y - 1][x + 1] == 'O')
+						{
+							startPosX = posX + Config.GRID_INSET;
+						}
+                        arrayOfObstaclePoints.Add(new Vector2[]
+                        {
+                            new Vector2(startPosX, posY - Config.GRID_INSET),
+                            new Vector2(endPosX, posY - Config.GRID_INSET)
+                        });
+                    }
+                    // Bottom edge.
+                    if (y == Config.GRID_HEIGHT - 1 || grid[y + 1][x] == 'O'
+						|| (x != 0 && grid[y + 1][x] == 'X' && grid[y][x - 1] == 'X' && grid[y + 1][x - 1] == 'O')  // Diagonally to the left.
+						|| (x != Config.GRID_WIDTH - 1 && grid[y + 1][x] == 'X' && grid[y][x + 1] == 'X' && grid[y + 1][x + 1] == 'O'))  // Diagonally to the right.
+                    {
+						float startPosX = posX;
+						float endPosX = posX + Config.GRID_INTERVAL;
+						// Check if this is a corner and account for inset if so.
+						if (x == 0 || grid[y][x - 1] == 'O')
+						{
+							startPosX += Config.GRID_INSET;
+						}
+						if (x == Config.GRID_WIDTH - 1 || grid[y][x + 1] == 'O')
+						{
+							endPosX -= Config.GRID_INSET;
+						}
+						if (y != Config.GRID_HEIGHT - 1 && x != 0 && grid[y + 1][x] == 'X' && grid[y][x - 1] == 'X' && grid[y + 1][x - 1] == 'O')
+						{
+							endPosX = posX + Config.GRID_INSET;
+						}
+						if (y != Config.GRID_HEIGHT - 1 && x != Config.GRID_WIDTH - 1 && grid[y + 1][x] == 'X' && grid[y][x + 1] == 'X' && grid[y + 1][x + 1] == 'O')
+						{
+							startPosX = posX + Config.GRID_INSET;
+						}
+                        arrayOfObstaclePoints.Add(new Vector2[]
+                        {
+                            new Vector2(startPosX, posY - Config.GRID_INTERVAL + Config.GRID_INSET),
+                            new Vector2(endPosX, posY - Config.GRID_INTERVAL + Config.GRID_INSET)
+                        });
+                    }
+                    // Left edge.
+                    if (x == 0 || grid[y][x - 1] == 'O'
+						|| (y != 0 && grid[y - 1][x] == 'X' && grid[y - 1][x - 1] == 'O' && grid[y][x - 1] == 'X')  // Diagonally to the top.
+						|| (y != Config.GRID_HEIGHT - 1 && grid[y + 1][x] == 'X' && grid[y + 1][x - 1] == 'O' && grid[y][x - 1] == 'X'))  // Diagonally to the bottom.
+                    {
+						float startPosY = posY;
+						float endPosY = posY - Config.GRID_INTERVAL;
+						// Check if this is a corner and account for inset if so.
+						if (y == 0 || grid[y - 1][x] == 'O')
+						{
+							startPosY -= Config.GRID_INSET;
+						}
+						if (y == Config.GRID_HEIGHT - 1 || grid[y + 1][x] == 'O')
+						{
+							endPosY += Config.GRID_INSET;
+						}
+						if (y != 0 && x != 0 && grid[y - 1][x] == 'X' && grid[y - 1][x - 1] == 'O' && grid[y][x - 1] == 'X')
+						{
+							endPosY = posY - Config.GRID_INSET;
+						}
+						if (y != Config.GRID_HEIGHT - 1 && x != 0 && grid[y + 1][x] == 'X' && grid[y + 1][x - 1] == 'O' && grid[y][x - 1] == 'X')
+						{
+							startPosY = posY - Config.GRID_INSET;
+						}
+                        arrayOfObstaclePoints.Add(new Vector2[]
+                        {
+                            new Vector2(posX + Config.GRID_INSET, startPosY),
+                            new Vector2(posX + Config.GRID_INSET, endPosY)
+                        });
+                    }
+                    // Right edge.
+                    if (x == Config.GRID_WIDTH - 1 || grid[y][x + 1] == 'O'
+						|| (y != 0 && grid[y - 1][x] == 'X' && grid[y - 1][x + 1] == 'O' && grid[y][x + 1] == 'X')  // Diagonally to the top.
+						|| (y != Config.GRID_HEIGHT - 1 && grid[y + 1][x] == 'X' && grid[y + 1][x + 1] == 'O' && grid[y][x + 1] == 'X'))  // Diagonally to the bottom.
+                    {
+						float startPosY = posY;
+						float endPosY = posY - Config.GRID_INTERVAL;
+						// Check if this is a corner and account for inset if so.
+						if (y == 0 || grid[y - 1][x] == 'O')
+						{
+							startPosY -= Config.GRID_INSET;
+						}
+						if (y == Config.GRID_HEIGHT - 1 || grid[y + 1][x] == 'O')
+						{
+							endPosY += Config.GRID_INSET;
+						}
+						if (y != 0 && x != Config.GRID_WIDTH - 1 && grid[y - 1][x] == 'X' && grid[y - 1][x + 1] == 'O' && grid[y][x + 1] == 'X')
+						{
+							endPosY = posY - Config.GRID_INSET;
+						}
+						if (y != Config.GRID_HEIGHT - 1 && x != Config.GRID_WIDTH - 1 && grid[y + 1][x] == 'X' && grid[y + 1][x + 1] == 'O' && grid[y][x + 1] == 'X')
+						{
+							startPosY = posY - Config.GRID_INSET;
+						}
+                        arrayOfObstaclePoints.Add(new Vector2[]
+                        {
+                            new Vector2(posX + Config.GRID_INTERVAL - Config.GRID_INSET, startPosY),
+                            new Vector2(posX + Config.GRID_INTERVAL - Config.GRID_INSET, endPosY)
+                        });
+                    }
+                }
+            }
+        }
 
-                //Top Tetris piece
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width - 1.2f * i, height - 1.15f), new Vector2(i * width - 1.4f * i, height - 1.15f), new Vector2(i * width - 1.4f * i, height - 1.5f), new Vector2(i * width - 1.6f * i, height - 1.5f), new Vector2(i * width - 1.6f * i, height - 1.9f), new Vector2(i * width - 1.4f * i, height - 1.9f), new Vector2(i * width - 1.4f * i, 0.3f), new Vector2(i * width - 1.2f * i, 0.3f) });
-
-                //Top edge obstacle
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width, height - 1.8f), new Vector2(i * width - 0.8f * i, height - 1.8f), new Vector2(i * width - 0.8f * i, 0.3f), new Vector2(i * width, 0.3f) });
-
-				//Bottom edge obstacle
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width, 0), new Vector2(i * width - 0.8f * i, 0), new Vector2(i * width - 0.8f * i, -0.4f), new Vector2(i * width, -0.4f) });
-
-				//Vertical tictac
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width - 1.2f * i, 0), new Vector2(i * width - 1.4f * i, 0), new Vector2(i * width - 1.4f * i, -0.4f), new Vector2(i * width - 1.2f * i, -0.4f) });
-
-				//Horizontal tictac
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width - 1.2f * i, -0.7f), new Vector2(0.4f * i, -0.7f), new Vector2(0.4f * i, -1f), new Vector2(i * width - 1.2f * i, -1f) });
-
-				//L shape
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width - 0.3f * i, -0.7f), new Vector2(i * width - 0.8f * i, -0.7f), new Vector2(i * width - 0.8f * i, -1f), new Vector2(i * width - 0.8f * i, -1.4f), new Vector2(i * width - 0.6f * i, -1.4f), new Vector2(i * width - 0.6f * i, -1f), new Vector2(i * width - 0.3f * i, -1f) });
-
-				//Bottom edge obstacle
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width, -1.25f), new Vector2(i * width - 0.2f * i, -1.25f), new Vector2(i * width - 0.2f * i, -1.35f), new Vector2(i * width, -1.35f) });
-
-				//Bottom obstacle
-				arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(i * width-0.4f*i, -1.7f), new Vector2(i * width - 0.4f * i, -1.9f), new Vector2(i * 0.4f, -1.9f), new Vector2(i * 0.4f, -1.7f), new Vector2(i * 0.6f, -1.7f), new Vector2(i * 0.6f, -1.3f) , new Vector2(i * width - 1.2f * i, -1.3f), new Vector2(i * width - 1.2f * i, -1.7f) });
-
-			}
-		}
-
-        //Center Top Testris Piece
-		arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(0.3f, height - 1.15f), new Vector2(-0.3f, height - 1.15f), new Vector2(-0.3f, height-1.3f), new Vector2(-0.1f, height - 1.3f), new Vector2(-0.1f, height - 1.9f), new Vector2(0.1f, height - 1.9f), new Vector2(0.1f, height - 1.3f), new Vector2(0.3f, height - 1.3f) });
-
-		//Center Middle Testris Piece
-		arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(0.3f, -0.25f), new Vector2(-0.3f, -0.25f), new Vector2(-0.3f, -0.4f), new Vector2(-0.1f, -0.4f), new Vector2(-0.1f, -1f), new Vector2(0.1f, -1f), new Vector2(0.1f, -0.4f), new Vector2(0.3f, -0.4f) });
-
-		//Center Bottom Testris Piece
-		arrayOfObstaclePoints.Add(new Vector2[] { new Vector2(0.3f, -1.25f), new Vector2(-0.3f, -1.25f), new Vector2(-0.3f, -1.4f), new Vector2(-0.1f, -1.4f), new Vector2(-0.1f, -1.9f), new Vector2(0.1f, -1.9f), new Vector2(0.1f, -1.4f), new Vector2(0.3f, -1.4f) });
-
-		height = 2.25F;
-
-		return arrayOfObstaclePoints.ToArray();
-	}
+        return arrayOfObstaclePoints.ToArray();
+    }
 }

@@ -42,7 +42,7 @@ public class HW3NavigationHandler : MonoBehaviour
     void Update()
     {
         nodeHandler.VisualizeNodes();
-        
+        obstacleHandler.VisualizePath();
     }
 
 }
