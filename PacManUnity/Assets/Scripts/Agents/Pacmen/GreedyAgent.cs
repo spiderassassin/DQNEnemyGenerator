@@ -13,6 +13,7 @@ public class GreedyAgent : MonoBehaviour
     //Path
     private Vector3[] path;
     private int pathIndex;
+    private Vector3 currTarget;
 
     public void SetTarget(Vector3 _target)
     {
@@ -42,6 +43,7 @@ public class GreedyAgent : MonoBehaviour
         Vector3 currPos = transform.position;
         currPos += new Vector3(0.1f, 0, 0);
         SetTarget(currPos);
+        currTarget = transform.position;
     }
 
     // Update is called once per frame
@@ -58,14 +60,20 @@ public class GreedyAgent : MonoBehaviour
             GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(target);
             path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
 
-            if (path == null || path.Length<=1)
+            if (path == null || path.Length < 1)
             {
-                SetTarget(target);
+                // Do nothing.
             }
             else
             {
                 pathIndex = 0;
-                SetTarget(path[pathIndex]);
+                // The target should be the next node in the path only if we've reached the center of the current node.
+                Vector3 distBetweenTarget = transform.position - currTarget;
+                if (distBetweenTarget.x < 0.0001f && distBetweenTarget.y < 0.0001f)
+                {
+                    currTarget = path[pathIndex];
+                }
+                SetTarget(currTarget);
             }
 
         }
