@@ -12,7 +12,7 @@ public class FrameActionState : State
         // Pick randomly for now.
         // FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)Random.Range(0, 5);
 
-        // More intelligent version, only pick from legal actions. (TODO: FIX)
+        // More intelligent version, only pick from legal actions.
         List<int> possibleActions = new List<int>();
         for (int i = 0; i < 5; i++)
         {

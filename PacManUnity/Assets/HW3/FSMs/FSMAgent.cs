@@ -72,7 +72,6 @@ public class FSMAgent : MonoBehaviour
                     {
                         SetPosition(potentialNewPosition);
                     }
-                    // SetPosition(potentialNewPosition);
                 }
             }
 
