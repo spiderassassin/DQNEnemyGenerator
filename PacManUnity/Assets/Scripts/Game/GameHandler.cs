@@ -42,13 +42,15 @@ public class GameHandler: MonoBehaviour
 
         // Add pellets along the path.
         Vector2[][] path = ObstacleHandler.Instance.GetWalkablePath();
+        // In the future, can change to true if we implement power pellets.
+        bool powerPellets = false;
         foreach (Vector2[] line in path)
         {
             Vector3 pos = new Vector3(line[0].x, line[0].y, 0);
             GraphNode g = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(pos);
             if (corners.Contains(g))
             {
-                pelletHandler.AddPellet(g.Location, true);
+                pelletHandler.AddPellet(g.Location, powerPellets);
             }
             else
             {
