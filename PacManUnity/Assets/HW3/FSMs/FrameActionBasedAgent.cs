@@ -85,7 +85,7 @@ public class FrameActionBasedAgent: FSMAgent
         {
             // Get corrected direction.
             Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(direction, nextNode);
-            SetTarget(GetPosition() + direction * Config.GRID_INTERVAL);
+            SetTarget(target);
         }
         else
         {

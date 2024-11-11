@@ -37,6 +37,7 @@ public class HW3NavigationHandler : MonoBehaviour
         obstacleHandler.CreateAndRenderObstacles(obstacleDefiner.GetObstaclePoints());
         nodeHandler = new GridHandler();
         nodeHandler.CreateNodes();
+		nodeHandler.SetNeighbours(obstacleHandler.GetWalkablePath());
     }
 
     void Update()

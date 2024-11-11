@@ -5,14 +5,15 @@ using UnityEngine;
 public class ArrowKeysAgent : MonoBehaviour
 {
     private Vector3 target;
-    private bool movingTowardTarget = false;
+    private bool movingTowardTarget = true;
     public bool MovingTowardTarget { get { return movingTowardTarget; } }
 
     private const int RIGHT = 0, DOWN = 1, LEFT = 2, UP = 3;
-    private int currDirection = 0;//0 = right, 1 = down, 2 = left, 3 = up
-
+    private int currDirection = 0;  //0 = right, 1 = down, 2 = left, 3 = up
+    private int nextDirection = 0;
 
     private float speed = AgentConstants.SPEED;
+
     public void SetTarget(Vector3 _target)
     {
         target = _target;
@@ -33,7 +34,6 @@ public class ArrowKeysAgent : MonoBehaviour
         {
             transform.LookAt(target, Vector3.up);
         }
-        movingTowardTarget = true;
     }
 
     void Start()
@@ -48,65 +48,82 @@ public class ArrowKeysAgent : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            currDirection = RIGHT;
-            movingTowardTarget = true;
+            nextDirection = RIGHT;
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            currDirection = DOWN;
-            movingTowardTarget = true;
+            nextDirection = DOWN;
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            currDirection = LEFT;
-            movingTowardTarget = true;
+            nextDirection = LEFT;
         }
         else if (Input.GetKey(KeyCode.UpArrow))
         {
-            currDirection = UP;
-            movingTowardTarget = true;
+            nextDirection = UP;
         }
 
-        if (movingTowardTarget)
+        Vector3 nextVectorDirection = ActionToDirection(nextDirection);
+        Vector3 nextNode = transform.position + nextVectorDirection * Config.AGENT_MOVE_INTERVAL;
+        if (LegalAction(nextNode))
         {
-            if (currDirection == RIGHT)
-            {
-                SetTarget(HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position + Vector3.right * 0.2f).Location);
-            }
-            else if (currDirection == DOWN)
-            {
-                SetTarget(HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position + Vector3.down * 0.2f).Location);
-            }
-            else if (currDirection == LEFT)
-            {
-                SetTarget(HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position + Vector3.left * 0.2f).Location);
-            }
-            else if (currDirection == UP)
-            {
-                SetTarget(HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position + Vector3.up * 0.2f).Location);
-            }
+            // Get corrected direction.
+            Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(nextVectorDirection, nextNode);
+            SetTarget(target);
+            currDirection = nextDirection;
         }
-
-        if (movingTowardTarget)
+        else
         {
-            if ((target - transform.position).sqrMagnitude < AgentConstants.THRESHOLD)
+            // Keep going in the same direction.
+            nextVectorDirection = ActionToDirection(currDirection);
+            nextNode = transform.position + nextVectorDirection * Config.AGENT_MOVE_INTERVAL;
+            if (LegalAction(nextNode))
             {
-                movingTowardTarget = false;
-                transform.position = target;
+                // Get corrected direction.
+                Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(nextVectorDirection, nextNode);
+                SetTarget(target);
             }
             else
             {
-                Vector3 potentialNewPosition = transform.position + (target - transform.position).normalized * Time.deltaTime * speed;
-                if (ObstacleHandler.Instance.AnyIntersect(new Vector2(transform.position.x, transform.position.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
-                {
-                    movingTowardTarget = false;
-                }
-                else
-                {
-                    transform.position = potentialNewPosition;
-                }
+                // Stay in the same place.
+                SetTarget(transform.position);
             }
-
         }
+
+        if ((target - transform.position).sqrMagnitude < AgentConstants.THRESHOLD)
+        {
+            transform.position = target;
+        }
+        else
+        {
+            Vector3 potentialNewPosition = transform.position + (target - transform.position).normalized * Time.deltaTime * speed;
+            if (!ObstacleHandler.Instance.AnyIntersect(new Vector2(transform.position.x, transform.position.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
+            {
+                transform.position = potentialNewPosition;
+            }
+        }
+    }
+
+    private Vector3 ActionToDirection(int action)
+    {
+        switch (action)
+        {
+            case UP:
+                return Vector3.up;
+            case DOWN:
+                return Vector3.down;
+            case LEFT:
+                return Vector3.left;
+            case RIGHT:
+                return Vector3.right;
+            default:
+                return Vector3.zero;
+        }
+    }
+
+    // Check if the next node in the direction of the action is on the path.
+    private bool LegalAction(Vector3 nextNode)
+    {
+        return ObstacleHandler.Instance.CheckPointOnPath(new Vector2(nextNode.x, nextNode.y), new Vector2(transform.position.x, transform.position.y));
     }
 }

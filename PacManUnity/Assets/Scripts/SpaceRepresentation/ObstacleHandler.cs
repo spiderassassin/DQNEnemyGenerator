@@ -191,9 +191,9 @@ public class ObstacleHandler : MonoBehaviour
 		// Create line perpendicular to direction of travel and see if it intersects with the path.
 		Vector2 direction = point - src;
 		Vector2 perp = new Vector2(-direction.y, direction.x);
-		// Have some tolerance for being on the path.
-		Vector2 start = point - perp * Config.PATH_TOL;
-		Vector2 end = point + perp * Config.PATH_TOL;
+		// Have some tolerance for being on the path (account for the fact that direction is scaled by the move interval).
+		Vector2 start = point - perp * (Config.PATH_TOL / Config.AGENT_MOVE_INTERVAL);
+		Vector2 end = point + perp * (Config.PATH_TOL / Config.AGENT_MOVE_INTERVAL);
 		foreach(Vector2[] line in path)
 		{
 			// Convert to a polygon to use the existing intersection function.

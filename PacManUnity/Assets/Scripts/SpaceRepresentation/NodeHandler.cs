@@ -18,5 +18,6 @@ public class NodeHandler
 
     }
 
+	public virtual void SetNeighbours(Vector2[][] path) {}
 
 }

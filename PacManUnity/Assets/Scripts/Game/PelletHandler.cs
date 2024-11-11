@@ -14,6 +14,9 @@ public class PelletHandler : MonoBehaviour
     public bool JustEatenPowerPellet { get { return justEatenPowerPellet; } }
     private float justEatenPowerPelletTimer;
 
+    private int numPellets;
+    public int NumPellets { get { return numPellets; } }
+
     void Start()
     {
         Instance = this;
@@ -54,6 +57,7 @@ public class PelletHandler : MonoBehaviour
             newPelletObj.transform.position = location;
             newPelletObj.transform.parent = transform;
             locationToPellets.Add(location.ToString(), newPelletObj.GetComponent<Pellet>());
+            numPellets++;
         }
     }
 
@@ -68,6 +72,7 @@ public class PelletHandler : MonoBehaviour
             }
 
             locationToPellets.Remove(location.ToString());
+            numPellets--;
         }
     }
 
@@ -85,5 +90,16 @@ public class PelletHandler : MonoBehaviour
             }
         }
         return closest;
+    }
+
+    public Vector3[] GetPelletPositions()
+    {
+        Vector3[] pellets = new Vector3[locationToPellets.Count];
+        foreach (KeyValuePair<string, Pellet> kvp in locationToPellets)
+        {
+            pellets[pellets.Length] = kvp.Value.transform.position;
+        }
+
+        return pellets;
     }
 }

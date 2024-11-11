@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ScoreHandler : MonoBehaviour
 {
@@ -24,11 +23,24 @@ public class ScoreHandler : MonoBehaviour
     {
         score += 1;
         scoreText.text = BASIC_SCORE_TEXT+score;
+
+        // Check if game beaten.
+        if (PelletHandler.Instance.NumPellets == 0)
+        {
+            // Give a reward.
+            Debug.Log("You win!");
+            
+            // Stop gameplay.
+            Time.timeScale = 0;
+        }
     }
 
     public void KillPacman()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        // Give negative reward.
+        Debug.Log("You lose!");
+
+        // Stop gameplay.
+        Time.timeScale = 0;
     }
 }
