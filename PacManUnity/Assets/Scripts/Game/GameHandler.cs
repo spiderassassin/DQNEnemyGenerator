@@ -1,10 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameHandler: MonoBehaviour
 {
     public PelletHandler pelletHandler;
+
+    public class State
+    {
+        public Vector3 agentPosition;
+        public Vector3 ghostPosition;
+        public Vector3[] pelletPositions;
+        public int score;
+        public bool gameOver;
+        public float reward;
+    }
+
+    public float currReward;
+    public float accTension;
+    public float timestep;
 
     void Start()
     {
@@ -39,5 +55,89 @@ public class GameHandler: MonoBehaviour
                 pelletHandler.AddPellet(g.Location);
             }
         }
+
+        currReward = 0;
+        accTension = 0;
+        timestep = 0;
+    }
+
+    private void LateUpdate()
+    {
+        // Check for any tension updates (i.e. 1 if pacman is within certain path distance of ghost, else 0).
+        if (GhostManager.Instance.GhostsInPlay.Length != 1)
+        {
+            Debug.LogError("There should be exactly one ghost in play.");
+        }
+        else
+        {
+            Vector3 agentPos = PacmanInfo.Instance.transform.position;
+            Vector3 ghostPos = GhostManager.Instance.GhostsInPlay[0].GetPosition();
+            // Calculate path between agent and ghost.
+            GraphNode closestNodeAgent = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(agentPos);
+            GraphNode closestNodeGhost = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(ghostPos);
+            Vector3[] path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestNodeAgent, closestNodeGhost);
+            // Check if path is within certain distance.
+            accTension += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
+        }
+
+        // Update the reward if game is over.
+        if (Time.timeScale == 0)
+        {
+            // Length of time taken to complete the game (penalize for longer time).
+            // Number of pellets remaining (penalize for more remaining).
+            // Average tension (follow a normal distribution).
+            float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
+            currReward += tensionReward - timestep - pelletHandler.NumPellets;
+        }
+
+        timestep += 1;
+    }
+
+    private float CalculateTensionReward(float mean, float stdDev)
+    {
+        float avgTension = accTension / timestep;
+        // Using formula for normal distribution.
+        return (float) Math.Exp(-Math.Pow(avgTension - mean, 2) / (2 * Math.Pow(stdDev, 2)));
+    }
+
+    // Get the current state of the game.
+    public State GetState()
+    {
+        State state = new State();
+
+        // Get the positions of the agent and the ghost.
+        state.agentPosition = PacmanInfo.Instance.transform.position;
+        FSMAgent[] ghosts = GhostManager.Instance.GhostsInPlay;
+        if (ghosts.Length != 1)
+        {
+            Debug.LogError("There should be exactly one ghost in play.");
+        }
+        else
+        {
+            state.ghostPosition = ghosts[0].GetPosition();
+        }
+
+        // Get the positions of the pellets.
+        state.pelletPositions = pelletHandler.GetPelletPositions();
+
+        // Get the current score.
+        state.score = ScoreHandler.Instance.Score;
+
+        // Get whether the game is over.
+        state.gameOver = Time.timeScale == 0;
+
+        // Get the current reward.
+        state.reward = currReward;
+
+        return state;
+    }
+
+    public void ResetGame()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+
+        // Reset timescale to normal.
+        Time.timeScale = 1;
     }
 }

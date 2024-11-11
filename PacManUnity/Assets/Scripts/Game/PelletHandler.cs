@@ -91,4 +91,15 @@ public class PelletHandler : MonoBehaviour
         }
         return closest;
     }
+
+    public Vector3[] GetPelletPositions()
+    {
+        Vector3[] pellets = new Vector3[locationToPellets.Count];
+        foreach (KeyValuePair<string, Pellet> kvp in locationToPellets)
+        {
+            pellets[pellets.Length] = kvp.Value.transform.position;
+        }
+
+        return pellets;
+    }
 }

@@ -14,4 +14,8 @@ public class Config
     public static float AGENT_MOVE_INTERVAL = 0.01f;
 
     public static float PATH_TOL = 0.05f;
+
+    public static int TENSION_DISTANCE = 5;
+    public static float TENSION_MEAN = 0.65f;
+    public static float TENSION_STD_DEV = 0.1f;
 }

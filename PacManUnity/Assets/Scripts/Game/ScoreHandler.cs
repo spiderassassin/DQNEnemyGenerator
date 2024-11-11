@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class ScoreHandler : MonoBehaviour
 {
@@ -30,6 +29,9 @@ public class ScoreHandler : MonoBehaviour
         {
             // Give a reward.
             Debug.Log("You win!");
+            
+            // Stop gameplay.
+            Time.timeScale = 0;
         }
     }
 
@@ -37,8 +39,8 @@ public class ScoreHandler : MonoBehaviour
     {
         // Give negative reward.
         Debug.Log("You lose!");
-        
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+
+        // Stop gameplay.
+        Time.timeScale = 0;
     }
 }
