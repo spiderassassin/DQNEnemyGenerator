@@ -24,10 +24,20 @@ public class ScoreHandler : MonoBehaviour
     {
         score += 1;
         scoreText.text = BASIC_SCORE_TEXT+score;
+
+        // Check if game beaten.
+        if (PelletHandler.Instance.NumPellets == 0)
+        {
+            // Give a reward.
+            Debug.Log("You win!");
+        }
     }
 
     public void KillPacman()
     {
+        // Give negative reward.
+        Debug.Log("You lose!");
+        
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }

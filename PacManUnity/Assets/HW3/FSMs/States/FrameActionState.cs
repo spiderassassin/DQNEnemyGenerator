@@ -9,6 +9,13 @@ public class FrameActionState : State
 
     public override State Update(FSMAgent agent)
     {
+        // Check if close enough to eat pacman.
+        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        if (agent.CloseEnough(pacmanLocation))
+        {
+            ScoreHandler.Instance.KillPacman();
+        }
+
         // Pick randomly for now.
         // FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)Random.Range(0, 5);
 
