@@ -5,12 +5,17 @@ using UnityEngine;
 public class FrameActionBasedAgent: FSMAgent
 {
     private int frameCount;
+    public GameHandler gameHandler;
+    public float reward;
+    
 
     // Every X frames takes an action.
     public int actionFrequency = 1;
 
     void Start()
     {
+        gameHandler = FindAnyObjectByType<GameHandler>();
+        reward = gameHandler.currReward;
         Initialize();
     }
 
@@ -23,6 +28,7 @@ public class FrameActionBasedAgent: FSMAgent
 
     public override void TakeAction(Action action)
     {
+        
         if (frameCount == 0)
         {
             switch (action)

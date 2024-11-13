@@ -116,6 +116,9 @@ GameObject:
   - component: {fileID: 6712184599910977978}
   - component: {fileID: 1985629980}
   - component: {fileID: 564417674664047552}
+  - component: {fileID: 7722539002204972820}
+  - component: {fileID: 2875959489050938173}
+  - component: {fileID: 2949616900070866553}
   m_Layer: 0
   m_Name: FrameActionBased
   m_TagString: Untagged
@@ -154,6 +157,10 @@ MonoBehaviour:
   normal: {fileID: 6712184599910977978}
   frightened: {fileID: 1985629980}
   eyes: {fileID: 564417674664047552}
+  action: 0
+  gameHandler: {fileID: 0}
+  reward: 0
+  actionFrequency: 1
 --- !u!114 &6712184599910977978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,3 +224,68 @@ MonoBehaviour:
   west2: {fileID: 21300110, guid: 4281550ccb21f8f448143e5d012140b9, type: 3}
   south1: {fileID: 21300114, guid: 4281550ccb21f8f448143e5d012140b9, type: 3}
   south2: {fileID: 21300114, guid: 4281550ccb21f8f448143e5d012140b9, type: 3}
+--- !u!114 &7722539002204972820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712184599910977976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf7786bebde147dfbd547ff7d394f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  agent: {fileID: 506166469099225113}
+  gameHandler: {fileID: 0}
+  reward: 0
+--- !u!114 &2875959489050938173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712184599910977976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 9
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 05000000
+    VectorActionSize: 05000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: joe
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_DeterministicInference: 0
+  m_ObservableAttributeHandling: 0
+--- !u!114 &2949616900070866553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6712184599910977976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 5
+  DecisionStep: 1
+  TakeActionsBetweenDecisions: 1

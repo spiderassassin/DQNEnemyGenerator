@@ -97,7 +97,7 @@ public class PelletHandler : MonoBehaviour
         Vector3[] pellets = new Vector3[locationToPellets.Count];
         foreach (KeyValuePair<string, Pellet> kvp in locationToPellets)
         {
-            pellets[pellets.Length] = kvp.Value.transform.position;
+            pellets[pellets.Length-1] = kvp.Value.transform.position;
         }
 
         return pellets;

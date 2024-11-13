@@ -68,7 +68,7 @@ public class GameHandler: MonoBehaviour
         // Check for any tension updates (i.e. 1 if pacman is within certain path distance of ghost, else 0).
         if (GhostManager.Instance.GhostsInPlay.Length != 1)
         {
-            Debug.LogError("There should be exactly one ghost in play.");
+            //Debug.LogError("There should be exactly one ghost in play.");
         }
         else
         {
