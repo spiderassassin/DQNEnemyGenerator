@@ -14,13 +14,15 @@ public class FrameActionState : State
         if (agent.CloseEnough(pacmanLocation))
         {
             ScoreHandler.Instance.KillPacman();
+            
         }
 
         // Pick randomly for now.
         // FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)Random.Range(0, 5);
 
         // More intelligent version, only pick from legal actions.
-        List<int> possibleActions = new List<int>();
+
+        /*List<int> possibleActions = new List<int>();
         for (int i = 0; i < 5; i++)
         {
             if (agent.LegalAction((FrameActionBasedAgent.Action)i))
@@ -30,10 +32,11 @@ public class FrameActionState : State
         }
         System.Random rnd = new System.Random();
         int index = rnd.Next(possibleActions.Count);
-        FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)possibleActions[index];
+        FrameActionBasedAgent.Action action = (FrameActionBasedAgent.Action)possibleActions[index];*/
 
         // Take the action.
-        agent.TakeAction(action);
+
+        agent.TakeAction((FrameActionBasedAgent.Action)agent.action);
 
         // Stay in this state.
         return this;

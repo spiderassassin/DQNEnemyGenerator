@@ -23,6 +23,8 @@ public class FSMAgent : MonoBehaviour
     // Actions
     public enum Action { Up, Down, Left, Right, Stay };
 
+    public int action = 0;
+
     //Speed modifier
     private float speedModifer = 1.0f;
 

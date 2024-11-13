@@ -632,6 +632,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pelletHandler: {fileID: 1124194018}
+  currReward: 0
+  accTension: 0
+  timestep: 0
 --- !u!114 &1124194018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,7 +695,7 @@ PrefabInstance:
     - target: {fileID: 1053825024794855570, guid: dc3e547461d054a8a90aa738563bd7fb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1053825024794855571, guid: dc3e547461d054a8a90aa738563bd7fb,
         type: 3}
@@ -876,7 +879,7 @@ PrefabInstance:
     - target: {fileID: 8877795258094126653, guid: 671d8c3662a3d4a4e90e4b6cbff86be0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
