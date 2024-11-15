@@ -37,8 +37,8 @@ public class CowardAgent : MonoBehaviour
         }
         movingTowardTarget = true;
     }
-
-     void Start()
+    
+    void Start()
     {
         Vector3 currPos = transform.position;
         currPos += new Vector3(0.1f, 0, 0);
@@ -54,22 +54,19 @@ public class CowardAgent : MonoBehaviour
         if (ghost != null)
         {
             Vector3 vecToGhost = ghost.GetPosition() - transform.position;
-            if (vecToGhost.sqrMagnitude <= 1f)
+            //runningAway = true;
+            //CalculatePath
+            GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position);
+            GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position + vecToGhost.normalized * -0.6f+Vector3.right*Random.Range(-0.1f, 0.1f) + Vector3.down * Random.Range(-0.1f, 0.1f));
+            path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
+            if (path == null || path.Length < 1)
             {
-                //runningAway = true;
-                //CalculatePath
-                GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position);
-                GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position + vecToGhost.normalized * -0.6f+Vector3.right*Random.Range(-0.1f, 0.1f) + Vector3.down * Random.Range(-0.1f, 0.1f));
-                path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
-                if (path == null || path.Length < 1)
-                {
-                    // Do nothing.
-                }
-                else
-                {
-                    pathIndex = 0;
-                    SetTarget(path[pathIndex]);
-                }
+                // Do nothing.
+            }
+            else
+            {
+                pathIndex = 0;
+                SetTarget(path[pathIndex]);
             }
         }
 
