@@ -13,7 +13,7 @@ public class Logger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        File.WriteAllText(filePath, "Time, Pellets, Tension, Action, Reward\n");
+        File.WriteAllText(filePath, "Time, Pellets, Tension, Position, Reward\n");
     }
 
     // Update is called once per frame
