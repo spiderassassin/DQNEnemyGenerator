@@ -10,7 +10,7 @@ public class ArrowKeysAgent : MonoBehaviour
 
     private const int RIGHT = 0, DOWN = 1, LEFT = 2, UP = 3;
     private int currDirection = 0;  //0 = right, 1 = down, 2 = left, 3 = up
-    private int nextDirection = 0;
+    public int nextDirection = 0;
 
     private float speed = AgentConstants.SPEED;
 
