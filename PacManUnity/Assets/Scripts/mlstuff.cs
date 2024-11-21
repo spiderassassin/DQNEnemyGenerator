@@ -51,9 +51,9 @@ public class mlstuff : Agent
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
+        gameHandler.UpdateState();
         reward = gameHandler.currReward;
         state = gameHandler.GetState();
         AddReward(reward);
