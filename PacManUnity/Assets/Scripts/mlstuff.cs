@@ -29,6 +29,10 @@ public class mlstuff : Agent
         sensor.AddObservation(state.score);
         sensor.AddObservation(state.pelletPositions.Length);
         sensor.AddObservation(state.gameOver);
+        sensor.AddObservation(state.wallUp);
+        sensor.AddObservation(state.wallDown);
+        sensor.AddObservation(state.wallLeft);
+        sensor.AddObservation(state.wallRight);
         //for(int i = 0; i < state.pelletPositions.Length; i++)
         //{
         //sensor.AddObservation(state.pelletPositions[i]);
@@ -52,9 +56,11 @@ public class mlstuff : Agent
     {
         reward = gameHandler.currReward;
         state = gameHandler.GetState();
+        AddReward(reward);
         if(state.gameOver == true || gameHandler.timestep>= 60000)
         {
-            AddReward(reward);
+            // Add this back when we start trying with final reward.
+            // AddReward(reward);
             EndEpisode();
         }
         

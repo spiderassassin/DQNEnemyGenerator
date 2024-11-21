@@ -21,7 +21,7 @@ public class FSMAgent : MonoBehaviour
     private float moveDuration;
 
     // Actions
-    public enum Action { Up, Down, Left, Right, Stay };
+    public enum Action { Up, Down, Left, Right};
 
     public int action = 0;
 
