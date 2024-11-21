@@ -45,9 +45,6 @@ public class FrameActionBasedAgent: FSMAgent
                 case Action.Right:
                     Move(Vector3.right);
                     break;
-                case Action.Stay:
-                    // Do nothing.
-                    break;
             }
         }
         frameCount = (frameCount + 1) % actionFrequency;
@@ -76,8 +73,6 @@ public class FrameActionBasedAgent: FSMAgent
             case Action.Right:
                 direction = Vector3.right;
                 break;
-            case Action.Stay:
-                return true;
         }
         Vector3 nextNode = GetPosition() + direction * Config.AGENT_MOVE_INTERVAL;
         return LegalAction(nextNode);
@@ -95,7 +90,8 @@ public class FrameActionBasedAgent: FSMAgent
         }
         else
         {
-            TakeAction(Action.Stay);
+            // Don't do anything.
+            SetTarget(GetPosition());
         }
     }
 }
