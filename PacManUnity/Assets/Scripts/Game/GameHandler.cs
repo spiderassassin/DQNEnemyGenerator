@@ -11,6 +11,10 @@ public class GameHandler: MonoBehaviour
     public class State
     {
         public Vector3 agentPosition;
+        public bool wallUp;
+        public bool wallDown;
+        public bool wallLeft;
+        public bool wallRight;
         public Vector3 ghostPosition;
         public Vector3[] pelletPositions;
         public int score;
@@ -118,6 +122,12 @@ public class GameHandler: MonoBehaviour
         {
             state.ghostPosition = ghosts[0].GetPosition();
         }
+
+        // Get whether the tile in each direction is a wall.
+        state.wallUp = ObstacleHandler.Instance.CheckPointOnPath(new Vector2(state.agentPosition.x, state.agentPosition.y + Config.GRID_INTERVAL), new Vector2(state.agentPosition.x, state.agentPosition.y));
+        state.wallDown = ObstacleHandler.Instance.CheckPointOnPath(new Vector2(state.agentPosition.x, state.agentPosition.y - Config.GRID_INTERVAL), new Vector2(state.agentPosition.x, state.agentPosition.y));
+        state.wallLeft = ObstacleHandler.Instance.CheckPointOnPath(new Vector2(state.agentPosition.x - Config.GRID_INTERVAL, state.agentPosition.y), new Vector2(state.agentPosition.x, state.agentPosition.y));
+        state.wallRight = ObstacleHandler.Instance.CheckPointOnPath(new Vector2(state.agentPosition.x + Config.GRID_INTERVAL, state.agentPosition.y), new Vector2(state.agentPosition.x, state.agentPosition.y));
 
         // Get the positions of the pellets.
         state.pelletPositions = pelletHandler.GetPelletPositions();
