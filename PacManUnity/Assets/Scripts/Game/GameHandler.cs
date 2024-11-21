@@ -84,6 +84,8 @@ public class GameHandler: MonoBehaviour
             Vector3[] path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestNodeAgent, closestNodeGhost);
             // Check if path is within certain distance.
             accTension += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
+            // For now, just set reward as tension.
+            currReward = path.Length < Config.TENSION_DISTANCE ? 0 : -1;
         }
 
         // Update the reward if game is over.
@@ -93,7 +95,8 @@ public class GameHandler: MonoBehaviour
             // Number of pellets remaining (penalize for more remaining).
             // Average tension (follow a normal distribution).
             float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
-            currReward += tensionReward - timestep - pelletHandler.NumPellets;
+            // Add this back later perhaps.
+            // currReward += tensionReward - timestep - pelletHandler.NumPellets;
         }
 
         timestep += 1;
