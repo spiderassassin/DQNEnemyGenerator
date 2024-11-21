@@ -7,6 +7,7 @@ public class FrameActionBasedAgent: FSMAgent
     private int frameCount;
     public GameHandler gameHandler;
     public float reward;
+    private bool tookIllegalAction;
     
 
     // Every X frames takes an action.
@@ -78,6 +79,16 @@ public class FrameActionBasedAgent: FSMAgent
         return LegalAction(nextNode);
     }
 
+    public override bool TookIllegalAction()
+    {
+        if (tookIllegalAction)
+        {
+            tookIllegalAction = false;
+            return true;
+        }
+        return false;
+    }
+
     // Move towards the next node in the specified direction.
     private void Move(Vector3 direction)
     {
@@ -92,6 +103,7 @@ public class FrameActionBasedAgent: FSMAgent
         {
             // Don't do anything.
             SetTarget(GetPosition());
+            tookIllegalAction = true;
         }
     }
 }

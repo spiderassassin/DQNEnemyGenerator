@@ -129,6 +129,11 @@ public class FSMAgent : MonoBehaviour
         return false;
     }
 
+    public virtual bool TookIllegalAction()
+    {
+        return false;
+    }
+
     //Set target location and begin pathing towards the target
     public void SetTarget(Vector3 _target, float duration = -1)
     {
