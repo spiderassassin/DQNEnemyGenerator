@@ -742,7 +742,7 @@ PrefabInstance:
     - target: {fileID: 1053825024794855570, guid: dc3e547461d054a8a90aa738563bd7fb,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1053825024794855571, guid: dc3e547461d054a8a90aa738563bd7fb,
         type: 3}
@@ -1346,6 +1346,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RandomGreedyAgent
       objectReference: {fileID: 0}
+    - target: {fileID: 8063320532968930203, guid: 6b6eac72b6910b745827b52051a6637a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8623979467670563946, guid: 6b6eac72b6910b745827b52051a6637a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1354,7 +1359,7 @@ PrefabInstance:
     - target: {fileID: 8623979467670563946, guid: 6b6eac72b6910b745827b52051a6637a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8623979467670563946, guid: 6b6eac72b6910b745827b52051a6637a,
         type: 3}

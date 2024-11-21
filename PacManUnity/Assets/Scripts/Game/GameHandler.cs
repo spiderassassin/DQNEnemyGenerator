@@ -85,7 +85,7 @@ public class GameHandler: MonoBehaviour
             // Check if path is within certain distance.
             accTension += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
             // For now, just set reward as tension.
-            currReward += 1;
+            currReward = path.Length < Config.TENSION_DISTANCE ? 1 : 0;
         }
 
         // Update the reward if game is over.
