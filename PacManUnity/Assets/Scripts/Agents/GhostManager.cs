@@ -19,16 +19,7 @@ public class GhostManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        // Ensure that there is only one instance of this class.
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
+        Instance = this;
         ghostsInPlay = new List<FSMAgent>();
         originalGhostPositions = new List<Vector3>();
         ghostSpawner = ghostSpawnerMax/3f;
@@ -68,13 +59,13 @@ public class GhostManager : MonoBehaviour
         return closest;
     }
 
-    public void DontDestroy()
+    public void ResetGhosts()
     {
         for (int i = 0; i < ghostsInPlay.Count; i++)
         {
-            // Reset the ghost's position.
             ghostsInPlay[i].SetPosition(originalGhostPositions[i]);
-            DontDestroyOnLoad(ghostsInPlay[i].gameObject);
+            // Reset FSMAgent.
+            ghostsInPlay[i].Initialize();
         }
     }
 }

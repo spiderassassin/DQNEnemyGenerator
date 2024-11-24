@@ -35,6 +35,12 @@ public class ScoreHandler : MonoBehaviour
         }
     }
 
+    public void ResetScore()
+    {
+        score = 0;
+        scoreText.text = BASIC_SCORE_TEXT+score;
+    }
+
     public void KillPacman()
     {
         // Give negative reward.

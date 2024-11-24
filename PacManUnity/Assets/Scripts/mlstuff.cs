@@ -9,6 +9,8 @@ public class mlstuff : Agent
     public float reward;
     public GameHandler.State state;
 
+    [SerializeField] private bool demonstration;
+
 
     void Start()
     {
@@ -27,7 +29,7 @@ public class mlstuff : Agent
         sensor.AddObservation(state.agentPosition);
         sensor.AddObservation(state.ghostPosition);
         sensor.AddObservation(state.score);
-        // sensor.AddObservation(state.pelletPositions.Length);
+        sensor.AddObservation(state.pelletPositions.Length);
         sensor.AddObservation(state.gameOver);
         sensor.AddObservation(state.wallUp);
         sensor.AddObservation(state.wallDown);
@@ -45,6 +47,7 @@ public class mlstuff : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
+        // If demonstration, get the action manually, otherwise use the action from the agent.
         agent.action = actions.DiscreteActions[0];
         print("Action: " + agent.action);
     }
@@ -53,7 +56,6 @@ public class mlstuff : Agent
 
     private void LateUpdate()
     {
-        gameHandler = FindAnyObjectByType<GameHandler>();
         gameHandler.UpdateState();
         reward = gameHandler.currReward;
         state = gameHandler.GetState();
