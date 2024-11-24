@@ -26,6 +26,8 @@ public class GameHandler: MonoBehaviour
     public float accTension;
     public float timestep;
 
+    [SerializeField] private bool keepGhostOnReset;
+
     void Start()
     {
 
@@ -143,7 +145,7 @@ public class GameHandler: MonoBehaviour
         state.wallRight = ObstacleHandler.Instance.CheckPointOnPath(new Vector2(state.agentPosition.x + Config.GRID_INTERVAL, state.agentPosition.y), new Vector2(state.agentPosition.x, state.agentPosition.y));
 
         // Get the positions of the pellets.
-        state.pelletPositions = pelletHandler.GetPelletPositions();
+        // state.pelletPositions = pelletHandler.GetPelletPositions();
 
         // Get the current score.
         state.score = ScoreHandler.Instance.Score;
@@ -159,9 +161,12 @@ public class GameHandler: MonoBehaviour
 
     public void ResetGame()
     {
+        if (keepGhostOnReset)
+        {
+            GhostManager.Instance.DontDestroy();
+        }
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
-
         // Reset timescale to normal.
         Time.timeScale = 1;
     }

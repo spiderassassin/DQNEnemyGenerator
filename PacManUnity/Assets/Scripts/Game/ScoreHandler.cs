@@ -12,9 +12,6 @@ public class ScoreHandler : MonoBehaviour
 
     public int Score { get { return score; } }//Public reference for Score
 
-    [SerializeField] private GameHandler gameHandler;
-    [SerializeField] private bool restartOnDeath;
-
     private const string BASIC_SCORE_TEXT = "Pellets: ";
 
     void Start()
@@ -45,13 +42,5 @@ public class ScoreHandler : MonoBehaviour
 
         // Stop gameplay.
         Time.timeScale = 0;
-
-        // Only do this if we're recording demonstrations for BHC.
-        if (restartOnDeath)
-        {
-            // Restart the game.
-            gameHandler.ResetGame();
-        }
-
     }
 }

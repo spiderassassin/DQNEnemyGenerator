@@ -98,7 +98,7 @@ public class FSMAgent : MonoBehaviour
     }
 
     //YOU ARE NOT ALLOWED TO TELEPORT
-    private void SetPosition(Vector3 position)
+    public void SetPosition(Vector3 position)
     {
         transform.position = position;
     }
