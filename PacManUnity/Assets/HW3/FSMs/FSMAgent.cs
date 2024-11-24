@@ -119,6 +119,8 @@ public class FSMAgent : MonoBehaviour
     
     public virtual void TakeAction(Action action){ }
 
+    public virtual int GetCurrentAction(){ return 0; }
+
     public virtual bool LegalAction(Vector3 direction)
     {
         return false;

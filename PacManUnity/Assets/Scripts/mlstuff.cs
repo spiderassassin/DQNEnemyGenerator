@@ -47,12 +47,19 @@ public class mlstuff : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-        // If demonstration, get the action manually, otherwise use the action from the agent.
         agent.action = actions.DiscreteActions[0];
         print("Action: " + agent.action);
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     
+    public override void Heuristic(in ActionBuffers actionsOut)
+    {
+        // If demonstration, get the action manually, otherwise don't change anything.
+        if (demonstration)
+        {
+            var actions = actionsOut.DiscreteActions;
+            actions[0] = gameHandler.GetCurrentAction();
+        }
+    }
 
     private void LateUpdate()
     {

@@ -7,7 +7,7 @@ public class ChaseState : State
     //Path
     private Vector3[] path;
     private int pathIndex;
-    private Vector3 currTarget;
+    public Vector3 currTarget;
 
     //Set name of this state
     public ChaseState():base("Chase"){ }
