@@ -10,10 +10,13 @@ public class PacmanInfo : MonoBehaviour
     private Vector3 facing;
     public Vector3 Facing { get { return facing; } }
 
+    private Vector3 startPosition;
+
     // Start is called before the first frame update
     void Awake()
     {
         Instance = this;
+        startPosition = transform.position;
     }
 
     void Update()
@@ -36,5 +39,11 @@ public class PacmanInfo : MonoBehaviour
         }
 
         prevLocation = transform.position;
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = startPosition;
+        prevLocation = startPosition;
     }
 }

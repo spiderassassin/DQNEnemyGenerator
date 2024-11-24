@@ -102,4 +102,14 @@ public class PelletHandler : MonoBehaviour
 
         return pellets;
     }
+
+    public void ResetPellets()
+    {
+        foreach (KeyValuePair<string, Pellet> kvp in locationToPellets)
+        {
+            Destroy(kvp.Value.gameObject);
+        }
+        locationToPellets.Clear();
+        numPellets = 0;
+    }
 }

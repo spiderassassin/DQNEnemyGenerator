@@ -26,8 +26,6 @@ public class GameHandler: MonoBehaviour
     public float accTension;
     public float timestep;
 
-    [SerializeField] private bool keepGhostOnReset;
-
     void Start()
     {
 
@@ -47,6 +45,15 @@ public class GameHandler: MonoBehaviour
         }
 
         // Add pellets along the path.
+        SpawnPellets();
+
+        currReward = 0;
+        accTension = 0;
+        timestep = 0;
+    }
+
+    public void SpawnPellets()
+    {
         Vector2[][] path = ObstacleHandler.Instance.GetWalkablePath();
         // In the future, can change to true if we implement power pellets.
         bool powerPellets = false;
@@ -54,19 +61,8 @@ public class GameHandler: MonoBehaviour
         {
             Vector3 pos = new Vector3(line[0].x, line[0].y, 0);
             GraphNode g = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(pos);
-            if (corners.Contains(g))
-            {
-                pelletHandler.AddPellet(g.Location, powerPellets);
-            }
-            else
-            {
-                pelletHandler.AddPellet(g.Location);
-            }
+            pelletHandler.AddPellet(g.Location);
         }
-
-        currReward = 0;
-        accTension = 0;
-        timestep = 0;
     }
 
     private void LateUpdate()
@@ -145,7 +141,7 @@ public class GameHandler: MonoBehaviour
         state.wallRight = ObstacleHandler.Instance.CheckPointOnPath(new Vector2(state.agentPosition.x + Config.GRID_INTERVAL, state.agentPosition.y), new Vector2(state.agentPosition.x, state.agentPosition.y));
 
         // Get the positions of the pellets.
-        // state.pelletPositions = pelletHandler.GetPelletPositions();
+        state.pelletPositions = pelletHandler.GetPelletPositions();
 
         // Get the current score.
         state.score = ScoreHandler.Instance.Score;
@@ -159,14 +155,28 @@ public class GameHandler: MonoBehaviour
         return state;
     }
 
+    public void ResetState()
+    {
+        currReward = 0;
+        accTension = 0;
+        timestep = 0;
+    }
+
     public void ResetGame()
     {
-        if (keepGhostOnReset)
-        {
-            GhostManager.Instance.DontDestroy();
-        }
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        // Reset the positions of the agent and the ghost.
+        PacmanInfo.Instance.ResetPosition();
+        GhostManager.Instance.ResetGhosts();
+
+        // Reset the positions of the pellets.
+        pelletHandler.ResetPellets();
+        SpawnPellets();
+
+        // Reset the score.
+        ScoreHandler.Instance.ResetScore();
+
+        // Reset the state.
+        ResetState();
         // Reset timescale to normal.
         Time.timeScale = 1;
     }
