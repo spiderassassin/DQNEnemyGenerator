@@ -25,16 +25,9 @@ public class GhostManager : MonoBehaviour
 
     void Update()
     {
-        if (ghostSpawner > 0)
+        if (ghostIndex < ghosts.Length)
         {
-            ghostSpawner -= Time.deltaTime;
-            if (ghostSpawner <= 0)
-            {
-                if (ghostIndex < ghosts.Length)
-                {
-                    InstantiateNextGhost();
-                }
-            }
+            InstantiateNextGhost();
         }
     }
 
