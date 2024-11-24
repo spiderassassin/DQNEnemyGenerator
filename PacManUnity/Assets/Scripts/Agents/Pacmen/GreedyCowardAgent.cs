@@ -54,7 +54,7 @@ public class GreedyCowardAgent : MonoBehaviour
         if (ghost != null)
         {
             Vector3 vecToGhost = ghost.GetPosition() - transform.position;
-            if (vecToGhost.sqrMagnitude <= 1f)
+            if (vecToGhost.sqrMagnitude <= 0.1f)
             {
                 runningAway = true;
                 //CalculatePath
