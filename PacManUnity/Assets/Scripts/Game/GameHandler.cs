@@ -26,6 +26,8 @@ public class GameHandler: MonoBehaviour
     public float accTension;
     public float timestep;
 
+    [SerializeField] private bool keepGhostOnReset;
+
     void Start()
     {
 
@@ -69,6 +71,11 @@ public class GameHandler: MonoBehaviour
 
     private void LateUpdate()
     {
+        // UpdateState();
+    }
+
+    public void UpdateState()
+    {
         // Check for any tension updates (i.e. 1 if pacman is within certain path distance of ghost, else 0).
         if (GhostManager.Instance.GhostsInPlay.Length != 1)
         {
@@ -84,8 +91,11 @@ public class GameHandler: MonoBehaviour
             Vector3[] path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestNodeAgent, closestNodeGhost);
             // Check if path is within certain distance.
             accTension += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
-            // For now, just set reward as tension.
-            currReward = path.Length < Config.TENSION_DISTANCE ? 1 : 0;
+            // currReward = path.Length < Config.TENSION_DISTANCE ? 1 : 0;
+            // Just give -1 reward to make things faster.
+            currReward = -1;
+            // Also give -1 if agent hits the wall.
+            currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
         }
 
         // Update the reward if game is over.
@@ -97,6 +107,8 @@ public class GameHandler: MonoBehaviour
             float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
             // Add this back later perhaps.
             // currReward += tensionReward - timestep - pelletHandler.NumPellets;
+            // For now, just set reward as killing pacman.
+            currReward = pelletHandler.NumPellets > 0 ? 1000 : 0;
         }
 
         timestep += 1;
@@ -133,7 +145,7 @@ public class GameHandler: MonoBehaviour
         state.wallRight = ObstacleHandler.Instance.CheckPointOnPath(new Vector2(state.agentPosition.x + Config.GRID_INTERVAL, state.agentPosition.y), new Vector2(state.agentPosition.x, state.agentPosition.y));
 
         // Get the positions of the pellets.
-        state.pelletPositions = pelletHandler.GetPelletPositions();
+        // state.pelletPositions = pelletHandler.GetPelletPositions();
 
         // Get the current score.
         state.score = ScoreHandler.Instance.Score;
@@ -149,9 +161,12 @@ public class GameHandler: MonoBehaviour
 
     public void ResetGame()
     {
+        if (keepGhostOnReset)
+        {
+            GhostManager.Instance.DontDestroy();
+        }
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
-
         // Reset timescale to normal.
         Time.timeScale = 1;
     }

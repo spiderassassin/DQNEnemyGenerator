@@ -42,7 +42,7 @@ public class FSMAgent : MonoBehaviour
         //Pathing Logic
         if (movingTowardTarget)
         {
-            if ((target - GetPosition()).sqrMagnitude < AgentConstants.THRESHOLD)
+            if ((target - GetPosition()).sqrMagnitude < 0.0001f)
             {
                 movingTowardTarget = false;
                 SetPosition(target);
@@ -98,7 +98,7 @@ public class FSMAgent : MonoBehaviour
     }
 
     //YOU ARE NOT ALLOWED TO TELEPORT
-    private void SetPosition(Vector3 position)
+    public void SetPosition(Vector3 position)
     {
         transform.position = position;
     }
@@ -125,6 +125,11 @@ public class FSMAgent : MonoBehaviour
     }
 
     public virtual bool LegalAction(Action action)
+    {
+        return false;
+    }
+
+    public virtual bool TookIllegalAction()
     {
         return false;
     }

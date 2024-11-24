@@ -18,19 +18,14 @@ public class GridHandler : NodeHandler
     public override void CreateNodes()
     {
         nodeDictionary = new Dictionary<string, GraphNode>();
-        string activeScene = SceneManager.GetActiveScene().name;
-        
-        if (activeScene.Equals("Scene1"))
+        // Generate nodes for the grid.
+        for (float x = gridStartX; x <= gridEndX; x += Config.GRID_INTERVAL)
         {
-            // Generate nodes for the grid.
-            for (float x = gridStartX; x <= gridEndX; x += Config.GRID_INTERVAL)
+            for (float y = gridStartY; y <= gridEndY; y += Config.GRID_INTERVAL)
             {
-                for (float y = gridStartY; y <= gridEndY; y += Config.GRID_INTERVAL)
-                {
-                    Vector3 position = new Vector3(x, y, 0);
-                    GraphNode node = new GraphNode(position);
-                    nodeDictionary.Add(position.ToString(), node);
-                }
+                Vector3 position = new Vector3(x, y, 0);
+                GraphNode node = new GraphNode(position);
+                nodeDictionary.Add(position.ToString(), node);
             }
         }
     }

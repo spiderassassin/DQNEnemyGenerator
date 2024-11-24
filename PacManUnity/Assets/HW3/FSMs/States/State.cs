@@ -12,6 +12,11 @@ public class State
         this.stateName = _stateName;
     }
 
+    public virtual State Start(FSMAgent agent)
+    {
+        return this;
+    }
+
     //Handle each tick of behavior while in this state
     public virtual State Update(FSMAgent agent)
     {

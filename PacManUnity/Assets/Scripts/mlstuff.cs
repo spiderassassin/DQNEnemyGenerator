@@ -4,7 +4,7 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 public class mlstuff : Agent
 {
-    public FrameActionBasedAgent agent;
+    public FSMAgent agent;
     public GameHandler gameHandler;
     public float reward;
     public GameHandler.State state;
@@ -27,7 +27,7 @@ public class mlstuff : Agent
         sensor.AddObservation(state.agentPosition);
         sensor.AddObservation(state.ghostPosition);
         sensor.AddObservation(state.score);
-        sensor.AddObservation(state.pelletPositions.Length);
+        // sensor.AddObservation(state.pelletPositions.Length);
         sensor.AddObservation(state.gameOver);
         sensor.AddObservation(state.wallUp);
         sensor.AddObservation(state.wallDown);
@@ -51,9 +51,10 @@ public class mlstuff : Agent
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
+        gameHandler = FindAnyObjectByType<GameHandler>();
+        gameHandler.UpdateState();
         reward = gameHandler.currReward;
         state = gameHandler.GetState();
         AddReward(reward);

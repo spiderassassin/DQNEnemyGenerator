@@ -4,41 +4,59 @@ using UnityEngine;
 
 public class ChaseState : State
 {
+    //Path
+    private Vector3[] path;
+    private int pathIndex;
+    private Vector3 currTarget;
+
     //Set name of this state
     public ChaseState():base("Chase"){ }
 
+    public override State Start(FSMAgent agent)
+    {
+        Vector3 currPos = agent.transform.position;
+        currPos += new Vector3(0.1f, 0, 0);
+        agent.SetTarget(currPos);
+        currTarget = agent.transform.position;
+
+        return this;
+    }
+
     public override State Update(FSMAgent agent)
     {
-        //Handle Following Pacman
+        // Check if close enough to eat pacman.
         Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
         if (agent.CloseEnough(pacmanLocation))
         {
             ScoreHandler.Instance.KillPacman();
         }
 
-        //If timer complete, go to Scatter State
-        if (agent.TimerComplete())
-        {
-            return new ScatterState(new Vector3(ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.YBound), this);
-        }
+        //Follow Pacman
+        GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(agent.transform.position);
+        GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(pacmanLocation);
+        path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
 
-        //If Pacman ate a power pellet, go to Frightened State
-        if (PelletHandler.Instance.JustEatenPowerPellet)
+        if (path == null || path.Length < 1)
         {
-            return new FrightenedState(this);
+            // Do nothing.
         }
-        //If we didn't return follow Pacman
-        agent.SetTarget(pacmanLocation);
+        else
+        {
+            pathIndex = 0;
+            // The target should be the next node in the path only if we've reached the center of the current node.
+            Vector3 distBetweenTarget = agent.transform.position - currTarget;
+            if (Mathf.Abs(distBetweenTarget.x) < 0.0001f && Mathf.Abs(distBetweenTarget.y) < 0.0001f)
+            {
+                currTarget = path[pathIndex];
+            }
+            agent.SetTarget(currTarget);
+        }
 
         //Stay in this state
         return this;
     }
 
-    //Upon entering state, set timer to enter Scatter State
-    public override void EnterState(FSMAgent agent)
-    {
-        agent.SetTimer(20f);
-    }
+    public override void EnterState(FSMAgent agent){ }
 
     public override void ExitState(FSMAgent agent){ }
 }

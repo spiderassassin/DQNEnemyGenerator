@@ -11,30 +11,34 @@ public class GhostManager : MonoBehaviour
 
     private List<FSMAgent> ghostsInPlay;
     public FSMAgent[] GhostsInPlay { get { return ghostsInPlay.ToArray(); } }
+    private List<Vector3> originalGhostPositions;
 
     private float ghostSpawner;
     public float ghostSpawnerMax = 3;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        Instance = this;
+        // Ensure that there is only one instance of this class.
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
         ghostsInPlay = new List<FSMAgent>();
+        originalGhostPositions = new List<Vector3>();
         ghostSpawner = ghostSpawnerMax/3f;
     }
 
     void Update()
     {
-        if (ghostSpawner > 0)
+        if (ghostIndex < ghosts.Length)
         {
-            ghostSpawner -= Time.deltaTime;
-            if (ghostSpawner <= 0)
-            {
-                if (ghostIndex < ghosts.Length)
-                {
-                    InstantiateNextGhost();
-                }
-            }
+            InstantiateNextGhost();
         }
     }
 
@@ -45,6 +49,7 @@ public class GhostManager : MonoBehaviour
         ghostIndex += 1;
 
         ghostsInPlay.Add(ghost1.GetComponent<FSMAgent>());
+        originalGhostPositions.Add(ghost1.GetComponent<FSMAgent>().GetPosition());
     }
 
     public FSMAgent GetClosestGhost(Vector3 position)
@@ -61,5 +66,15 @@ public class GhostManager : MonoBehaviour
             }
         }
         return closest;
+    }
+
+    public void DontDestroy()
+    {
+        for (int i = 0; i < ghostsInPlay.Count; i++)
+        {
+            // Reset the ghost's position.
+            ghostsInPlay[i].SetPosition(originalGhostPositions[i]);
+            DontDestroyOnLoad(ghostsInPlay[i].gameObject);
+        }
     }
 }

@@ -14,5 +14,6 @@ public class Blinky : FSMAgent
     {
         currState = new ChaseState();
         currState.EnterState(this);
+        currState.Start(this);
     }
 }

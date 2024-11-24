@@ -42,7 +42,5 @@ public class ScoreHandler : MonoBehaviour
 
         // Stop gameplay.
         Time.timeScale = 0;
-
-
     }
 }
