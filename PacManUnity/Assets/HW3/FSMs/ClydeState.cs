@@ -19,20 +19,20 @@ public class ClydeState : State
     public override State Update(FSMAgent agent)
     {
         //Handle Following Pacman
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
-            ScoreHandler.Instance.KillPacman();
+            scoreHandler.KillPacman();
         }
 
         //If timer complete, go to Scatter State
         if (agent.TimerComplete())
         {
-            return new ScatterState(new Vector3(-1*ObstacleHandler.Instance.XBound, -1*ObstacleHandler.Instance.YBound), this);
+            return new ScatterState(new Vector3(-1*obstacleHandler.XBound, -1*obstacleHandler.YBound), this);
         }
 
         //If Pacman ate a power pellet, go to Frightened State
-        if (PelletHandler.Instance.JustEatenPowerPellet)
+        if (pelletHandler.JustEatenPowerPellet)
         {
             return new FrightenedState(this);
         }
@@ -41,7 +41,7 @@ public class ClydeState : State
 
         if(dist<1.6){
             //If we didn't return follow Pacman
-            agent.SetTarget(new Vector3(-1*ObstacleHandler.Instance.XBound, -1*ObstacleHandler.Instance.YBound));
+            agent.SetTarget(new Vector3(-1*obstacleHandler.XBound, -1*obstacleHandler.YBound));
         }
         else{
 

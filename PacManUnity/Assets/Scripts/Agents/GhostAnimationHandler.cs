@@ -11,17 +11,17 @@ public class GhostAnimationHandler : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y - prevLocation.y > AgentConstants.EPSILON)
+        if (transform.localPosition.y - prevLocation.y > AgentConstants.EPSILON)
         {
             animator.open = north1;
             animator.close = north2;
         }
-        else if (transform.position.y - prevLocation.y < -1*AgentConstants.EPSILON)
+        else if (transform.localPosition.y - prevLocation.y < -1*AgentConstants.EPSILON)
         {
             animator.open = south1;
             animator.close = south2;
         }
-        else if(transform.position.x - prevLocation.x > AgentConstants.EPSILON)
+        else if(transform.localPosition.x - prevLocation.x > AgentConstants.EPSILON)
         {
             animator.open = east1;
             animator.close = east2;
@@ -32,7 +32,7 @@ public class GhostAnimationHandler : MonoBehaviour
             animator.close = west2;
         }
 
-        prevLocation = transform.position;
+        prevLocation = transform.localPosition;
 
 
     }

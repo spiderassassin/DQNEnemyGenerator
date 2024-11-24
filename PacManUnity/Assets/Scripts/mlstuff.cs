@@ -12,9 +12,6 @@ public class mlstuff : Agent
 
     void Start()
     {
-        //print(agent.action);
-        gameHandler = FindAnyObjectByType<GameHandler>();
-        
     }
 
     public override void OnEpisodeBegin()
@@ -27,8 +24,8 @@ public class mlstuff : Agent
         sensor.AddObservation(state.agentPosition);
         sensor.AddObservation(state.ghostPosition);
         sensor.AddObservation(state.score);
-        sensor.AddObservation(state.pelletPositions.Length);
-        sensor.AddObservation(state.gameOver);
+        // sensor.AddObservation(state.pelletPositions.Length);
+        // sensor.AddObservation(state.gameOver);
         sensor.AddObservation(state.wallUp);
         sensor.AddObservation(state.wallDown);
         sensor.AddObservation(state.wallLeft);

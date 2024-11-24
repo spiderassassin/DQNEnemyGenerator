@@ -35,19 +35,21 @@ public class GridHandler : NodeHandler
         }
     }
 
-    public override void VisualizeNodes()
+    public override void VisualizeNodes(Transform transform)
     {
+        // Offset by the position of the parent environment object.
+        Vector3 offset = transform.parent.position;
         //Visualize grid points
         foreach (KeyValuePair<string, GraphNode> kvp in nodeDictionary)
         {
             //Draw left line
-            Debug.DrawLine(kvp.Value.Location + Vector3.left * Config.GRID_INTERVAL / 2f + Vector3.up * Config.GRID_INTERVAL / 2f, kvp.Value.Location + Vector3.left * Config.GRID_INTERVAL / 2f + Vector3.down * Config.GRID_INTERVAL / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.left * Config.GRID_INTERVAL / 2f + Vector3.up * Config.GRID_INTERVAL / 2f + offset, kvp.Value.Location + Vector3.left * Config.GRID_INTERVAL / 2f + Vector3.down * Config.GRID_INTERVAL / 2f + offset, Color.white);
             //Draw right line
-            Debug.DrawLine(kvp.Value.Location + Vector3.right * Config.GRID_INTERVAL / 2f + Vector3.up * Config.GRID_INTERVAL / 2f, kvp.Value.Location + Vector3.right * Config.GRID_INTERVAL / 2f + Vector3.down * Config.GRID_INTERVAL / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.right * Config.GRID_INTERVAL / 2f + Vector3.up * Config.GRID_INTERVAL / 2f + offset, kvp.Value.Location + Vector3.right * Config.GRID_INTERVAL / 2f + Vector3.down * Config.GRID_INTERVAL / 2f + offset, Color.white);
             //Draw top line
-            Debug.DrawLine(kvp.Value.Location + Vector3.up * Config.GRID_INTERVAL / 2f + Vector3.left * Config.GRID_INTERVAL / 2f, kvp.Value.Location + Vector3.up * Config.GRID_INTERVAL / 2f + Vector3.right * Config.GRID_INTERVAL / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.up * Config.GRID_INTERVAL / 2f + Vector3.left * Config.GRID_INTERVAL / 2f + offset, kvp.Value.Location + Vector3.up * Config.GRID_INTERVAL / 2f + Vector3.right * Config.GRID_INTERVAL / 2f + offset, Color.white);
             //Draw bottom line
-            Debug.DrawLine(kvp.Value.Location + Vector3.down * Config.GRID_INTERVAL / 2f + Vector3.left * Config.GRID_INTERVAL / 2f, kvp.Value.Location + Vector3.down * Config.GRID_INTERVAL / 2f + Vector3.right * Config.GRID_INTERVAL / 2f, Color.white);
+            Debug.DrawLine(kvp.Value.Location + Vector3.down * Config.GRID_INTERVAL / 2f + Vector3.left * Config.GRID_INTERVAL / 2f + offset, kvp.Value.Location + Vector3.down * Config.GRID_INTERVAL / 2f + Vector3.right * Config.GRID_INTERVAL / 2f + offset, Color.white);
         }
     }
 

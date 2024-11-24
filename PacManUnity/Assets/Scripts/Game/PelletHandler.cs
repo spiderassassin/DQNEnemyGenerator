@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PelletHandler : MonoBehaviour
 {
-    public static PelletHandler Instance;
-
     public GameObject protoPellet, protoPowerPellet;
 
     private Dictionary<string, Pellet> locationToPellets;
@@ -17,9 +15,11 @@ public class PelletHandler : MonoBehaviour
     private int numPellets;
     public int NumPellets { get { return numPellets; } }
 
+    [SerializeField] private ScoreHandler scoreHandler;
+
     void Start()
     {
-        Instance = this;
+
     }
 
     void Update()
@@ -54,8 +54,13 @@ public class PelletHandler : MonoBehaviour
                 newPelletObj = GameObject.Instantiate(protoPellet);
             }
 
-            newPelletObj.transform.position = location;
-            newPelletObj.transform.parent = transform;
+            // Assign the required managers to the pellet.
+            newPelletObj.GetComponent<Pellet>().pelletHandler = this;
+            newPelletObj.GetComponent<Pellet>().scoreHandler = scoreHandler;
+            
+            // Position ghost locally within the environment that instantiated it.
+            newPelletObj.transform.parent = this.transform.parent;
+            newPelletObj.transform.localPosition = location;
             locationToPellets.Add(location.ToString(), newPelletObj.GetComponent<Pellet>());
             numPellets++;
         }
@@ -82,7 +87,7 @@ public class PelletHandler : MonoBehaviour
         Pellet closest = null;
         foreach (KeyValuePair<string, Pellet> kvp in locationToPellets)
         {
-            float dist = (kvp.Value.transform.position - location).sqrMagnitude;
+            float dist = (kvp.Value.transform.localPosition - location).sqrMagnitude;
             if (dist < minDist)
             {
                 minDist = dist;
@@ -97,7 +102,7 @@ public class PelletHandler : MonoBehaviour
         Vector3[] pellets = new Vector3[locationToPellets.Count];
         foreach (KeyValuePair<string, Pellet> kvp in locationToPellets)
         {
-            pellets[pellets.Length-1] = kvp.Value.transform.position;
+            pellets[pellets.Length-1] = kvp.Value.transform.localPosition;
         }
 
         return pellets;

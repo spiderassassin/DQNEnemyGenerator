@@ -6,9 +6,12 @@ public class Pellet : MonoBehaviour
 {
     public bool powerPellet = false;
 
+    public PelletHandler pelletHandler;
+    public ScoreHandler scoreHandler;
+
     public void Eat() {
-        PelletHandler.Instance.RemovePellet(transform.position);
-        ScoreHandler.Instance.UpdateScore();
+        pelletHandler.RemovePellet(transform.localPosition);
+        scoreHandler.UpdateScore();
         Destroy(gameObject);
     }
 

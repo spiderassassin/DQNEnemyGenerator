@@ -7,6 +7,8 @@ public class AStarPathFinder : GreedyPathFinder
 {
     public static int nodesOpened = 0;
 
+    [SerializeField] private ObstacleHandler obstacleHandler;
+
     //ASSIGNMENT 2: EDIT BELOW THIS LINE, IMPLEMENT A*
     public override Vector3[] CalculatePath(GraphNode startNode, GraphNode goalNode)
     {
@@ -37,7 +39,7 @@ public class AStarPathFinder : GreedyPathFinder
             //Check each neighbor
             foreach (GraphNode neighbor in currNode.GraphNode.Neighbors)
             {
-                gScore = currNode.GetGScore() + ObstacleHandler.Instance.GridSize;
+                gScore = currNode.GetGScore() + obstacleHandler.GridSize;
                     
                 AStarNode aStarNeighbor = new AStarNode(currNode, neighbor, Heuristic(neighbor, goalNode));
                 openSet.Enqueue(aStarNeighbor);

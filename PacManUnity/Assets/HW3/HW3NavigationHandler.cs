@@ -5,8 +5,6 @@ using UnityEngine;
 //Exact copy of the NavigationHandler. Implement Smoothing here
 public class HW3NavigationHandler : MonoBehaviour
 {
-    public static HW3NavigationHandler Instance;
-
     [SerializeField]
     private ObstacleHandler obstacleHandler;
     [SerializeField]
@@ -26,7 +24,6 @@ public class HW3NavigationHandler : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;
         Time.timeScale = timeScale;
     }
 
@@ -42,7 +39,7 @@ public class HW3NavigationHandler : MonoBehaviour
 
     void Update()
     {
-        nodeHandler.VisualizeNodes();
+        nodeHandler.VisualizeNodes(this.transform);
         obstacleHandler.VisualizePath();
     }
 

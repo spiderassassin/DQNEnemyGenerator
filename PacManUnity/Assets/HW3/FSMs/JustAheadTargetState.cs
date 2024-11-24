@@ -10,26 +10,26 @@ public class JustAheadTargetState : State
     public override State Update(FSMAgent agent)
     {
         //Handle Following Pacman
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
-            ScoreHandler.Instance.KillPacman();
+            scoreHandler.KillPacman();
         }
 
         //If timer complete, go to Scatter State
         if (agent.TimerComplete())
         {
-            return new ScatterState(new Vector3(ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.YBound), this);
+            return new ScatterState(new Vector3(obstacleHandler.XBound, obstacleHandler.YBound), this);
         }
 
         //If Pacman ate a power pellet, go to Frightened State
-        if (PelletHandler.Instance.JustEatenPowerPellet)
+        if (pelletHandler.JustEatenPowerPellet)
         {
             return new FrightenedState(this);
         }
 
         //If we didn't return follow Pacman
-        agent.SetTarget(pacmanLocation+PacmanInfo.Instance.Facing*0.2f);
+        agent.SetTarget(pacmanLocation+pacmanInfo.Facing*0.2f);
 
         //Stay in this state
         return this;

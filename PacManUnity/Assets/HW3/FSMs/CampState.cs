@@ -10,36 +10,36 @@ public class CampState : State
     public override State Update(FSMAgent agent)
     {
         //Handle Following Pacman
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
-            ScoreHandler.Instance.KillPacman();
+            scoreHandler.KillPacman();
         }
 
         //If timer complete, go to Scatter State
         if (agent.TimerComplete())
         {
-            return new ScatterState(new Vector3(ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.YBound), this);
+            return new ScatterState(new Vector3(obstacleHandler.XBound, obstacleHandler.YBound), this);
         }
 
         //If Pacman ate a power pellet, go to Frightened State
-        if (PelletHandler.Instance.JustEatenPowerPellet)
+        if (pelletHandler.JustEatenPowerPellet)
         {
             return new FrightenedState(this);
         }
 
         //This has gone too far
-        if(ScoreHandler.Instance.Score>120){
+        if(scoreHandler.Score>120){
            return new JustAheadTargetState(); 
         }
 
-        Pellet p = PelletHandler.Instance.GetClosestPellet(pacmanLocation);
+        Pellet p = pelletHandler.GetClosestPellet(pacmanLocation);
 
         if(p.powerPellet){
-           agent.SetTarget(new Vector3(ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.YBound)); 
+           agent.SetTarget(new Vector3(obstacleHandler.XBound, obstacleHandler.YBound)); 
         }
         else{
-            agent.SetTarget(p.transform.position); 
+            agent.SetTarget(p.transform.localPosition); 
         }
 
         //Stay in this state

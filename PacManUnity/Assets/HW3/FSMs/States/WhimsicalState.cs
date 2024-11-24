@@ -14,26 +14,26 @@ public class WhimsicalState : State
     {
 
         //Check if you killed pacman
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
-            ScoreHandler.Instance.KillPacman();
+            scoreHandler.KillPacman();
         }
 
         //Check if timer completes and should transition to scatter state
         if (agent.TimerComplete())
         {
-            return new ScatterState(new Vector3(ObstacleHandler.Instance.XBound, -1*ObstacleHandler.Instance.YBound), this);
+            return new ScatterState(new Vector3(obstacleHandler.XBound, -1*obstacleHandler.YBound), this);
         }
 
         //Check if Pacman ate a power pellet and we should become frightened
-        if (PelletHandler.Instance.JustEatenPowerPellet)
+        if (pelletHandler.JustEatenPowerPellet)
         {
             return new FrightenedState(this);
         }
 
         //Handle movement logic
-        pacmanLocation += PacmanInfo.Instance.Facing * 0.4f;
+        pacmanLocation += pacmanInfo.Facing * 0.4f;
 
         if (blinky != null)
         {

@@ -23,10 +23,10 @@ public class ScatterState : State
     public override State Update(FSMAgent agent)
     {
         //Determine if we've killed Pacman
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
-            ScoreHandler.Instance.KillPacman();
+            scoreHandler.KillPacman();
         }
 
         //If we're done scattering set up return state
@@ -36,7 +36,7 @@ public class ScatterState : State
         }
 
         //Handle Pacman eating power pellet and transitioning to Frightened State
-        if (PelletHandler.Instance.JustEatenPowerPellet)
+        if (pelletHandler.JustEatenPowerPellet)
         {
             return new FrightenedState(this);
         }
@@ -70,11 +70,11 @@ public class ScatterState : State
     {
         agent.SetTimer(7f);
 
-        GraphNode g = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(scatterPosition);
+        GraphNode g = hw3NavigationHandler.NodeHandler.ClosestNode(scatterPosition);
         realScatterPosition = g.Location;
         agent.SetTarget(realScatterPosition);
         Vector3 innerPosition = Vector3.Lerp(Vector3.zero, realScatterPosition, 0.8f);
-        realInnerPosition = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(innerPosition+ Vector3.left*realScatterPosition.x/3+Vector3.down* realScatterPosition.y/6).Location;
+        realInnerPosition = hw3NavigationHandler.NodeHandler.ClosestNode(innerPosition+ Vector3.left*realScatterPosition.x/3+Vector3.down* realScatterPosition.y/6).Location;
     }
 
     public override void ExitState(FSMAgent agent)

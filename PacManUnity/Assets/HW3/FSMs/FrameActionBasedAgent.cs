@@ -5,24 +5,21 @@ using UnityEngine;
 public class FrameActionBasedAgent: FSMAgent
 {
     private int frameCount;
-    public GameHandler gameHandler;
     public float reward;
     private bool tookIllegalAction;
     
-
     // Every X frames takes an action.
     public int actionFrequency = 1;
 
     void Start()
     {
-        gameHandler = FindAnyObjectByType<GameHandler>();
         reward = gameHandler.currReward;
         Initialize();
     }
 
     public override void Initialize()
     {
-        currState = new FrameActionState();
+        currState = new FrameActionState(hw3NavigationHandler, pacmanInfo, pelletHandler, scoreHandler, obstacleHandler);
         currState.EnterState(this);
         frameCount = 0;
     }
@@ -54,7 +51,7 @@ public class FrameActionBasedAgent: FSMAgent
     // Check if the next node in the direction of the action is on the path.
     public override bool LegalAction(Vector3 nextNode)
     {
-        return ObstacleHandler.Instance.CheckPointOnPath(new Vector2(nextNode.x, nextNode.y), new Vector2(GetPosition().x, GetPosition().y));
+        return obstacleHandler.CheckPointOnPath(new Vector2(nextNode.x, nextNode.y), new Vector2(GetPosition().x, GetPosition().y));
     }
 
     public override bool LegalAction(Action action)
@@ -96,7 +93,7 @@ public class FrameActionBasedAgent: FSMAgent
         if (LegalAction(nextNode))
         {
             // Get corrected direction.
-            Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(direction, nextNode);
+            Vector3 target = obstacleHandler.GetCorrectedTarget(direction, nextNode);
             SetTarget(target);
         }
         else

@@ -5,15 +5,15 @@ using UnityEngine;
 public class FrameActionState : State
 {
     // Set name of this state.
-    public FrameActionState():base("FrameAction"){ }
+    public FrameActionState(HW3NavigationHandler hw3NavigationHandler, PacmanInfo pacmanInfo, PelletHandler pelletHandler, ScoreHandler scoreHandler, ObstacleHandler obstacleHandler):base("FrameAction", hw3NavigationHandler, pacmanInfo, pelletHandler, scoreHandler, obstacleHandler){ }
 
     public override State Update(FSMAgent agent)
     {
         // Check if close enough to eat pacman.
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
-            ScoreHandler.Instance.KillPacman();
+            scoreHandler.KillPacman();
             
         }
 

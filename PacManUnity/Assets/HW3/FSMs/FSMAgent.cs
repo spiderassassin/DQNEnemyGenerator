@@ -28,6 +28,13 @@ public class FSMAgent : MonoBehaviour
     //Speed modifier
     private float speedModifer = 1.0f;
 
+    public HW3NavigationHandler hw3NavigationHandler;
+    public PacmanInfo pacmanInfo;
+    public PelletHandler pelletHandler;
+    public ScoreHandler scoreHandler;
+    public ObstacleHandler obstacleHandler;
+    public GameHandler gameHandler;
+
     //Set up initial state
     public virtual void Initialize(){ }
 
@@ -66,7 +73,7 @@ public class FSMAgent : MonoBehaviour
                 {
                     Vector3 potentialNewPosition = GetPosition() + (target - GetPosition()).normalized * Time.deltaTime * AgentConstants.GHOST_SPEED * speedModifer;
                     // If the position is not on the path, stop moving.
-                    if (!ObstacleHandler.Instance.CheckPointOnPath(potentialNewPosition, new Vector2(GetPosition().x, GetPosition().y)))
+                    if (!obstacleHandler.CheckPointOnPath(potentialNewPosition, new Vector2(GetPosition().x, GetPosition().y)))
                     {
                         movingTowardTarget = false;
                     }
@@ -94,13 +101,13 @@ public class FSMAgent : MonoBehaviour
 
     public Vector3 GetPosition()
     {
-        return transform.position;
+        return transform.localPosition;
     }
 
     //YOU ARE NOT ALLOWED TO TELEPORT
     private void SetPosition(Vector3 position)
     {
-        transform.position = position;
+        transform.localPosition = position;
     }
 
     //TIMER GETTERS AND SETTERS
@@ -137,9 +144,9 @@ public class FSMAgent : MonoBehaviour
     //Set target location and begin pathing towards the target
     public void SetTarget(Vector3 _target, float duration = -1)
     {
-        GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(GetPosition());
-        GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(_target);
-        path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
+        GraphNode closestStart = hw3NavigationHandler.NodeHandler.ClosestNode(GetPosition());
+        GraphNode closestGoal = hw3NavigationHandler.NodeHandler.ClosestNode(_target);
+        path = hw3NavigationHandler.PathFinder.CalculatePath(closestStart, closestGoal);
 
         if (path == null || path.Length <= 1)
         {

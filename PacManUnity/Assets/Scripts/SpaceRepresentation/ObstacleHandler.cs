@@ -8,7 +8,6 @@ public class ObstacleHandler : MonoBehaviour
 {
 	public Material obstacleLineMaterial;
 
-	public static ObstacleHandler Instance;
 	private List<Polygon> obstacles = new List<Polygon>();
 	public Polygon[] Obstacles{ get { return obstacles.ToArray(); } }
 	private ObstacleDefiner obstacleDefiner;
@@ -25,7 +24,6 @@ public class ObstacleHandler : MonoBehaviour
 	//Initialize this singleton
 	public void Init(ObstacleDefiner _obstacleDefiner)
 	{
-		ObstacleHandler.Instance = this;
 		obstacleDefiner = _obstacleDefiner;
 		path = obstacleDefiner.GetWalkablePath();
 	}
@@ -34,6 +32,9 @@ public class ObstacleHandler : MonoBehaviour
 	private void CreateAndRenderObstacle(Vector2[] points, string obstacleName = "")
 	{
 		GameObject newObstacleObj = new GameObject();
+		// Position obstacle locally within the environment that instantiated it.
+		newObstacleObj.transform.parent = this.transform.parent;
+		newObstacleObj.transform.localPosition = newObstacleObj.transform.position;
 		if (obstacleName.Length > 0)
 		{
 			newObstacleObj.name = obstacleName;
@@ -93,10 +94,10 @@ public class ObstacleHandler : MonoBehaviour
     //Returns the corners of the map
     public Vector2[] GetMapCorners()
     {
-        return new Vector2[] { new Vector2(ObstacleHandler.Instance.XBound * -1, ObstacleHandler.Instance.YBound * -1),
-            new Vector2(ObstacleHandler.Instance.XBound * -1, ObstacleHandler.Instance.YBound),
-        new Vector2(ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.YBound),
-        new Vector2(ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.YBound * -1)};
+        return new Vector2[] { new Vector2(XBound * -1, YBound * -1),
+            new Vector2(XBound * -1, YBound),
+        new Vector2(XBound, YBound),
+        new Vector2(XBound, YBound * -1)};
     }
 
     //Returns an array of obstacle points
@@ -123,9 +124,11 @@ public class ObstacleHandler : MonoBehaviour
 	// Draw a line representing the path.
 	public void VisualizePath()
 	{
+		// Offset by the position of the parent environment object.
+        Vector3 offset = transform.parent.position;
 		foreach(Vector2[] line in path)
 		{
-			Debug.DrawLine(new Vector3(line[0].x, line[0].y, 0), new Vector3(line[1].x, line[1].y, 0), Color.green);
+			Debug.DrawLine(new Vector3(line[0].x, line[0].y, 0) + offset, new Vector3(line[1].x, line[1].y, 0) + offset, Color.green);
 		}
 	}
 

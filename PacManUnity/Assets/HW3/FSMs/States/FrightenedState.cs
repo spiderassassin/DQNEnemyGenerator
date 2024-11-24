@@ -21,7 +21,7 @@ public class FrightenedState : State
     public override State Update(FSMAgent agent)
     {
         //Check and see if we've been eaten, if so become eyes
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
             return new EyesState(returnState);
@@ -41,7 +41,7 @@ public class FrightenedState : State
         else
         {
             randomTimer = 0;
-            agent.SetTarget(new Vector3(Random.RandomRange(-1 * ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.XBound), Random.RandomRange(-1 * ObstacleHandler.Instance.YBound, ObstacleHandler.Instance.YBound)));
+            agent.SetTarget(new Vector3(Random.RandomRange(-1 * obstacleHandler.XBound, obstacleHandler.XBound), Random.RandomRange(-1 * obstacleHandler.YBound, obstacleHandler.YBound)));
         }
         //Stay in this state
         return this;

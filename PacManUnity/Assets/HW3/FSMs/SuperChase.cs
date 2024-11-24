@@ -10,26 +10,26 @@ public class SuperChase : State
     public override State Update(FSMAgent agent)
     {
         //Handle Following Pacman
-        Vector3 pacmanLocation = PacmanInfo.Instance.transform.position;
+        Vector3 pacmanLocation = pacmanInfo.transform.localPosition;
         if (agent.CloseEnough(pacmanLocation))
         {
-            ScoreHandler.Instance.KillPacman();
+            scoreHandler.KillPacman();
         }
 
         //If timer complete, go to Scatter State
         if (agent.TimerComplete())
         {
-            return new ScatterState(new Vector3(ObstacleHandler.Instance.XBound, ObstacleHandler.Instance.YBound), this);
+            return new ScatterState(new Vector3(obstacleHandler.XBound, obstacleHandler.YBound), this);
         }
 
         //If Pacman ate a power pellet, go to Frightened State
-        if (PelletHandler.Instance.JustEatenPowerPellet)
+        if (pelletHandler.JustEatenPowerPellet)
         {
             return new FrightenedState(this);
         }
 
         //Time to camp
-        if(ScoreHandler.Instance.Score>60){
+        if(scoreHandler.Score>60){
            return new CampState(); 
         }
 

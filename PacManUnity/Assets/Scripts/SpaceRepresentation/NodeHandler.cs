@@ -13,7 +13,7 @@ public class NodeHandler
 		return null;
 	}
 
-    public virtual void VisualizeNodes()
+    public virtual void VisualizeNodes(Transform transform)
     {
 
     }

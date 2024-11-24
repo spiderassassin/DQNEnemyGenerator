@@ -15,13 +15,18 @@ public class GreedyCowardAgent : MonoBehaviour
     private int pathIndex;
     private Vector3 currTarget;
 
+    [SerializeField] private HW3NavigationHandler hw3NavigationHandler;
+    [SerializeField] private GhostManager ghostManager;
+    [SerializeField] private PelletHandler pelletHandler;
+    [SerializeField] private ObstacleHandler obstacleHandler;
+
     public void SetTarget(Vector3 _target)
     {
         target = _target;
-        if (Mathf.Abs(transform.position.x - target.x) < AgentConstants.EPSILON)//Special case moving vertically
+        if (Mathf.Abs(transform.localPosition.x - target.x) < AgentConstants.EPSILON)//Special case moving vertically
         {
             Vector3 eulerAngles = transform.eulerAngles;
-            if (transform.position.y < target.y)
+            if (transform.localPosition.y < target.y)
             {
                 eulerAngles.x = -90;
             }
@@ -40,27 +45,27 @@ public class GreedyCowardAgent : MonoBehaviour
 
      void Start()
     {
-        Vector3 currPos = transform.position;
+        Vector3 currPos = transform.localPosition;
         currPos += new Vector3(0.1f, 0, 0);
         SetTarget(currPos);
-        currTarget = transform.position;
+        currTarget = transform.localPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
         bool runningAway = false;
-        FSMAgent ghost = GhostManager.Instance.GetClosestGhost(transform.position);
+        FSMAgent ghost = ghostManager.GetClosestGhost(transform.localPosition);
         if (ghost != null)
         {
-            Vector3 vecToGhost = ghost.GetPosition() - transform.position;
+            Vector3 vecToGhost = ghost.GetPosition() - transform.localPosition;
             if (vecToGhost.sqrMagnitude <= 1f)
             {
                 runningAway = true;
                 //CalculatePath
-                GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position);
-                GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position + vecToGhost.normalized * -0.6f+Vector3.right*Random.Range(-0.1f, 0.1f) + Vector3.down * Random.Range(-0.1f, 0.1f));
-                path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
+                GraphNode closestStart = hw3NavigationHandler.NodeHandler.ClosestNode(transform.localPosition);
+                GraphNode closestGoal = hw3NavigationHandler.NodeHandler.ClosestNode(transform.localPosition + vecToGhost.normalized * -0.6f+Vector3.right*Random.Range(-0.1f, 0.1f) + Vector3.down * Random.Range(-0.1f, 0.1f));
+                path = hw3NavigationHandler.PathFinder.CalculatePath(closestStart, closestGoal);
                 if (path == null || path.Length < 1)
                 {
                     // Do nothing.
@@ -75,15 +80,15 @@ public class GreedyCowardAgent : MonoBehaviour
 
         if (!runningAway)
         {
-            Pellet p = PelletHandler.Instance.GetClosestPellet(transform.position);
+            Pellet p = pelletHandler.GetClosestPellet(transform.localPosition);
             if (p != null)
             {
-                Vector3 target = p.transform.position;
+                Vector3 target = p.transform.localPosition;
 
                 //CalculatePath	
-                GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position);
-                GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(target);
-                path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
+                GraphNode closestStart = hw3NavigationHandler.NodeHandler.ClosestNode(transform.localPosition);
+                GraphNode closestGoal = hw3NavigationHandler.NodeHandler.ClosestNode(target);
+                path = hw3NavigationHandler.PathFinder.CalculatePath(closestStart, closestGoal);
 
                 if (path == null || path.Length < 1)
                 {
@@ -93,7 +98,7 @@ public class GreedyCowardAgent : MonoBehaviour
                 {
                     pathIndex = 0;
                     // The target should be the next node in the path only if we've reached the center of the current node.
-                    Vector3 distBetweenTarget = transform.position - currTarget;
+                    Vector3 distBetweenTarget = transform.localPosition - currTarget;
                     if (distBetweenTarget.x < 0.0001f && distBetweenTarget.y < 0.0001f)
                     {
                         currTarget = path[pathIndex];
@@ -111,21 +116,21 @@ public class GreedyCowardAgent : MonoBehaviour
 
         if (movingTowardTarget)
         {
-            if ((target - transform.position).sqrMagnitude < AgentConstants.THRESHOLD)
+            if ((target - transform.localPosition).sqrMagnitude < AgentConstants.THRESHOLD)
             {
                 movingTowardTarget = false;
-                transform.position = target;
+                transform.localPosition = target;
             }
             else
             {
-                Vector3 potentialNewPosition = transform.position + (target - transform.position).normalized * Time.deltaTime * speed;
-                if (ObstacleHandler.Instance.AnyIntersect(new Vector2(transform.position.x, transform.position.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
+                Vector3 potentialNewPosition = transform.localPosition + (target - transform.localPosition).normalized * Time.deltaTime * speed;
+                if (obstacleHandler.AnyIntersect(new Vector2(transform.localPosition.x, transform.localPosition.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
                 {
                     movingTowardTarget = false;
                 }
                 else
                 {
-                    transform.position = potentialNewPosition;
+                    transform.localPosition = potentialNewPosition;
                 }
             }
 

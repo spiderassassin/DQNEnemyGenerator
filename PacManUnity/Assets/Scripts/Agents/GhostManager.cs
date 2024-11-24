@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class GhostManager : MonoBehaviour
 {
-    public static GhostManager Instance;
-
     public GameObject[] ghosts;//The ghosts in the order that they will appear
     private int ghostIndex = 0;
 
@@ -15,10 +13,15 @@ public class GhostManager : MonoBehaviour
     private float ghostSpawner;
     public float ghostSpawnerMax = 3;
 
+    [SerializeField] private GameHandler gameHandler;
+    [SerializeField] private ObstacleHandler obstacleHandler;
+    [SerializeField] private HW3NavigationHandler hw3NavigationHandler;
+    [SerializeField] private PacmanInfo pacmanInfo;
+    [SerializeField] private ScoreHandler scoreHandler;
+
     // Start is called before the first frame update
     void Start()
     {
-        Instance = this;
         ghostsInPlay = new List<FSMAgent>();
         ghostSpawner = ghostSpawnerMax/3f;
     }
@@ -42,6 +45,16 @@ public class GhostManager : MonoBehaviour
     {
         ghostSpawner = ghostSpawnerMax;
         GameObject ghost1 = GameObject.Instantiate(ghosts[ghostIndex]);
+        // Set the ghost's managers.
+        ghost1.GetComponent<FSMAgent>().gameHandler = gameHandler;
+        ghost1.GetComponent<FSMAgent>().obstacleHandler = obstacleHandler;
+        ghost1.GetComponent<FSMAgent>().hw3NavigationHandler = hw3NavigationHandler;
+        ghost1.GetComponent<FSMAgent>().pacmanInfo = pacmanInfo;
+        ghost1.GetComponent<FSMAgent>().scoreHandler = scoreHandler;
+        ghost1.GetComponent<mlstuff>().gameHandler = gameHandler;
+        // Position ghost locally within the environment that instantiated it.
+        ghost1.transform.parent = this.transform.parent;
+        ghost1.transform.localPosition = ghost1.transform.position;
         ghostIndex += 1;
 
         ghostsInPlay.Add(ghost1.GetComponent<FSMAgent>());

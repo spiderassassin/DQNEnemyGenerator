@@ -14,13 +14,16 @@ public class PathFollowingAgent : MonoBehaviour
     private Vector3[] path;
     private int pathIndex;
 
+    [SerializeField] private HW3NavigationHandler hw3NavigationHandler;
+    [SerializeField] private ObstacleHandler obstacleHandler;
+
     public void SetTarget(Vector3 _target)
 	{
 		target = _target;
-        if (Mathf.Abs(transform.position.x - target.x) < AgentConstants.EPSILON)//Special case moving vertically
+        if (Mathf.Abs(transform.localPosition.x - target.x) < AgentConstants.EPSILON)//Special case moving vertically
         {
             Vector3 eulerAngles = transform.eulerAngles;
-            if (transform.position.y < target.y)
+            if (transform.localPosition.y < target.y)
             { 
                 eulerAngles.x = -90;
             }
@@ -39,7 +42,7 @@ public class PathFollowingAgent : MonoBehaviour
 
     void Start()
     {
-        Vector3 currPos = transform.position;
+        Vector3 currPos = transform.localPosition;
         currPos += new Vector3(0.1f, 0, 0);
         SetTarget(currPos);
     }
@@ -56,9 +59,9 @@ public class PathFollowingAgent : MonoBehaviour
                  10f));
 
             //CalculatePath	
-            GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(transform.position);
-            GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(target);
-            path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
+            GraphNode closestStart = hw3NavigationHandler.NodeHandler.ClosestNode(transform.localPosition);
+            GraphNode closestGoal = hw3NavigationHandler.NodeHandler.ClosestNode(target);
+            path = hw3NavigationHandler.PathFinder.CalculatePath(closestStart, closestGoal);
 
             if (path == null)
             {
@@ -90,20 +93,20 @@ public class PathFollowingAgent : MonoBehaviour
 
         if (movingTowardTarget)
 		{
-			if ((target - transform.position).sqrMagnitude < AgentConstants.THRESHOLD)
+			if ((target - transform.localPosition).sqrMagnitude < AgentConstants.THRESHOLD)
 			{
 				movingTowardTarget = false;
-                transform.position = target;
+                transform.localPosition = target;
 			}
 			else {
-                Vector3 potentialNewPosition = transform.position + (target - transform.position).normalized * Time.deltaTime * speed;
-				if (ObstacleHandler.Instance.AnyIntersect(new Vector2(transform.position.x, transform.position.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
+                Vector3 potentialNewPosition = transform.localPosition + (target - transform.localPosition).normalized * Time.deltaTime * speed;
+				if (obstacleHandler.AnyIntersect(new Vector2(transform.localPosition.x, transform.localPosition.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
 				{
 					movingTowardTarget = false;
 				}
 				else
 				{
-					transform.position = potentialNewPosition;
+					transform.localPosition = potentialNewPosition;
 				}
 			}
 			

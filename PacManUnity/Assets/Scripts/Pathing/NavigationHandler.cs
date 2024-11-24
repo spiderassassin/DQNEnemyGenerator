@@ -28,7 +28,7 @@ public class NavigationHandler : MonoBehaviour
 
 	void Update()
 	{
-        nodeHandler.VisualizeNodes();
+        nodeHandler.VisualizeNodes(this.transform.parent);
 		if (Input.GetMouseButtonDown(0))
 		{
             pathIndex = 0;
@@ -38,7 +38,7 @@ public class NavigationHandler : MonoBehaviour
 				 10f));
 
 			//CalculatePath	
-			GraphNode closestStart = nodeHandler.ClosestNode(agent.transform.position);
+			GraphNode closestStart = nodeHandler.ClosestNode(agent.transform.localPosition);
 			GraphNode closestGoal = nodeHandler.ClosestNode(target);
 			path = pathFinder.CalculatePath(closestStart, closestGoal);
             

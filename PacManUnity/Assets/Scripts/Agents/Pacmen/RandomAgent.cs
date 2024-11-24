@@ -17,13 +17,15 @@ public class RandomAgent : MonoBehaviour
 
     private float speed = AgentConstants.SPEED;
 
+    [SerializeField] private ObstacleHandler obstacleHandler;
+
     public void SetTarget(Vector3 _target)
     {
         target = _target;
-        if (Mathf.Abs(transform.position.x - target.x) < AgentConstants.EPSILON)//Special case moving vertically
+        if (Mathf.Abs(transform.localPosition.x - target.x) < AgentConstants.EPSILON)//Special case moving vertically
         {
             Vector3 eulerAngles = transform.eulerAngles;
-            if (transform.position.y < target.y)
+            if (transform.localPosition.y < target.y)
             {
                 eulerAngles.x = -90;
             }
@@ -41,7 +43,7 @@ public class RandomAgent : MonoBehaviour
 
     void Start()
     {
-        Vector3 currPos = transform.position;
+        Vector3 currPos = transform.localPosition;
         currPos += new Vector3(0.001f, 0, 0);
         SetTarget(currPos);
     }
@@ -60,11 +62,11 @@ public class RandomAgent : MonoBehaviour
         }
 
         Vector3 nextVectorDirection = ActionToDirection(nextDirection);
-        Vector3 nextNode = transform.position + nextVectorDirection * Config.AGENT_MOVE_INTERVAL;
+        Vector3 nextNode = transform.localPosition + nextVectorDirection * Config.AGENT_MOVE_INTERVAL;
         if (LegalAction(nextNode))
         {
             // Get corrected direction.
-            Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(nextVectorDirection, nextNode);
+            Vector3 target = obstacleHandler.GetCorrectedTarget(nextVectorDirection, nextNode);
             SetTarget(target);
             currDirection = nextDirection;
         }
@@ -72,30 +74,30 @@ public class RandomAgent : MonoBehaviour
         {
             // Keep going in the same direction.
             nextVectorDirection = ActionToDirection(currDirection);
-            nextNode = transform.position + nextVectorDirection * Config.AGENT_MOVE_INTERVAL;
+            nextNode = transform.localPosition + nextVectorDirection * Config.AGENT_MOVE_INTERVAL;
             if (LegalAction(nextNode))
             {
                 // Get corrected direction.
-                Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(nextVectorDirection, nextNode);
+                Vector3 target = obstacleHandler.GetCorrectedTarget(nextVectorDirection, nextNode);
                 SetTarget(target);
             }
             else
             {
                 // Stay in the same place.
-                SetTarget(transform.position);
+                SetTarget(transform.localPosition);
             }
         }
 
-        if ((target - transform.position).sqrMagnitude < AgentConstants.THRESHOLD)
+        if ((target - transform.localPosition).sqrMagnitude < AgentConstants.THRESHOLD)
         {
-            transform.position = target;
+            transform.localPosition = target;
         }
         else
         {
-            Vector3 potentialNewPosition = transform.position + (target - transform.position).normalized * Time.deltaTime * speed;
-            if (!ObstacleHandler.Instance.AnyIntersect(new Vector2(transform.position.x, transform.position.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
+            Vector3 potentialNewPosition = transform.localPosition + (target - transform.localPosition).normalized * Time.deltaTime * speed;
+            if (!obstacleHandler.AnyIntersect(new Vector2(transform.localPosition.x, transform.localPosition.y), new Vector2(potentialNewPosition.x, potentialNewPosition.y)))
             {
-                transform.position = potentialNewPosition;
+                transform.localPosition = potentialNewPosition;
             }
         }
     }
@@ -120,6 +122,6 @@ public class RandomAgent : MonoBehaviour
     // Check if the next node in the direction of the action is on the path.
     private bool LegalAction(Vector3 nextNode)
     {
-        return ObstacleHandler.Instance.CheckPointOnPath(new Vector2(nextNode.x, nextNode.y), new Vector2(transform.position.x, transform.position.y));
+        return obstacleHandler.CheckPointOnPath(new Vector2(nextNode.x, nextNode.y), new Vector2(transform.localPosition.x, transform.localPosition.y));
     }
 }

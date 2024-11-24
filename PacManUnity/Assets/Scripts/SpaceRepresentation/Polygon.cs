@@ -288,9 +288,10 @@ public class Polygon
 				point1 = points[i];
 				point2 = points[0];
 			}
-
-			line.SetPosition(0, point1);
-			line.SetPosition(1, point2);
+			// Offset by the position of the parent environment object.
+			Vector2 offset = polygonObject.transform.parent.position;
+			line.SetPosition(0, point1 + offset);
+			line.SetPosition(1, point2 + offset);
 			line.startWidth = lineWidth;
 			line.endWidth = lineWidth;
 			line.material = lineMaterial;
