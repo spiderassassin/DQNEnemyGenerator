@@ -69,7 +69,7 @@ public class GreedyAgent : MonoBehaviour
                 pathIndex = 0;
                 // The target should be the next node in the path only if we've reached the center of the current node.
                 Vector3 distBetweenTarget = transform.position - currTarget;
-                if (distBetweenTarget.x < 0.0001f && distBetweenTarget.y < 0.0001f)
+                if (Mathf.Abs(distBetweenTarget.x) < 0.0001f && Mathf.Abs(distBetweenTarget.y) < 0.0001f)
                 {
                     currTarget = path[pathIndex];
                 }

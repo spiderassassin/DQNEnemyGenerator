@@ -42,7 +42,7 @@ public class FSMAgent : MonoBehaviour
         //Pathing Logic
         if (movingTowardTarget)
         {
-            if ((target - GetPosition()).sqrMagnitude < AgentConstants.THRESHOLD)
+            if ((target - GetPosition()).sqrMagnitude < 0.0001f)
             {
                 movingTowardTarget = false;
                 SetPosition(target);
