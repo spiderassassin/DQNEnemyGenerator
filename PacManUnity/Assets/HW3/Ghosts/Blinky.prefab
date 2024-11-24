@@ -272,7 +272,7 @@ MonoBehaviour:
   agent: {fileID: 6712184599910977981}
   gameHandler: {fileID: 0}
   reward: 0
-  demonstration: 0
+  demonstration: 1
 --- !u!114 &5410428708859456678
 MonoBehaviour:
   m_ObjectHideFlags: 0

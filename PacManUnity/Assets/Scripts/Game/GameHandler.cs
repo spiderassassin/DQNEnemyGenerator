@@ -155,6 +155,11 @@ public class GameHandler: MonoBehaviour
         return state;
     }
 
+    public int GetCurrentAction()
+    {
+        return GhostManager.Instance.GhostsInPlay[0].GetCurrentAction();
+    }
+
     public void ResetState()
     {
         currReward = 0;
