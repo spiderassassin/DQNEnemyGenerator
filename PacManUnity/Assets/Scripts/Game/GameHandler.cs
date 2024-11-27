@@ -25,6 +25,7 @@ public class GameHandler: MonoBehaviour
     public float currReward;
     public float accTension;
     public float timestep;
+    public float timeSinceLastTension;
 
     void Start()
     {
@@ -50,6 +51,7 @@ public class GameHandler: MonoBehaviour
         currReward = 0;
         accTension = 0;
         timestep = 0;
+        timeSinceLastTension = 0;
     }
 
     public void SpawnPellets()
@@ -86,13 +88,29 @@ public class GameHandler: MonoBehaviour
             GraphNode closestNodeGhost = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(ghostPos);
             Vector3[] path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestNodeAgent, closestNodeGhost);
             // Check if path is within certain distance.
+
             //accTension += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
             //currReward += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
             currReward += CalculateTensionReward(path.Length, Config.TENSION_MEAN, Config.TENSION_STD_DEV);
             // Just give -1 reward to make things faster.
             currReward += -1/ pelletHandler.NumPellets;
             // Also give -1 if agent hits the wall.
+
             currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
+            // Decrease over time.
+            currReward += -1;
+
+            // Now check if the agent hasn't been in tension for a while.
+            timeSinceLastTension += 1;
+            if (path.Length < Config.TENSION_DISTANCE)
+            {
+                timeSinceLastTension = 0;
+            }
+            else if (timeSinceLastTension > Config.TENSION_TIMEOUT)
+            {
+                Time.timeScale = 0;
+                currReward += -10000;
+            }
         }
 
         // Update the reward if game is over.
@@ -101,11 +119,12 @@ public class GameHandler: MonoBehaviour
             // Length of time taken to complete the game (penalize for longer time).
             // Number of pellets remaining (penalize for more remaining).
             // Average tension (follow a normal distribution).
-            //float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
-            // Add this back later perhaps.
+
+            float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
+
             // currReward += tensionReward - timestep - pelletHandler.NumPellets;
-            // For now, just set reward as killing pacman.
-            currReward = pelletHandler.NumPellets > 0 ? 1000 : 0;
+            // Remove for now, don't actually want to kill pacman.
+            // currReward = pelletHandler.NumPellets > 0 ? 1000 : 0;
         }
 
         timestep += 1;
