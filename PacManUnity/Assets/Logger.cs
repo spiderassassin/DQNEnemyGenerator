@@ -6,12 +6,13 @@ public class Logger : MonoBehaviour
 {
     public PelletHandler pelletHandler;
     public GameHandler gameHandler;
-    public string filePath = "log.csv";
+    public string filePath = "log";
     private float nextTime = 0.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        filePath = filePath + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
         File.WriteAllText(filePath, "Time, Pellets, Tension, Position, Distance, Reward\n");
     }
 
