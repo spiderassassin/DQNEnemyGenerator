@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 1351876040785298609, guid: 5b9527db8c6f9413295895490cbb46f5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.2
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 1351876040785298609, guid: 5b9527db8c6f9413295895490cbb46f5,
         type: 3}
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pelletHandler: {fileID: 1124194018}
   gameHandler: {fileID: 1124194017}
-  filePath: log.csv
+  filePath: log
 --- !u!4 &1095387233
 Transform:
   m_ObjectHideFlags: 0
@@ -682,6 +682,7 @@ MonoBehaviour:
   currReward: 0
   accTension: 0
   timestep: 0
+  timeSinceLastTension: 0
 --- !u!114 &1124194018
 MonoBehaviour:
   m_ObjectHideFlags: 0
