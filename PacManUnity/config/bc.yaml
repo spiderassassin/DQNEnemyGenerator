@@ -2,7 +2,7 @@ default_settings:
       trainer_type: ppo
       hyperparameters:
         batch_size: 10
-        buffer_size: 100
+        buffer_size: 10000
         learning_rate: 3.0e-4
         beta: 5.0e-4
         epsilon: 0.4
@@ -18,12 +18,13 @@ default_settings:
       reward_signals:
         extrinsic:
           gamma: 0.99
-          strength: 0.5
+          strength: 1.0
         gail:
-          strength: 0
+          strength: 0.3
           demo_path: PacManUnity/Assets/Demonstrations/BlinkyRecording.demo
       behavioral_cloning:
-        strength: 1.0
+        strength: 0.5
+        steps: 0
         demo_path: PacManUnity/Assets/Demonstrations/BlinkyRecording.demo
       max_steps: 1000000
       time_horizon: 64
