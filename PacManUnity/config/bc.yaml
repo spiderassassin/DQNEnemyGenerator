@@ -19,6 +19,7 @@ default_settings:
         extrinsic:
           gamma: 0.99
           strength: 1.0
+
         gail:
           strength: 0.3
           demo_path: PacManUnity/Assets/Demonstrations/BlinkyRecording.demo

@@ -15,7 +15,7 @@ public class Config
 
     public static float PATH_TOL = 0.05f;
 
-    public static int TENSION_DISTANCE = 5;
+    public static int TENSION_DISTANCE = 3;
     public static float TENSION_MEAN = 0.65f;
     public static float TENSION_STD_DEV = 0.1f;
     public static float TENSION_TIMEOUT = 100000.0f;
