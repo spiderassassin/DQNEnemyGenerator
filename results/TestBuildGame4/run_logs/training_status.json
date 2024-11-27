@@ -1,0 +1,47 @@
+{
+    "joe": {
+        "checkpoints": [
+            {
+                "steps": 499974,
+                "file_path": "results\\TestBuildGame4\\joe\\joe-499974.onnx",
+                "reward": 0.37741647746429324,
+                "creation_time": 1732613439.2752748,
+                "auxillary_file_paths": [
+                    "results\\TestBuildGame4\\joe\\joe-499974.pt"
+                ]
+            },
+            {
+                "steps": 999996,
+                "file_path": "results\\TestBuildGame4\\joe\\joe-999996.onnx",
+                "reward": 0.3973621705686337,
+                "creation_time": 1732620148.1810021,
+                "auxillary_file_paths": [
+                    "results\\TestBuildGame4\\joe\\joe-999996.pt"
+                ]
+            },
+            {
+                "steps": 1000060,
+                "file_path": "results\\TestBuildGame4\\joe\\joe-1000060.onnx",
+                "reward": 0.39390822003428205,
+                "creation_time": 1732620148.209878,
+                "auxillary_file_paths": [
+                    "results\\TestBuildGame4\\joe\\joe-1000060.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000060,
+            "file_path": "results\\TestBuildGame4\\joe.onnx",
+            "reward": 0.39390822003428205,
+            "creation_time": 1732620148.209878,
+            "auxillary_file_paths": [
+                "results\\TestBuildGame4\\joe\\joe-1000060.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
