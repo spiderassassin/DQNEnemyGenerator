@@ -12,7 +12,7 @@ def peaks(number, results):
             scipy.find_peaks(results[str(i)][info])
 
 def change(number, results):
-    infos = ["time", "pellets", "tension", "distance", "reward"]
+    infos = ["time", "pellets"]#, "tension", "distance", "reward"]
     before = {}
     after = {}
     
@@ -23,12 +23,12 @@ def change(number, results):
     for i in range(number/2):
         values = results[str(i)]
         for info in infos:
-            before[info].extend(values[str(i)][info])
+            before[info].append(values[str(i)][info][-1])
             
     for i in range(number/2, number):
         values = results[str(i)]
         for info in infos:
-            after[info].extend(values[str(i)][info])
+            after[info].append(values[str(i)][info][-1])
 
     for info in infos:
         plt.boxplot(before[info])
@@ -47,12 +47,14 @@ def gatherResults(number):
     for log in logs:
         results[str(currNum)] = {}
         values = csv.reader(log)
+        prev_tension = 0
         for line in values:
             results[str(currNum)]["time"] = line[0]
             results[str(currNum)]["pellets"] = line[1]
-            results[str(currNum)]["tension"] = line[2]
+            results[str(currNum)]["tension"] = line[2] - prev_tension
             results[str(currNum)]["distance"] = line[4]
             results[str(currNum)]["reward"] = line[5]
+            prev_tension = line[2]
         log.close()
 
     return results
