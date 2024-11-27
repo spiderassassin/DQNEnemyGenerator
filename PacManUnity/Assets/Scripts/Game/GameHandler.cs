@@ -86,10 +86,11 @@ public class GameHandler: MonoBehaviour
             GraphNode closestNodeGhost = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(ghostPos);
             Vector3[] path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestNodeAgent, closestNodeGhost);
             // Check if path is within certain distance.
-            accTension += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
-            // currReward = path.Length < Config.TENSION_DISTANCE ? 1 : 0;
+            //accTension += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
+            //currReward += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
+            currReward += CalculateTensionReward(path.Length, Config.TENSION_MEAN, Config.TENSION_STD_DEV);
             // Just give -1 reward to make things faster.
-            currReward = -1;
+            currReward += -1/ pelletHandler.NumPellets;
             // Also give -1 if agent hits the wall.
             currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
         }
@@ -100,7 +101,7 @@ public class GameHandler: MonoBehaviour
             // Length of time taken to complete the game (penalize for longer time).
             // Number of pellets remaining (penalize for more remaining).
             // Average tension (follow a normal distribution).
-            float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
+            //float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
             // Add this back later perhaps.
             // currReward += tensionReward - timestep - pelletHandler.NumPellets;
             // For now, just set reward as killing pacman.
@@ -110,11 +111,14 @@ public class GameHandler: MonoBehaviour
         timestep += 1;
     }
 
-    private float CalculateTensionReward(float mean, float stdDev)
+    private float CalculateTensionReward(float dist, float mean, float stdDev)
     {
-        float avgTension = accTension / timestep;
+        //float avgTension = accTension / timestep;
         // Using formula for normal distribution.
-        return (float) Math.Exp(-Math.Pow(avgTension - mean, 2) / (2 * Math.Pow(stdDev, 2)));
+        float coef = 1.0f / (float)Math.Sqrt(2.0 * Math.PI)*stdDev;
+
+
+        return (float) coef * (float)Math.Exp(-Math.Pow(dist-mean, 2) / (2 * Math.Pow(stdDev, 2)));
     }
 
     // Get the current state of the game.
