@@ -50,7 +50,7 @@ public class ChaseTensionState : State
             if (Mathf.Abs(distBetweenTarget.x) < 0.0001f && Mathf.Abs(distBetweenTarget.y) < 0.0001f)
             {
                 // But also restrict the target to be 2 nodes away from pacman.
-                if (path.Length == 2)
+                if (path.Length == 2 && Random.Range(0, 100) < 99)
                 {
                     currTarget = agent.transform.position;
                 }

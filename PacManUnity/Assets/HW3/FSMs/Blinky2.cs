@@ -11,7 +11,7 @@ public class Blinky2 : FSMAgent
 
     public override void Initialize()
     {
-        currState = new ChaseState();
+        currState = new ChaseTensionState();
         currState.EnterState(this);
         currState.Start(this);
     }
@@ -20,7 +20,7 @@ public class Blinky2 : FSMAgent
     {
         // Check which direction currently moving in and assign action accordingly.
         Vector3 currPos = transform.position;
-        Vector3 nextPos = ((ChaseState)currState).currTarget;
+        Vector3 nextPos = ((ChaseTensionState)currState).currTarget;
         float xDist = currPos.x - nextPos.x;
         float yDist = currPos.y - nextPos.y;
         Action currAction = Action.Up;
