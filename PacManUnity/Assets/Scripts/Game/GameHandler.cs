@@ -12,16 +12,17 @@ public class GameHandler: MonoBehaviour
 
     public class State
     {
-        public Vector3 agentPosition;
+        public Vector3 agentPosition;  // Position of the node the agent is on.
         public bool wallUp;
         public bool wallDown;
         public bool wallLeft;
         public bool wallRight;
-        public Vector3 ghostPosition;
+        public Vector3 ghostPosition;  // Position of the node that the ghost is on (closest).
         public Vector3[] pelletPositions;
         public int score;
         public bool gameOver;
         public float reward;
+        public bool waitingForAction;
     }
 
     public float currReward;
@@ -95,7 +96,7 @@ public class GameHandler: MonoBehaviour
             //currReward += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
             currReward += CalculateTensionReward(path.Length, Config.TENSION_MEAN, Config.TENSION_STD_DEV);
             // Just give -1 reward to make things faster.
-            currReward += -1/ pelletHandler.NumPellets;
+            currReward += pelletHandler.NumPellets == 0 ? -1 : -1 / pelletHandler.NumPellets;
             // Also give -1 if agent hits the wall.
 
             currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
@@ -122,8 +123,6 @@ public class GameHandler: MonoBehaviour
             // Number of pellets remaining (penalize for more remaining).
             // Average tension (follow a normal distribution).
 
-            float tensionReward = CalculateTensionReward(Config.TENSION_MEAN, Config.TENSION_STD_DEV);
-
             // currReward += tensionReward - timestep - pelletHandler.NumPellets;
             // Remove for now, don't actually want to kill pacman.
             // currReward = pelletHandler.NumPellets > 0 ? 1000 : 0;
@@ -148,7 +147,7 @@ public class GameHandler: MonoBehaviour
         State state = new State();
 
         // Get the positions of the agent and the ghost.
-        state.agentPosition = PacmanInfo.Instance.transform.position;
+        state.agentPosition = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(PacmanInfo.Instance.transform.position).Location;
         FSMAgent[] ghosts = GhostManager.Instance.GhostsInPlay;
         if (ghosts.Length != 1)
         {
@@ -156,7 +155,8 @@ public class GameHandler: MonoBehaviour
         }
         else
         {
-            state.ghostPosition = ghosts[0].GetPosition();
+            // Set to the closest node.
+            state.ghostPosition = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(ghosts[0].GetPosition()).Location;
         }
 
         // Get whether the tile in each direction is a wall.
@@ -176,6 +176,10 @@ public class GameHandler: MonoBehaviour
 
         // Get the current reward.
         state.reward = currReward;
+
+        // Set whether the agent has reached the center of a node and is waiting for the next action.
+        state.waitingForAction = ghosts[0].WaitingForAction();
+        ghosts[0].ResumeAction();
 
         return state;
     }

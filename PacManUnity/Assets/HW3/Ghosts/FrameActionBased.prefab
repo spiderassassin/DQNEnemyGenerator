@@ -118,7 +118,6 @@ GameObject:
   - component: {fileID: 564417674664047552}
   - component: {fileID: 7722539002204972820}
   - component: {fileID: 2875959489050938173}
-  - component: {fileID: 2949616900070866553}
   m_Layer: 0
   m_Name: FrameActionBased
   m_TagString: Untagged
@@ -135,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 6712184599910977976}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.45, z: 0}
+  m_LocalPosition: {x: 0.45, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -243,6 +242,7 @@ MonoBehaviour:
   agent: {fileID: 506166469099225113}
   gameHandler: {fileID: 0}
   reward: 0
+  demonstration: 0
 --- !u!114 &2875959489050938173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,18 +274,3 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
---- !u!114 &2949616900070866553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6712184599910977976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  DecisionStep: 1
-  TakeActionsBetweenDecisions: 1

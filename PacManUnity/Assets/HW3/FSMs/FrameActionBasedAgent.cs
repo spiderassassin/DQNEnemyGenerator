@@ -92,17 +92,19 @@ public class FrameActionBasedAgent: FSMAgent
     // Move towards the next node in the specified direction.
     private void Move(Vector3 direction)
     {
-        Vector3 nextNode = GetPosition() + direction * Config.AGENT_MOVE_INTERVAL;
+        // Get closest node to the current position + 1 grid interval in the direction of the action.
+        Vector3 nextNode = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(GetPosition() + direction * Config.GRID_INTERVAL).Location;
         if (LegalAction(nextNode))
         {
             // Get corrected direction.
-            Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(direction, nextNode);
-            SetTarget(target);
+            // Vector3 target = ObstacleHandler.Instance.GetCorrectedTarget(direction, nextNode);
+            // SetTarget(target);
+            SetTarget(nextNode);
         }
         else
         {
             // Don't do anything.
-            SetTarget(GetPosition());
+            SetTarget(HW3NavigationHandler.Instance.NodeHandler.ClosestNode(GetPosition()).Location);
             tookIllegalAction = true;
         }
     }

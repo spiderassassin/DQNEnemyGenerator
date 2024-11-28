@@ -66,15 +66,16 @@ public class mlstuff : Agent
         gameHandler.UpdateState();
         reward = gameHandler.currReward;
         state = gameHandler.GetState();
-        AddReward(reward);
+        if (state.waitingForAction)
+        {
+            AddReward(reward);
+            RequestDecision();
+        }
         if(state.gameOver == true || gameHandler.timestep>= 60000)
         {
             // Add this back when we start trying with final reward.
             // AddReward(reward);
             EndEpisode();
         }
-        
-        //print(state);
-
     }
 }
