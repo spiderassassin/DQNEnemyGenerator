@@ -96,12 +96,10 @@ public class GameHandler: MonoBehaviour
             //currReward += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
             currReward += CalculateTensionReward(path.Length, Config.TENSION_MEAN, Config.TENSION_STD_DEV);
             // Just give -1 reward to make things faster.
-            currReward += pelletHandler.NumPellets == 0 ? -1 : -1 / pelletHandler.NumPellets;
+            currReward += pelletHandler.NumPellets == 0 ? -1 : -10.0f / pelletHandler.NumPellets;
             // Also give -1 if agent hits the wall.
 
             currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
-            // Decrease over time.
-            currReward += -1;
 
             // Now check if the agent hasn't been in tension for a while.
             timeSinceLastTension += 1;
@@ -111,8 +109,8 @@ public class GameHandler: MonoBehaviour
             }
             else if (timeSinceLastTension > Config.TENSION_TIMEOUT)
             {
-                Time.timeScale = 0;
                 currReward += -10000;
+                Time.timeScale = 0;
             }
         }
 
@@ -194,6 +192,7 @@ public class GameHandler: MonoBehaviour
         currReward = 0;
         accTension = 0;
         timestep = 0;
+        timeSinceLastTension = 0;
     }
 
     public void ResetGame()
