@@ -243,6 +243,7 @@ MonoBehaviour:
   gameHandler: {fileID: 0}
   reward: 0
   demonstration: 0
+  maxEpisodes: 5
 --- !u!114 &2875959489050938173
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,9 @@ public class mlstuff : Agent
     public GameHandler.State state;
 
     [SerializeField] private bool demonstration;
+    [SerializeField] private int maxEpisodes = 0;
 
+    private int episodes;
 
     void Start()
     {
@@ -69,6 +71,14 @@ public class mlstuff : Agent
             // Add this back when we start trying with final reward.
             // AddReward(reward);
             EndEpisode();
+            episodes += 1;
+            // End after a certain number of episodes.
+            if (maxEpisodes != 0 && episodes >= maxEpisodes)
+            {
+                print("Reached max episodes");
+                // Quit the game.
+                Academy.Instance.Dispose();
+            }
         }
     }
 }
