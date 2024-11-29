@@ -26,15 +26,8 @@ public class mlstuff : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(state.agentPosition);
-        sensor.AddObservation(state.ghostPosition);
-        sensor.AddObservation(state.score);
-        sensor.AddObservation(state.pelletPositions.Length);
-        sensor.AddObservation(state.gameOver);
-        sensor.AddObservation(state.wallUp);
-        sensor.AddObservation(state.wallDown);
-        sensor.AddObservation(state.wallLeft);
-        sensor.AddObservation(state.wallRight);
+        sensor.AddObservation(state.agentPositionIndex);
+        sensor.AddObservation(state.ghostPositionIndex);
         //for(int i = 0; i < state.pelletPositions.Length; i++)
         //{
         //sensor.AddObservation(state.pelletPositions[i]);

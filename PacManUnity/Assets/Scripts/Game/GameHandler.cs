@@ -13,11 +13,13 @@ public class GameHandler: MonoBehaviour
     public class State
     {
         public Vector3 agentPosition;  // Position of the node the agent is on.
+        public int agentPositionIndex;  // Index of the node the agent is on.
         public bool wallUp;
         public bool wallDown;
         public bool wallLeft;
         public bool wallRight;
         public Vector3 ghostPosition;  // Position of the node that the ghost is on (closest).
+        public int ghostPositionIndex;  // Index of the node that the ghost is on.
         public Vector3[] pelletPositions;
         public int score;
         public bool gameOver;
@@ -96,10 +98,9 @@ public class GameHandler: MonoBehaviour
             //currReward += path.Length < Config.TENSION_DISTANCE ? 1 : 0;
             currReward += CalculateTensionReward(path.Length, Config.TENSION_MEAN, Config.TENSION_STD_DEV);
             // Just give -1 reward to make things faster.
-            currReward += pelletHandler.NumPellets == 0 ? -1 : -10.0f / pelletHandler.NumPellets;
+            currReward += pelletHandler.NumPellets == 0 ? -1 : -1.0f / pelletHandler.NumPellets;
             // Also give -1 if agent hits the wall.
-
-            currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
+            // currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
 
             // Now check if the agent hasn't been in tension for a while.
             timeSinceLastTension += 1;
@@ -109,7 +110,7 @@ public class GameHandler: MonoBehaviour
             }
             else if (timeSinceLastTension > Config.TENSION_TIMEOUT)
             {
-                currReward += -10000;
+                currReward += -10000000;
                 Time.timeScale = 0;
             }
         }
@@ -145,7 +146,10 @@ public class GameHandler: MonoBehaviour
         State state = new State();
 
         // Get the positions of the agent and the ghost.
-        state.agentPosition = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(PacmanInfo.Instance.transform.position).Location;
+        GraphNode agentNode = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(PacmanInfo.Instance.transform.position);
+        state.agentPosition = agentNode.Location;
+        // To simplify state, get the index of the node in the list of nodes.
+        state.agentPositionIndex = agentNode.GetHashCode();  // Pray that this is unique for our small number of states.
         FSMAgent[] ghosts = GhostManager.Instance.GhostsInPlay;
         if (ghosts.Length != 1)
         {
@@ -154,7 +158,9 @@ public class GameHandler: MonoBehaviour
         else
         {
             // Set to the closest node.
-            state.ghostPosition = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(ghosts[0].GetPosition()).Location;
+            GraphNode ghostNode = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(ghosts[0].GetPosition());
+            state.ghostPosition = ghostNode.Location;
+            state.ghostPositionIndex = ghostNode.GetHashCode();
         }
 
         // Get whether the tile in each direction is a wall.
