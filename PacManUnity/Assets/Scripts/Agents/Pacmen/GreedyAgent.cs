@@ -38,12 +38,19 @@ public class GreedyAgent : MonoBehaviour
         movingTowardTarget = true;
     }
 
+    private void ResetTarget()
+    {
+        currTarget = transform.position;
+    }
+
     void Start()
     {
         Vector3 currPos = transform.position;
         currPos += new Vector3(0.1f, 0, 0);
         SetTarget(currPos);
         currTarget = transform.position;
+        // Subscribe to the reset callback.
+        PacmanInfo.Instance.OnReset += ResetTarget;
     }
 
     // Update is called once per frame
@@ -103,5 +110,10 @@ public class GreedyAgent : MonoBehaviour
             }
 
         }
+    }
+
+    private void OnDestroy()
+    {
+        PacmanInfo.Instance.OnReset -= ResetTarget;
     }
 }
