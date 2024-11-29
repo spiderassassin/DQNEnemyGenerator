@@ -18,12 +18,12 @@ default_settings:
       reward_signals:
         extrinsic:
           gamma: 0.99
-          strength: 1.0
+          strength: 2.0
         gail:
-          strength: 0.05
+          strength: 0.01
           demo_path: PacManUnity/Assets/Demonstrations/BlinkyRecording_2.demo
       behavioral_cloning:
-        strength: 1.0
+        strength: 0.1
         steps: 50000
         demo_path: PacManUnity/Assets/Demonstrations/BlinkyRecording_2.demo
       max_steps: 1000000
