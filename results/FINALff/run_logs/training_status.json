@@ -1,0 +1,29 @@
+{
+    "joe": {
+        "checkpoints": [
+            {
+                "steps": 6481,
+                "file_path": "results/FINALff/joe/joe-6481.onnx",
+                "reward": -16880647.657986112,
+                "creation_time": 1732857551.8113868,
+                "auxillary_file_paths": [
+                    "results/FINALff/joe/joe-6481.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 6481,
+            "file_path": "results/FINALff/joe.onnx",
+            "reward": -16880647.657986112,
+            "creation_time": 1732857551.8113868,
+            "auxillary_file_paths": [
+                "results/FINALff/joe/joe-6481.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1"
+    }
+}

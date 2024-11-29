@@ -92,7 +92,7 @@ public class GameHandler: MonoBehaviour
             // Just give -1 reward to make things faster.
             currReward += -1/ pelletHandler.NumPellets;
             // Also give -1 if agent hits the wall.
-            currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
+            currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -10 : 0;
         }
 
         // Update the reward if game is over.
