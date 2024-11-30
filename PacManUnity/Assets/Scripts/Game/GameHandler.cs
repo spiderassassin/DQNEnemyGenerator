@@ -8,6 +8,8 @@ public class GameHandler: MonoBehaviour
 {
     public PelletHandler pelletHandler;
 
+    public Logger logger;
+
     public class State
     {
         public Vector3 agentPosition;
@@ -205,6 +207,7 @@ public class GameHandler: MonoBehaviour
 
         // Reset the state.
         ResetState();
+        logger.Reset();
         // Reset timescale to normal.
         Time.timeScale = 1;
     }

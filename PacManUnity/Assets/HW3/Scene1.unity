@@ -679,6 +679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pelletHandler: {fileID: 1124194018}
+  logger: {fileID: 1095387232}
   currReward: 0
   accTension: 0
   timestep: 0
@@ -1018,6 +1019,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1755621045}
+    - targetCorrespondingSourceObject: {fileID: 8877795258094126653, guid: 671d8c3662a3d4a4e90e4b6cbff86be0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1755621046}
   m_SourcePrefab: {fileID: 100100000, guid: 671d8c3662a3d4a4e90e4b6cbff86be0, type: 3}
 --- !u!1 &1551067810
 GameObject:
@@ -1261,6 +1266,22 @@ MonoBehaviour:
   NumStepsToRecord: 0
   DemonstrationName: bc1
   DemonstrationDirectory: behaviorCloning
+--- !u!114 &1755621046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755621037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b6042bc9a5d4aa58d931eae49442e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
 --- !u!1001 &839121795804136708
 PrefabInstance:
   m_ObjectHideFlags: 0
