@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 def peaks(text, results, directory):
     infos = ["time", "pellets", "tension", "distance", "reward"]
 
+    numPeaks = {}
+    numPeaks["before"] = []
+    numPeaks["after"] = []
+
     for key in results["before"].keys():
         for info in infos[1:]:
             plt.plot(results["before"][key]["time"], results["before"][key][info])
@@ -117,6 +121,9 @@ def gatherResults(directory):
 if __name__ == "__main__":
     directory = sys.argv[1]
 
+    text = open("eval//stats//" + directory.replace('/','-') + ".txt", 'w')
+    text.write("")
+    text.close
     text = open("eval//stats//" + directory.replace('/','-') + ".txt", 'a')
 
     results = gatherResults(directory)
