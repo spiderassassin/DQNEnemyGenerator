@@ -1,0 +1,276 @@
+pellets peaks of initial game 0
+(array([], dtype=int64), {})
+tension peaks of initial game 0
+(array([], dtype=int64), {})
+distance peaks of initial game 0
+(array([], dtype=int64), {})
+reward peaks of initial game 0
+(array([], dtype=int64), {})
+pellets peaks of initial game 1
+(array([], dtype=int64), {})
+tension peaks of initial game 1
+(array([ 9, 45, 56, 95], dtype=int64), {})
+distance peaks of initial game 1
+(array([18, 75], dtype=int64), {})
+reward peaks of initial game 1
+(array([ 14,  74, 113], dtype=int64), {})
+pellets peaks of initial game 2
+(array([], dtype=int64), {})
+tension peaks of initial game 2
+(array([ 10,  21,  36,  55,  98, 109], dtype=int64), {})
+distance peaks of initial game 2
+(array([ 17,  28,  40,  73, 103], dtype=int64), {})
+reward peaks of initial game 2
+(array([15, 24, 39, 69], dtype=int64), {})
+pellets peaks of initial game 3
+(array([], dtype=int64), {})
+tension peaks of initial game 3
+(array([10, 43, 77], dtype=int64), {})
+distance peaks of initial game 3
+(array([19, 77], dtype=int64), {})
+reward peaks of initial game 3
+(array([15], dtype=int64), {})
+pellets peaks of initial game 4
+(array([], dtype=int64), {})
+tension peaks of initial game 4
+(array([10, 37], dtype=int64), {})
+distance peaks of initial game 4
+(array([17], dtype=int64), {})
+reward peaks of initial game 4
+(array([15], dtype=int64), {})
+pellets peaks of initial game 5
+(array([], dtype=int64), {})
+tension peaks of initial game 5
+(array([10, 36], dtype=int64), {})
+distance peaks of initial game 5
+(array([17], dtype=int64), {})
+reward peaks of initial game 5
+(array([15], dtype=int64), {})
+pellets peaks of initial game 6
+(array([], dtype=int64), {})
+tension peaks of initial game 6
+(array([10, 36], dtype=int64), {})
+distance peaks of initial game 6
+(array([17], dtype=int64), {})
+reward peaks of initial game 6
+(array([15], dtype=int64), {})
+pellets peaks of initial game 7
+(array([], dtype=int64), {})
+tension peaks of initial game 7
+(array([4], dtype=int64), {})
+distance peaks of initial game 7
+(array([2], dtype=int64), {})
+reward peaks of initial game 7
+(array([], dtype=int64), {})
+pellets peaks of final game 0
+(array([], dtype=int64), {})
+tension peaks of final game 0
+(array([], dtype=int64), {})
+distance peaks of final game 0
+(array([], dtype=int64), {})
+reward peaks of final game 0
+(array([], dtype=int64), {})
+pellets peaks of final game 1
+(array([], dtype=int64), {})
+tension peaks of final game 1
+(array([  9,  45,  72,  83, 102], dtype=int64), {})
+distance peaks of final game 1
+(array([ 18,  72,  83, 102], dtype=int64), {})
+reward peaks of final game 1
+(array([ 14, 113], dtype=int64), {})
+pellets peaks of final game 2
+(array([], dtype=int64), {})
+tension peaks of final game 2
+(array([ 10,  21,  36,  55, 100, 109], dtype=int64), {})
+distance peaks of final game 2
+(array([ 17,  28,  40,  73, 109], dtype=int64), {})
+reward peaks of final game 2
+(array([15, 24, 39, 69], dtype=int64), {})
+pellets peaks of final game 3
+(array([], dtype=int64), {})
+tension peaks of final game 3
+(array([ 9, 36], dtype=int64), {})
+distance peaks of final game 3
+(array([17], dtype=int64), {})
+reward peaks of final game 3
+(array([14], dtype=int64), {})
+pellets peaks of final game 4
+(array([], dtype=int64), {})
+tension peaks of final game 4
+(array([10, 37, 73], dtype=int64), {})
+distance peaks of final game 4
+(array([17, 73], dtype=int64), {})
+reward peaks of final game 4
+(array([15], dtype=int64), {})
+pellets peaks of final game 5
+(array([], dtype=int64), {})
+tension peaks of final game 5
+(array([10, 37], dtype=int64), {})
+distance peaks of final game 5
+(array([17], dtype=int64), {})
+reward peaks of final game 5
+(array([15], dtype=int64), {})
+pellets peaks of final game 6
+(array([], dtype=int64), {})
+tension peaks of final game 6
+(array([10, 36], dtype=int64), {})
+distance peaks of final game 6
+(array([17], dtype=int64), {})
+reward peaks of final game 6
+(array([15], dtype=int64), {})
+pellets peaks of final game 7
+(array([], dtype=int64), {})
+tension peaks of final game 7
+(array([4], dtype=int64), {})
+distance peaks of final game 7
+(array([2], dtype=int64), {})
+reward peaks of final game 7
+(array([], dtype=int64), {})
+change in time
+TtestResult(statistic=0.30017568740660344, pvalue=0.7691796950578126, df=12.0)
+change in pellets
+TtestResult(statistic=-0.13046561461068798, pvalue=0.8983596375592765, df=12.0)
+change in tension
+TtestResult(statistic=0.0, pvalue=1.0, df=12.0)
+change in distance
+TtestResult(statistic=0.0, pvalue=1.0, df=12.0)
+change in reward
+TtestResult(statistic=-0.2733064231580048, pvalue=0.789264609754597, df=12.0)
+pellets peaks of initial game 0
+(array([], dtype=int64), {})
+tension peaks of initial game 0
+(array([], dtype=int64), {})
+distance peaks of initial game 0
+(array([], dtype=int64), {})
+reward peaks of initial game 0
+(array([], dtype=int64), {})
+pellets peaks of initial game 1
+(array([], dtype=int64), {})
+tension peaks of initial game 1
+(array([ 9, 45, 56, 95], dtype=int64), {})
+distance peaks of initial game 1
+(array([18, 75], dtype=int64), {})
+reward peaks of initial game 1
+(array([ 14,  74, 113], dtype=int64), {})
+pellets peaks of initial game 2
+(array([], dtype=int64), {})
+tension peaks of initial game 2
+(array([ 10,  21,  36,  55,  98, 109], dtype=int64), {})
+distance peaks of initial game 2
+(array([ 17,  28,  40,  73, 103], dtype=int64), {})
+reward peaks of initial game 2
+(array([15, 24, 39, 69], dtype=int64), {})
+pellets peaks of initial game 3
+(array([], dtype=int64), {})
+tension peaks of initial game 3
+(array([10, 43, 77], dtype=int64), {})
+distance peaks of initial game 3
+(array([19, 77], dtype=int64), {})
+reward peaks of initial game 3
+(array([15], dtype=int64), {})
+pellets peaks of initial game 4
+(array([], dtype=int64), {})
+tension peaks of initial game 4
+(array([10, 37], dtype=int64), {})
+distance peaks of initial game 4
+(array([17], dtype=int64), {})
+reward peaks of initial game 4
+(array([15], dtype=int64), {})
+pellets peaks of initial game 5
+(array([], dtype=int64), {})
+tension peaks of initial game 5
+(array([10, 36], dtype=int64), {})
+distance peaks of initial game 5
+(array([17], dtype=int64), {})
+reward peaks of initial game 5
+(array([15], dtype=int64), {})
+pellets peaks of initial game 6
+(array([], dtype=int64), {})
+tension peaks of initial game 6
+(array([10, 36], dtype=int64), {})
+distance peaks of initial game 6
+(array([17], dtype=int64), {})
+reward peaks of initial game 6
+(array([15], dtype=int64), {})
+pellets peaks of initial game 7
+(array([], dtype=int64), {})
+tension peaks of initial game 7
+(array([4], dtype=int64), {})
+distance peaks of initial game 7
+(array([2], dtype=int64), {})
+reward peaks of initial game 7
+(array([], dtype=int64), {})
+pellets peaks of final game 0
+(array([], dtype=int64), {})
+tension peaks of final game 0
+(array([], dtype=int64), {})
+distance peaks of final game 0
+(array([], dtype=int64), {})
+reward peaks of final game 0
+(array([], dtype=int64), {})
+pellets peaks of final game 1
+(array([], dtype=int64), {})
+tension peaks of final game 1
+(array([  9,  45,  72,  83, 102], dtype=int64), {})
+distance peaks of final game 1
+(array([ 18,  72,  83, 102], dtype=int64), {})
+reward peaks of final game 1
+(array([ 14, 113], dtype=int64), {})
+pellets peaks of final game 2
+(array([], dtype=int64), {})
+tension peaks of final game 2
+(array([ 10,  21,  36,  55, 100, 109], dtype=int64), {})
+distance peaks of final game 2
+(array([ 17,  28,  40,  73, 109], dtype=int64), {})
+reward peaks of final game 2
+(array([15, 24, 39, 69], dtype=int64), {})
+pellets peaks of final game 3
+(array([], dtype=int64), {})
+tension peaks of final game 3
+(array([ 9, 36], dtype=int64), {})
+distance peaks of final game 3
+(array([17], dtype=int64), {})
+reward peaks of final game 3
+(array([14], dtype=int64), {})
+pellets peaks of final game 4
+(array([], dtype=int64), {})
+tension peaks of final game 4
+(array([10, 37, 73], dtype=int64), {})
+distance peaks of final game 4
+(array([17, 73], dtype=int64), {})
+reward peaks of final game 4
+(array([15], dtype=int64), {})
+pellets peaks of final game 5
+(array([], dtype=int64), {})
+tension peaks of final game 5
+(array([10, 37], dtype=int64), {})
+distance peaks of final game 5
+(array([17], dtype=int64), {})
+reward peaks of final game 5
+(array([15], dtype=int64), {})
+pellets peaks of final game 6
+(array([], dtype=int64), {})
+tension peaks of final game 6
+(array([10, 36], dtype=int64), {})
+distance peaks of final game 6
+(array([17], dtype=int64), {})
+reward peaks of final game 6
+(array([15], dtype=int64), {})
+pellets peaks of final game 7
+(array([], dtype=int64), {})
+tension peaks of final game 7
+(array([4], dtype=int64), {})
+distance peaks of final game 7
+(array([2], dtype=int64), {})
+reward peaks of final game 7
+(array([], dtype=int64), {})
+change in time
+TtestResult(statistic=0.30017568740660344, pvalue=0.7691796950578126, df=12.0)
+change in pellets
+TtestResult(statistic=-0.13046561461068798, pvalue=0.8983596375592765, df=12.0)
+change in tension
+TtestResult(statistic=0.0, pvalue=1.0, df=12.0)
+change in distance
+TtestResult(statistic=0.0, pvalue=1.0, df=12.0)
+change in reward
+TtestResult(statistic=-0.2733064231580048, pvalue=0.789264609754597, df=12.0)
