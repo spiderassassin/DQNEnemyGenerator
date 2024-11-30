@@ -9,6 +9,7 @@ public class Logger : MonoBehaviour
     public string filePath = "log";
     private float nextTime = 0.0f;
     private int gameNumber = 0;
+    private float timeFromStart = 0.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +29,7 @@ public class Logger : MonoBehaviour
             Vector3 pacman = gameHandler.GetState().agentPosition;
             float distance = Math.Abs(position[0]-pacman[0]) + Math.Abs(position[1]-pacman[1]) + Math.Abs(position[2]-pacman[2]);
 
-            string text = string.Format("{0}, {1}, {2}, ({3} {4} {5}), {6}, {7}\n", Time.time, pelletHandler.NumPellets, gameHandler.accTension, position[0], position[1], position[2], distance, gameHandler.currReward);
+            string text = string.Format("{0}, {1}, {2}, ({3} {4} {5}), {6}, {7}\n", Time.time - timeFromStart, pelletHandler.NumPellets, gameHandler.accTension, position[0], position[1], position[2], distance, gameHandler.currReward);
             print(text);
             File.AppendAllText(filePath, text);
         }
@@ -38,6 +39,7 @@ public class Logger : MonoBehaviour
         gameNumber++;
         string text = string.Format("Game {0}\n", gameNumber);
         print(text);
+        timeFromStart = Time.time;
         File.AppendAllText(filePath, text);
     }
 }
