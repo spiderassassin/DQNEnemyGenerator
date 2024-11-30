@@ -10,29 +10,32 @@ public class Logger : MonoBehaviour
     private float nextTime = 0.0f;
     private int gameNumber = 0;
     private float timeFromStart = 0.0f;
+    private GraphNode ghost;
+    private GraphNode pacman;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         filePath = filePath + System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".csv";
-        File.WriteAllText(filePath, "Time, Pellets, Tension, Position, Distance, Reward\n");
+        File.WriteAllText(filePath, "Time, Pellets, Tension, Distance, Reward\n");
         string text = string.Format("Game {0}\n", gameNumber);
         File.AppendAllText(filePath, text);
+        ghost = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(gameHandler.GetState().ghostPosition);
+        pacman = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(gameHandler.GetState().agentPosition);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > nextTime){
-            nextTime += 0.1f;
-            Vector3 position = gameHandler.GetState().ghostPosition;
-            Vector3 pacman = gameHandler.GetState().agentPosition;
-            float distance = Math.Abs(position[0]-pacman[0]) + Math.Abs(position[1]-pacman[1]) + Math.Abs(position[2]-pacman[2]);
-
-            string text = string.Format("{0}, {1}, {2}, ({3} {4} {5}), {6}, {7}\n", Time.time - timeFromStart, pelletHandler.NumPellets, gameHandler.accTension, position[0], position[1], position[2], distance, gameHandler.currReward);
-            print(text);
-            File.AppendAllText(filePath, text);
-        }
+        ghost = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(gameHandler.GetState().ghostPosition);
+        pacman = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(gameHandler.GetState().agentPosition);
+        Vector3[] path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(pacman, ghost);
+        print(path);
+        float distance = path.Length;
+        float tension = gameHandler.CalculateTensionReward(distance, Config.TENSION_MEAN, Config.TENSION_STD_DEV);
+        string text = string.Format("{0}, {1}, {2}, {3}, {4}\n", Time.time - timeFromStart, pelletHandler.NumPellets, tension, distance, gameHandler.currReward);
+        print(text);
+        File.AppendAllText(filePath, text);
     }
 
     public void Reset(){

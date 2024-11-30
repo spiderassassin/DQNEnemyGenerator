@@ -132,7 +132,7 @@ public class GameHandler: MonoBehaviour
         timestep += 1;
     }
 
-    private float CalculateTensionReward(float dist, float mean, float stdDev)
+    public float CalculateTensionReward(float dist, float mean, float stdDev)
     {
         //float avgTension = accTension / timestep;
         // Using formula for normal distribution.
