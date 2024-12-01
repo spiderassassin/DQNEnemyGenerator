@@ -1,0 +1,4028 @@
+tension peaks of initial game 0
+(array([], dtype=int64), {})
+tension peaks of initial game 1
+(array([  9,  45,  59,  78,  99, 120], dtype=int64), {})
+tension peaks of initial game 2
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 3
+(array([ 10,  22,  42,  55,  80, 118, 143, 172, 193, 208], dtype=int64), {})
+tension peaks of initial game 4
+(array([10, 46, 64, 74, 95], dtype=int64), {})
+tension peaks of initial game 5
+(array([10, 46, 64, 79], dtype=int64), {})
+tension peaks of initial game 6
+(array([10, 37, 64, 76], dtype=int64), {})
+tension peaks of initial game 7
+(array([ 10,  45,  55,  87, 109], dtype=int64), {})
+tension peaks of initial game 8
+(array([10, 46, 62, 73], dtype=int64), {})
+tension peaks of initial game 9
+(array([ 10,  46,  64,  87, 100, 122], dtype=int64), {})
+tension peaks of initial game 10
+(array([ 10,  21,  36,  55, 100, 112], dtype=int64), {})
+tension peaks of initial game 11
+(array([ 10,  37,  66,  82,  94, 113], dtype=int64), {})
+tension peaks of initial game 12
+(array([ 10,  46,  64,  86, 110], dtype=int64), {})
+tension peaks of initial game 13
+(array([ 10,  37,  47,  61,  80, 100], dtype=int64), {})
+tension peaks of initial game 14
+(array([10, 37, 73, 85], dtype=int64), {})
+tension peaks of initial game 15
+(array([10, 45, 73], dtype=int64), {})
+tension peaks of initial game 16
+(array([ 10,  22,  42,  55,  80, 114, 152, 177, 199, 217, 237], dtype=int64), {})
+tension peaks of initial game 17
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 18
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 19
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 20
+(array([ 10,  46,  72,  82, 109], dtype=int64), {})
+tension peaks of initial game 21
+(array([ 10,  21,  36,  55, 100, 119], dtype=int64), {})
+tension peaks of initial game 22
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 23
+(array([ 10,  21,  36,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 24
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 25
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 26
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 27
+(array([ 10,  22,  42,  55, 100, 127, 145, 167], dtype=int64), {})
+tension peaks of initial game 28
+(array([ 10,  46,  64,  81,  91, 109], dtype=int64), {})
+tension peaks of initial game 29
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 30
+(array([ 10,  37,  70,  82,  93, 112], dtype=int64), {})
+tension peaks of initial game 31
+(array([ 10,  21,  36,  55, 100, 122], dtype=int64), {})
+tension peaks of initial game 32
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 33
+(array([10, 41, 64, 76], dtype=int64), {})
+tension peaks of initial game 34
+(array([10, 37, 73, 85], dtype=int64), {})
+tension peaks of initial game 35
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 36
+(array([10, 46, 64, 80], dtype=int64), {})
+tension peaks of initial game 37
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 38
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 39
+(array([ 10,  37,  64,  86, 110, 130, 149, 174, 197, 221, 242, 262, 316,
+       328, 361, 428], dtype=int64), {})
+tension peaks of initial game 40
+(array([10, 46, 71], dtype=int64), {})
+tension peaks of initial game 41
+(array([10, 46, 58, 97], dtype=int64), {})
+tension peaks of initial game 42
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 43
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 44
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 45
+(array([ 10,  22,  42,  55,  96, 118, 141, 160, 172, 190], dtype=int64), {})
+tension peaks of initial game 46
+(array([10, 45, 73, 83], dtype=int64), {})
+tension peaks of initial game 47
+(array([10, 45, 55, 95], dtype=int64), {})
+tension peaks of initial game 48
+(array([10, 46, 64, 75], dtype=int64), {})
+tension peaks of initial game 49
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 50
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 51
+(array([ 10,  37,  61,  73,  85, 109, 153, 178, 213, 266, 285, 309, 325,
+       337, 352], dtype=int64), {})
+tension peaks of initial game 52
+(array([10, 46, 64, 78], dtype=int64), {})
+tension peaks of initial game 53
+(array([ 10,  37,  64,  79,  91, 103], dtype=int64), {})
+tension peaks of initial game 54
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 55
+(array([10, 37, 64, 81], dtype=int64), {})
+tension peaks of initial game 56
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 57
+(array([ 10,  37,  64,  80,  91, 104, 127, 143], dtype=int64), {})
+tension peaks of initial game 58
+(array([10, 46, 63, 73], dtype=int64), {})
+tension peaks of initial game 59
+(array([ 10,  46,  58,  78,  97, 109, 127, 140, 164], dtype=int64), {})
+tension peaks of initial game 60
+(array([10, 44, 73, 91], dtype=int64), {})
+tension peaks of initial game 61
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 62
+(array([10, 46, 63, 73], dtype=int64), {})
+tension peaks of initial game 63
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 64
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 65
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 66
+(array([10, 46, 73, 91], dtype=int64), {})
+tension peaks of initial game 67
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 68
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 69
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 70
+(array([10, 45, 72, 82], dtype=int64), {})
+tension peaks of initial game 71
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 72
+(array([10, 46, 71], dtype=int64), {})
+tension peaks of initial game 73
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 74
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 75
+(array([ 10,  46,  56, 100, 120], dtype=int64), {})
+tension peaks of initial game 76
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 77
+(array([ 10,  37,  61,  73,  85, 104, 173, 190, 217, 262, 281, 307, 325,
+       336, 352], dtype=int64), {})
+tension peaks of initial game 78
+(array([10, 37, 70], dtype=int64), {})
+tension peaks of initial game 79
+(array([ 10,  37,  73,  84, 103], dtype=int64), {})
+tension peaks of initial game 80
+(array([ 10,  21,  36,  55, 102, 127, 144], dtype=int64), {})
+tension peaks of initial game 81
+(array([ 10,  46,  64,  81,  91, 110, 129, 144, 154, 173, 194, 216, 241,
+       262, 304, 316, 332, 357, 407], dtype=int64), {})
+tension peaks of initial game 82
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 83
+(array([10, 46, 69], dtype=int64), {})
+tension peaks of initial game 84
+(array([10, 37, 61, 73, 86], dtype=int64), {})
+tension peaks of initial game 85
+(array([ 10,  46,  60,  79, 100, 119], dtype=int64), {})
+tension peaks of initial game 86
+(array([ 10,  46,  64,  81,  91, 110, 129, 145, 167], dtype=int64), {})
+tension peaks of initial game 87
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 88
+(array([ 10,  22,  55, 100, 119], dtype=int64), {})
+tension peaks of initial game 89
+(array([ 10,  46,  64,  82,  92, 111], dtype=int64), {})
+tension peaks of initial game 90
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 91
+(array([10, 41, 64, 76], dtype=int64), {})
+tension peaks of initial game 92
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 93
+(array([10, 37, 73, 85], dtype=int64), {})
+tension peaks of initial game 94
+(array([10, 37, 70], dtype=int64), {})
+tension peaks of initial game 95
+(array([ 10,  22,  55,  91, 101, 122], dtype=int64), {})
+tension peaks of initial game 96
+(array([ 10,  46,  57, 100, 111], dtype=int64), {})
+tension peaks of initial game 97
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 98
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 99
+(array([10, 41, 61, 73], dtype=int64), {})
+tension peaks of initial game 100
+(array([ 10,  22,  42,  55,  89, 115, 153, 181, 199, 226], dtype=int64), {})
+tension peaks of initial game 101
+(array([10, 46, 60, 73, 85], dtype=int64), {})
+tension peaks of initial game 102
+(array([10, 46, 64, 78], dtype=int64), {})
+tension peaks of initial game 103
+(array([10, 46, 60, 73], dtype=int64), {})
+tension peaks of initial game 104
+(array([10, 44, 72], dtype=int64), {})
+tension peaks of initial game 105
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 106
+(array([ 10,  46,  60,  79, 100, 119], dtype=int64), {})
+tension peaks of initial game 107
+(array([10, 37, 66, 81, 91], dtype=int64), {})
+tension peaks of initial game 108
+(array([10, 45, 72], dtype=int64), {})
+tension peaks of initial game 109
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 110
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 111
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 112
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 113
+(array([10, 37, 68], dtype=int64), {})
+tension peaks of initial game 114
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 115
+(array([ 10,  21,  36,  55, 104], dtype=int64), {})
+tension peaks of initial game 116
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 117
+(array([ 10,  37,  73,  84, 103], dtype=int64), {})
+tension peaks of initial game 118
+(array([ 10,  21,  36,  55, 100, 113], dtype=int64), {})
+tension peaks of initial game 119
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 120
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 121
+(array([10, 37, 65, 80], dtype=int64), {})
+tension peaks of initial game 122
+(array([ 10,  46,  61,  80,  99, 109], dtype=int64), {})
+tension peaks of initial game 123
+(array([10, 37, 48, 64, 73, 94], dtype=int64), {})
+tension peaks of initial game 124
+(array([10, 46, 73, 93], dtype=int64), {})
+tension peaks of initial game 125
+(array([10, 46, 61, 73, 91], dtype=int64), {})
+tension peaks of initial game 126
+(array([10, 46, 64, 95], dtype=int64), {})
+tension peaks of initial game 127
+(array([ 10,  46,  59,  78, 100, 111, 127, 154], dtype=int64), {})
+tension peaks of initial game 128
+(array([10, 46, 60, 73, 94], dtype=int64), {})
+tension peaks of initial game 129
+(array([ 10,  37,  64,  82, 104], dtype=int64), {})
+tension peaks of initial game 130
+(array([10, 46, 63, 73, 92], dtype=int64), {})
+tension peaks of initial game 131
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 132
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 133
+(array([ 10,  44,  72,  82, 102], dtype=int64), {})
+tension peaks of initial game 134
+(array([10, 46, 62, 73], dtype=int64), {})
+tension peaks of initial game 135
+(array([10, 46, 64, 77], dtype=int64), {})
+tension peaks of initial game 136
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 137
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 138
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 139
+(array([10, 46, 73, 85], dtype=int64), {})
+tension peaks of initial game 140
+(array([ 10,  21,  36,  55, 100, 118], dtype=int64), {})
+tension peaks of initial game 141
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 142
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 143
+(array([10, 37, 48, 64, 75], dtype=int64), {})
+tension peaks of initial game 144
+(array([ 10,  46,  64,  82, 103], dtype=int64), {})
+tension peaks of initial game 145
+(array([ 10,  21,  36,  55,  91, 102, 127, 154, 164, 183], dtype=int64), {})
+tension peaks of initial game 146
+(array([10, 46, 61, 73, 95], dtype=int64), {})
+tension peaks of initial game 147
+(array([ 10,  44,  55,  98, 109], dtype=int64), {})
+tension peaks of initial game 148
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 149
+(array([ 10,  46,  57, 100], dtype=int64), {})
+tension peaks of initial game 150
+(array([ 10,  21,  36,  55,  68,  88, 100], dtype=int64), {})
+tension peaks of initial game 151
+(array([10, 44, 73, 85], dtype=int64), {})
+tension peaks of initial game 152
+(array([ 10,  21,  36,  55,  91, 104], dtype=int64), {})
+tension peaks of initial game 153
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 154
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 155
+(array([10, 44, 73], dtype=int64), {})
+tension peaks of initial game 156
+(array([ 10,  22,  42,  55,  67,  87, 100], dtype=int64), {})
+tension peaks of initial game 157
+(array([ 10,  21,  42,  55,  67,  88, 100], dtype=int64), {})
+tension peaks of initial game 158
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 159
+(array([10, 46, 64, 75], dtype=int64), {})
+tension peaks of initial game 160
+(array([ 9, 36, 72], dtype=int64), {})
+tension peaks of initial game 161
+(array([ 10,  22,  55,  80, 109], dtype=int64), {})
+tension peaks of initial game 162
+(array([10, 37, 71, 82, 94], dtype=int64), {})
+tension peaks of initial game 163
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 164
+(array([10, 46, 73, 93], dtype=int64), {})
+tension peaks of initial game 165
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 166
+(array([10, 21, 36, 55, 95], dtype=int64), {})
+tension peaks of initial game 167
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 168
+(array([10, 37, 67, 82], dtype=int64), {})
+tension peaks of initial game 169
+(array([10, 37, 67, 82], dtype=int64), {})
+tension peaks of initial game 170
+(array([10, 37, 64, 80], dtype=int64), {})
+tension peaks of initial game 171
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 172
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 173
+(array([ 10,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of initial game 174
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 175
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 176
+(array([10, 37, 73, 93], dtype=int64), {})
+tension peaks of initial game 177
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 178
+(array([ 10,  37,  64,  91, 101], dtype=int64), {})
+tension peaks of initial game 179
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 180
+(array([10, 21, 36, 55, 96], dtype=int64), {})
+tension peaks of initial game 181
+(array([10, 21, 36, 55, 91], dtype=int64), {})
+tension peaks of initial game 182
+(array([ 10,  37,  66,  82,  92, 111], dtype=int64), {})
+tension peaks of initial game 183
+(array([10, 44, 73], dtype=int64), {})
+tension peaks of initial game 184
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 185
+(array([ 10,  21,  36,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 186
+(array([10, 46, 64, 75], dtype=int64), {})
+tension peaks of initial game 187
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 188
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 189
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 190
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 191
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 192
+(array([  9,  36,  63,  77,  90, 101, 126, 140, 153, 165, 189, 216, 260,
+       270, 289, 308, 342, 363, 378, 408], dtype=int64), {})
+tension peaks of initial game 193
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 194
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 195
+(array([10, 37, 73, 83], dtype=int64), {})
+tension peaks of initial game 196
+(array([10, 41, 64, 76], dtype=int64), {})
+tension peaks of initial game 197
+(array([10, 46, 64, 78], dtype=int64), {})
+tension peaks of initial game 198
+(array([ 10,  43,  68,  82,  91, 111, 131, 145], dtype=int64), {})
+tension peaks of initial game 199
+(array([10, 46, 64, 79], dtype=int64), {})
+tension peaks of initial game 200
+(array([ 10,  46,  64,  78,  91, 101], dtype=int64), {})
+tension peaks of initial game 201
+(array([ 10,  46,  64,  90, 100], dtype=int64), {})
+tension peaks of initial game 202
+(array([10, 37, 61, 73, 86], dtype=int64), {})
+tension peaks of initial game 203
+(array([ 10,  45,  55,  82,  94, 113], dtype=int64), {})
+tension peaks of initial game 204
+(array([10, 46, 61, 73, 85], dtype=int64), {})
+tension peaks of initial game 205
+(array([ 10,  46,  64,  81,  91, 109], dtype=int64), {})
+tension peaks of initial game 206
+(array([ 10,  21,  55,  96, 118, 159, 172, 183], dtype=int64), {})
+tension peaks of initial game 207
+(array([10, 46, 68, 93], dtype=int64), {})
+tension peaks of initial game 208
+(array([10, 46, 60, 73, 93], dtype=int64), {})
+tension peaks of initial game 209
+(array([ 10,  46,  61,  80, 100, 112], dtype=int64), {})
+tension peaks of initial game 210
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 211
+(array([10, 41, 64], dtype=int64), {})
+tension peaks of initial game 212
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 213
+(array([ 10,  46,  58,  96, 109, 126, 151, 163, 190, 235], dtype=int64), {})
+tension peaks of initial game 214
+(array([10, 46, 61, 73, 85], dtype=int64), {})
+tension peaks of initial game 215
+(array([10, 46, 57, 96], dtype=int64), {})
+tension peaks of initial game 216
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 217
+(array([ 10,  21,  36,  55,  90, 100, 127, 138], dtype=int64), {})
+tension peaks of initial game 218
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 219
+(array([ 10,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of initial game 220
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 221
+(array([ 10,  21,  36,  55, 101], dtype=int64), {})
+tension peaks of initial game 222
+(array([10, 37, 64, 77], dtype=int64), {})
+tension peaks of initial game 223
+(array([ 10,  37,  66,  82, 100], dtype=int64), {})
+tension peaks of initial game 224
+(array([ 10,  46,  62, 100, 112, 127, 142, 154, 166, 190, 217, 262, 315,
+       325, 361], dtype=int64), {})
+tension peaks of initial game 225
+(array([10, 44, 73], dtype=int64), {})
+tension peaks of initial game 226
+(array([10, 44, 73, 85], dtype=int64), {})
+tension peaks of initial game 227
+(array([10, 37, 49, 64, 73], dtype=int64), {})
+tension peaks of initial game 228
+(array([10, 46, 61, 73, 92], dtype=int64), {})
+tension peaks of initial game 229
+(array([ 10,  21,  36,  55,  79, 105, 118, 131, 152, 163, 184], dtype=int64), {})
+tension peaks of initial game 230
+(array([ 10,  21,  36,  55,  81, 118, 144, 169, 194, 220, 244], dtype=int64), {})
+tension peaks of initial game 231
+(array([10, 46, 63, 73], dtype=int64), {})
+tension peaks of initial game 232
+(array([ 10,  46,  62,  81, 100, 112], dtype=int64), {})
+tension peaks of initial game 233
+(array([ 10,  46,  78,  97, 109], dtype=int64), {})
+tension peaks of initial game 234
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 235
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 236
+(array([ 10,  46,  58, 100], dtype=int64), {})
+tension peaks of initial game 237
+(array([10, 46, 64, 76], dtype=int64), {})
+tension peaks of initial game 238
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 239
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 240
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 241
+(array([ 10,  44,  55,  87, 113, 141, 161, 172, 184, 226], dtype=int64), {})
+tension peaks of initial game 242
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 243
+(array([10, 37, 64, 80, 91], dtype=int64), {})
+tension peaks of initial game 244
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 245
+(array([ 10,  46,  64,  89, 100], dtype=int64), {})
+tension peaks of initial game 246
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 247
+(array([ 10,  37,  64,  79,  91, 103, 128, 145], dtype=int64), {})
+tension peaks of initial game 248
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 249
+(array([ 10,  22,  42,  55, 100, 127, 154, 166, 190, 217, 262, 309, 325,
+       361], dtype=int64), {})
+tension peaks of initial game 250
+(array([10, 46, 62, 73], dtype=int64), {})
+tension peaks of initial game 251
+(array([ 10,  37,  66,  82, 101], dtype=int64), {})
+tension peaks of initial game 252
+(array([ 10,  21,  55, 100, 127, 154, 174], dtype=int64), {})
+tension peaks of initial game 253
+(array([ 10,  21,  36,  55, 107], dtype=int64), {})
+tension peaks of initial game 254
+(array([10, 46, 70], dtype=int64), {})
+tension peaks of initial game 255
+(array([ 10,  46,  71,  82, 102], dtype=int64), {})
+tension peaks of initial game 256
+(array([ 10,  21,  36,  55,  91, 110, 129, 144, 154], dtype=int64), {})
+tension peaks of initial game 257
+(array([10, 45, 72, 82], dtype=int64), {})
+tension peaks of initial game 258
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 259
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 260
+(array([10, 46, 72, 82], dtype=int64), {})
+tension peaks of initial game 261
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 262
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 263
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 264
+(array([10, 46, 64, 76], dtype=int64), {})
+tension peaks of initial game 265
+(array([10, 43, 73, 84], dtype=int64), {})
+tension peaks of initial game 266
+(array([ 10,  21,  36,  55,  87, 108], dtype=int64), {})
+tension peaks of initial game 267
+(array([10, 43, 55, 93], dtype=int64), {})
+tension peaks of initial game 268
+(array([ 10,  21,  36,  55,  98, 109], dtype=int64), {})
+tension peaks of initial game 269
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 270
+(array([10, 46, 64, 76], dtype=int64), {})
+tension peaks of initial game 271
+(array([ 10,  46,  78, 100], dtype=int64), {})
+tension peaks of initial game 272
+(array([10, 44, 71], dtype=int64), {})
+tension peaks of initial game 273
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 274
+(array([ 10,  37,  77, 101], dtype=int64), {})
+tension peaks of initial game 275
+(array([10, 45, 71], dtype=int64), {})
+tension peaks of initial game 276
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 277
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 278
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 279
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 280
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 281
+(array([ 10,  37,  64,  80,  91, 104, 129, 145], dtype=int64), {})
+tension peaks of initial game 282
+(array([ 10,  46,  64,  79,  91, 103, 122], dtype=int64), {})
+tension peaks of initial game 283
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 284
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 285
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 286
+(array([ 10,  46,  64,  81,  91, 110, 129, 145], dtype=int64), {})
+tension peaks of initial game 287
+(array([ 10,  46,  78, 100], dtype=int64), {})
+tension peaks of initial game 288
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 289
+(array([10, 45, 71, 82], dtype=int64), {})
+tension peaks of initial game 290
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 291
+(array([10, 46, 73, 85], dtype=int64), {})
+tension peaks of initial game 292
+(array([ 10,  21,  36,  55, 104], dtype=int64), {})
+tension peaks of initial game 293
+(array([10, 46, 61, 73], dtype=int64), {})
+tension peaks of initial game 294
+(array([ 10,  37,  67,  82,  92, 111], dtype=int64), {})
+tension peaks of initial game 295
+(array([ 10,  21,  36,  55,  87, 109], dtype=int64), {})
+tension peaks of initial game 296
+(array([ 10,  37,  49,  64,  95, 127, 143], dtype=int64), {})
+tension peaks of initial game 297
+(array([ 10,  46,  55, 100], dtype=int64), {})
+tension peaks of initial game 298
+(array([10, 46, 56, 98], dtype=int64), {})
+tension peaks of initial game 299
+(array([ 10,  21,  36,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 300
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 301
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 302
+(array([10, 37, 64, 81], dtype=int64), {})
+tension peaks of initial game 303
+(array([10, 46, 62, 73], dtype=int64), {})
+tension peaks of initial game 304
+(array([10, 46, 73, 85], dtype=int64), {})
+tension peaks of initial game 305
+(array([ 10,  37,  64,  81,  91, 110, 129, 144, 154], dtype=int64), {})
+tension peaks of initial game 306
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 307
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 308
+(array([10, 45, 70], dtype=int64), {})
+tension peaks of initial game 309
+(array([10, 43, 67, 82], dtype=int64), {})
+tension peaks of initial game 310
+(array([ 10,  45,  55, 100, 120], dtype=int64), {})
+tension peaks of initial game 311
+(array([10, 37, 73, 85], dtype=int64), {})
+tension peaks of initial game 312
+(array([ 10,  46,  73, 110], dtype=int64), {})
+tension peaks of initial game 313
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 314
+(array([10, 46, 63, 73], dtype=int64), {})
+tension peaks of initial game 315
+(array([10, 37, 66, 82], dtype=int64), {})
+tension peaks of initial game 316
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 317
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 318
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 319
+(array([10, 44, 71], dtype=int64), {})
+tension peaks of initial game 320
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 321
+(array([10, 41, 64, 74], dtype=int64), {})
+tension peaks of initial game 322
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 323
+(array([ 10,  46,  78, 100], dtype=int64), {})
+tension peaks of initial game 324
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 325
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 326
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 327
+(array([ 10,  43,  73, 110], dtype=int64), {})
+tension peaks of initial game 328
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 329
+(array([ 9, 36, 72, 91], dtype=int64), {})
+tension peaks of initial game 330
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 331
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 332
+(array([10, 41, 64, 77], dtype=int64), {})
+tension peaks of initial game 333
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 334
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 335
+(array([10, 37, 64, 78], dtype=int64), {})
+tension peaks of initial game 336
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 337
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 338
+(array([10, 37, 64, 79], dtype=int64), {})
+tension peaks of initial game 339
+(array([ 10,  46,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 340
+(array([10, 37, 73, 84], dtype=int64), {})
+tension peaks of initial game 341
+(array([ 10,  41,  60,  79, 100], dtype=int64), {})
+tension peaks of initial game 342
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 343
+(array([10, 46, 61, 73, 93], dtype=int64), {})
+tension peaks of initial game 344
+(array([ 10,  21,  36,  55,  67,  87, 100, 110, 125, 154, 196, 220, 241,
+       262, 291, 306, 316, 343, 370], dtype=int64), {})
+tension peaks of initial game 345
+(array([10, 44, 71], dtype=int64), {})
+tension peaks of initial game 346
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 347
+(array([ 10,  37,  49,  64,  79,  91, 103], dtype=int64), {})
+tension peaks of initial game 348
+(array([ 10,  46,  64,  86, 110, 129, 145, 157], dtype=int64), {})
+tension peaks of initial game 349
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 350
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 351
+(array([10, 46, 73, 84], dtype=int64), {})
+tension peaks of initial game 352
+(array([ 10,  21,  36,  55,  97, 109], dtype=int64), {})
+tension peaks of initial game 353
+(array([10, 44, 69, 82], dtype=int64), {})
+tension peaks of initial game 354
+(array([ 9, 36, 72], dtype=int64), {})
+tension peaks of initial game 355
+(array([10, 22, 55, 93], dtype=int64), {})
+tension peaks of initial game 356
+(array([10, 46, 63, 73, 93], dtype=int64), {})
+tension peaks of initial game 357
+(array([10, 46, 64, 75], dtype=int64), {})
+tension peaks of initial game 358
+(array([ 10,  46,  57, 104], dtype=int64), {})
+tension peaks of initial game 359
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 360
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 361
+(array([ 10,  22,  55,  67,  88, 100, 121], dtype=int64), {})
+tension peaks of initial game 362
+(array([10, 44, 72], dtype=int64), {})
+tension peaks of initial game 363
+(array([10, 46, 71], dtype=int64), {})
+tension peaks of initial game 364
+(array([10, 46, 60, 73], dtype=int64), {})
+tension peaks of initial game 365
+(array([ 10,  37,  67,  82, 101], dtype=int64), {})
+tension peaks of initial game 366
+(array([ 10,  21,  36,  55,  79, 118, 152, 172, 197, 216, 258, 307, 325,
+       357, 415], dtype=int64), {})
+tension peaks of initial game 367
+(array([10, 46, 61, 73, 85], dtype=int64), {})
+tension peaks of initial game 368
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 369
+(array([10, 46, 63, 73], dtype=int64), {})
+tension peaks of initial game 370
+(array([10, 37, 73, 92], dtype=int64), {})
+tension peaks of initial game 371
+(array([ 10,  21,  36,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 372
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 373
+(array([ 10,  46,  64,  82,  93, 112], dtype=int64), {})
+tension peaks of initial game 374
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 375
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 376
+(array([10, 37, 64, 78], dtype=int64), {})
+tension peaks of initial game 377
+(array([10, 45, 71, 82], dtype=int64), {})
+tension peaks of initial game 378
+(array([10, 37, 73, 84], dtype=int64), {})
+tension peaks of initial game 379
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 380
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 381
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 382
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 383
+(array([ 10,  46,  64,  80,  91, 104], dtype=int64), {})
+tension peaks of initial game 384
+(array([10, 46, 58, 97], dtype=int64), {})
+tension peaks of initial game 385
+(array([ 10,  46,  64,  88, 100, 111, 127, 154], dtype=int64), {})
+tension peaks of initial game 386
+(array([ 10,  21,  36,  55, 102, 128, 145], dtype=int64), {})
+tension peaks of initial game 387
+(array([ 10,  46,  64,  81,  91, 110, 129, 144], dtype=int64), {})
+tension peaks of initial game 388
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 389
+(array([10, 46, 71], dtype=int64), {})
+tension peaks of initial game 390
+(array([ 10,  22,  55, 105], dtype=int64), {})
+tension peaks of initial game 391
+(array([10, 46, 60, 73, 92], dtype=int64), {})
+tension peaks of initial game 392
+(array([ 10,  21,  36,  55,  79, 106], dtype=int64), {})
+tension peaks of initial game 393
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 394
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 395
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 396
+(array([ 10,  37,  64,  89, 100, 120], dtype=int64), {})
+tension peaks of initial game 397
+(array([10, 43, 62, 73], dtype=int64), {})
+tension peaks of initial game 398
+(array([10, 37, 73, 91], dtype=int64), {})
+tension peaks of initial game 399
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 400
+(array([10, 46, 64, 77], dtype=int64), {})
+tension peaks of initial game 401
+(array([ 10,  46,  77, 101], dtype=int64), {})
+tension peaks of initial game 402
+(array([ 10,  21,  36,  55,  65,  80, 100], dtype=int64), {})
+tension peaks of initial game 403
+(array([ 10,  21,  36,  55, 104], dtype=int64), {})
+tension peaks of initial game 404
+(array([10, 21, 36, 55, 91], dtype=int64), {})
+tension peaks of initial game 405
+(array([10, 46, 73, 92], dtype=int64), {})
+tension peaks of initial game 406
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 407
+(array([10, 37, 69], dtype=int64), {})
+tension peaks of initial game 408
+(array([10, 50, 94], dtype=int64), {})
+tension peaks of initial game 409
+(array([10, 37, 70], dtype=int64), {})
+tension peaks of initial game 410
+(array([10, 41, 64, 76], dtype=int64), {})
+tension peaks of initial game 411
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 412
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 413
+(array([ 10,  37,  73,  85, 104], dtype=int64), {})
+tension peaks of initial game 414
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 415
+(array([ 10,  21,  36,  55,  68,  88, 100], dtype=int64), {})
+tension peaks of initial game 416
+(array([ 10,  21,  36,  55, 100, 120], dtype=int64), {})
+tension peaks of initial game 417
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 418
+(array([10, 46, 64, 91], dtype=int64), {})
+tension peaks of initial game 419
+(array([10, 44, 73, 84], dtype=int64), {})
+tension peaks of initial game 420
+(array([ 10,  37,  67,  86, 110], dtype=int64), {})
+tension peaks of initial game 421
+(array([ 10,  21,  36,  55,  81, 108], dtype=int64), {})
+tension peaks of initial game 422
+(array([ 10,  21,  36,  55,  79, 109], dtype=int64), {})
+tension peaks of initial game 423
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 424
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 425
+(array([ 10,  22,  55,  89, 100, 113, 127, 154, 163], dtype=int64), {})
+tension peaks of initial game 426
+(array([10, 46, 64, 82, 95], dtype=int64), {})
+tension peaks of initial game 427
+(array([ 10,  46,  73, 110], dtype=int64), {})
+tension peaks of initial game 428
+(array([ 10,  21,  36,  55,  80, 109], dtype=int64), {})
+tension peaks of initial game 429
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 430
+(array([ 10,  37,  64,  82,  93, 112, 145, 156], dtype=int64), {})
+tension peaks of initial game 431
+(array([ 10,  44,  73,  85, 104], dtype=int64), {})
+tension peaks of initial game 432
+(array([ 10,  21,  36,  55, 100, 112], dtype=int64), {})
+tension peaks of initial game 433
+(array([10, 37, 73, 84], dtype=int64), {})
+tension peaks of initial game 434
+(array([10, 45, 73, 91], dtype=int64), {})
+tension peaks of initial game 435
+(array([10, 46, 64], dtype=int64), {})
+tension peaks of initial game 436
+(array([10, 46, 61, 73, 86], dtype=int64), {})
+tension peaks of initial game 437
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 438
+(array([10, 37, 61, 73, 85], dtype=int64), {})
+tension peaks of initial game 439
+(array([10, 46, 64, 77], dtype=int64), {})
+tension peaks of initial game 440
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 441
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 442
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 443
+(array([10, 43, 73], dtype=int64), {})
+tension peaks of initial game 444
+(array([10, 46, 64, 77], dtype=int64), {})
+tension peaks of initial game 445
+(array([ 10,  41,  64,  78,  91, 102, 128, 144, 154], dtype=int64), {})
+tension peaks of initial game 446
+(array([ 9, 45, 71], dtype=int64), {})
+tension peaks of initial game 447
+(array([10, 44, 73], dtype=int64), {})
+tension peaks of initial game 448
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 449
+(array([10, 46, 73, 91], dtype=int64), {})
+tension peaks of initial game 450
+(array([ 10,  46,  58, 100], dtype=int64), {})
+tension peaks of initial game 451
+(array([ 10,  21,  36,  55, 100, 118], dtype=int64), {})
+tension peaks of initial game 452
+(array([ 10,  46,  64,  86, 110], dtype=int64), {})
+tension peaks of initial game 453
+(array([10, 37, 60, 73], dtype=int64), {})
+tension peaks of initial game 454
+(array([10, 37, 73, 94], dtype=int64), {})
+tension peaks of initial game 455
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 456
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 457
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 458
+(array([ 10,  46,  61,  73,  91, 110], dtype=int64), {})
+tension peaks of initial game 459
+(array([ 10,  21,  36,  55, 100, 118], dtype=int64), {})
+tension peaks of initial game 460
+(array([10, 37, 71, 82], dtype=int64), {})
+tension peaks of initial game 461
+(array([ 10,  46,  64,  81,  91, 110, 129, 143, 154, 192, 217, 244],
+      dtype=int64), {})
+tension peaks of initial game 462
+(array([10, 46, 68], dtype=int64), {})
+tension peaks of initial game 463
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 464
+(array([ 10,  46,  64,  82,  92, 111], dtype=int64), {})
+tension peaks of initial game 465
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 466
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 467
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 468
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 469
+(array([ 10,  46,  64,  82, 101], dtype=int64), {})
+tension peaks of initial game 470
+(array([10, 21, 36, 55, 99], dtype=int64), {})
+tension peaks of initial game 471
+(array([ 10,  21,  36,  55,  90, 118, 142, 167, 189, 199, 215, 226, 246,
+       261, 298, 313, 332, 343, 370, 433], dtype=int64), {})
+tension peaks of initial game 472
+(array([ 10,  44,  69,  82,  93, 112], dtype=int64), {})
+tension peaks of initial game 473
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 474
+(array([ 10,  50, 100, 113], dtype=int64), {})
+tension peaks of initial game 475
+(array([10, 37, 72, 82], dtype=int64), {})
+tension peaks of initial game 476
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 477
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 478
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 479
+(array([10, 46, 60, 73], dtype=int64), {})
+tension peaks of initial game 480
+(array([ 10,  46,  60,  73, 110], dtype=int64), {})
+tension peaks of initial game 481
+(array([ 10,  21,  36,  55, 101, 127, 145, 157], dtype=int64), {})
+tension peaks of initial game 482
+(array([10, 45, 70], dtype=int64), {})
+tension peaks of initial game 483
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 484
+(array([ 10,  46,  57, 100], dtype=int64), {})
+tension peaks of initial game 485
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 486
+(array([ 10,  37,  64,  81,  91, 109], dtype=int64), {})
+tension peaks of initial game 487
+(array([10, 37, 71, 82], dtype=int64), {})
+tension peaks of initial game 488
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 489
+(array([10, 37, 66, 82], dtype=int64), {})
+tension peaks of initial game 490
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 491
+(array([ 9, 36, 60, 72, 85], dtype=int64), {})
+tension peaks of initial game 492
+(array([10, 37, 69], dtype=int64), {})
+tension peaks of initial game 493
+(array([ 10,  46,  60,  79, 100, 121], dtype=int64), {})
+tension peaks of initial game 494
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 495
+(array([10, 41, 64, 78], dtype=int64), {})
+tension peaks of initial game 496
+(array([ 10,  41,  61,  73,  86, 109], dtype=int64), {})
+tension peaks of initial game 497
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 498
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 499
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 500
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 501
+(array([ 10,  37,  66,  82,  91, 110], dtype=int64), {})
+tension peaks of initial game 502
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 503
+(array([10, 37, 73, 91], dtype=int64), {})
+tension peaks of initial game 504
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 505
+(array([ 10,  22,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 506
+(array([ 10,  21,  36,  55,  97, 109], dtype=int64), {})
+tension peaks of initial game 507
+(array([ 10,  46,  58, 100], dtype=int64), {})
+tension peaks of initial game 508
+(array([ 10,  46,  78, 100], dtype=int64), {})
+tension peaks of initial game 509
+(array([ 10,  46,  56,  98, 109, 127, 152, 163, 175], dtype=int64), {})
+tension peaks of initial game 510
+(array([10, 43, 73], dtype=int64), {})
+tension peaks of initial game 511
+(array([ 10,  22,  42,  55,  80, 105, 118, 181], dtype=int64), {})
+tension peaks of initial game 512
+(array([10, 46, 63, 73, 93], dtype=int64), {})
+tension peaks of initial game 513
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 514
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 515
+(array([10, 46, 61, 73], dtype=int64), {})
+tension peaks of initial game 516
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 517
+(array([ 10,  46,  78, 100, 111], dtype=int64), {})
+tension peaks of initial game 518
+(array([ 9, 36, 72], dtype=int64), {})
+tension peaks of initial game 519
+(array([ 10,  46,  64,  90, 100, 127, 154], dtype=int64), {})
+tension peaks of initial game 520
+(array([ 10,  21,  36,  55,  79,  99, 118, 142, 181, 244], dtype=int64), {})
+tension peaks of initial game 521
+(array([10, 46, 64, 76], dtype=int64), {})
+tension peaks of initial game 522
+(array([10, 45, 70], dtype=int64), {})
+tension peaks of initial game 523
+(array([10, 44, 63, 73], dtype=int64), {})
+tension peaks of initial game 524
+(array([10, 46, 64, 79], dtype=int64), {})
+tension peaks of initial game 525
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 526
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 527
+(array([10, 37, 64, 82, 94], dtype=int64), {})
+tension peaks of initial game 528
+(array([10, 46, 64], dtype=int64), {})
+tension peaks of initial game 529
+(array([10, 46, 61, 73, 85], dtype=int64), {})
+tension peaks of initial game 530
+(array([10, 46, 68], dtype=int64), {})
+tension peaks of initial game 531
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 532
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 533
+(array([10, 22, 55, 98], dtype=int64), {})
+tension peaks of initial game 534
+(array([ 10,  21,  36,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 535
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 536
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 537
+(array([ 9, 36, 63, 78], dtype=int64), {})
+tension peaks of initial game 538
+(array([10, 46, 61, 73, 86], dtype=int64), {})
+tension peaks of initial game 539
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 540
+(array([ 10,  21,  36,  55, 100, 127, 145], dtype=int64), {})
+tension peaks of initial game 541
+(array([10, 43, 72], dtype=int64), {})
+tension peaks of initial game 542
+(array([10, 22, 55, 91], dtype=int64), {})
+tension peaks of initial game 543
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 544
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 545
+(array([10, 37, 64, 78], dtype=int64), {})
+tension peaks of initial game 546
+(array([10, 43, 71], dtype=int64), {})
+tension peaks of initial game 547
+(array([ 10,  22,  55,  79, 103], dtype=int64), {})
+tension peaks of initial game 548
+(array([ 10,  21,  36,  55,  67,  87, 100], dtype=int64), {})
+tension peaks of initial game 549
+(array([ 9, 36, 71], dtype=int64), {})
+tension peaks of initial game 550
+(array([ 10,  22,  42,  55, 118, 159, 172, 183], dtype=int64), {})
+tension peaks of initial game 551
+(array([ 9, 45, 59, 78, 98], dtype=int64), {})
+tension peaks of initial game 552
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 553
+(array([ 10,  45,  77, 101], dtype=int64), {})
+tension peaks of initial game 554
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 555
+(array([ 10,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of initial game 556
+(array([ 10,  21,  36,  55,  78, 109], dtype=int64), {})
+tension peaks of initial game 557
+(array([ 10,  46,  64,  88, 100, 111, 127, 145], dtype=int64), {})
+tension peaks of initial game 558
+(array([10, 44, 73], dtype=int64), {})
+tension peaks of initial game 559
+(array([10, 46, 64, 79], dtype=int64), {})
+tension peaks of initial game 560
+(array([10, 37, 70], dtype=int64), {})
+tension peaks of initial game 561
+(array([ 10,  45,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 562
+(array([ 10,  46,  64,  80,  91, 110], dtype=int64), {})
+tension peaks of initial game 563
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 564
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 565
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 566
+(array([ 10,  37,  64,  80,  91, 104], dtype=int64), {})
+tension peaks of initial game 567
+(array([ 10,  37,  73,  82, 101], dtype=int64), {})
+tension peaks of initial game 568
+(array([10, 21, 36, 55, 97], dtype=int64), {})
+tension peaks of initial game 569
+(array([ 10,  21,  36,  55,  78, 109], dtype=int64), {})
+tension peaks of initial game 570
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 571
+(array([ 9, 36, 72], dtype=int64), {})
+tension peaks of initial game 572
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 573
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 574
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 575
+(array([ 10,  37,  73,  85, 104], dtype=int64), {})
+tension peaks of initial game 576
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 577
+(array([10, 21, 36, 55, 96], dtype=int64), {})
+tension peaks of initial game 578
+(array([ 10,  21,  36,  55,  97, 118, 159, 172, 206], dtype=int64), {})
+tension peaks of initial game 579
+(array([ 10,  21,  36,  55,  94, 132, 145], dtype=int64), {})
+tension peaks of initial game 580
+(array([ 10,  46,  73,  84, 103], dtype=int64), {})
+tension peaks of initial game 581
+(array([ 10,  21,  36,  55, 100, 122], dtype=int64), {})
+tension peaks of initial game 582
+(array([ 10,  46,  64,  91, 100, 119], dtype=int64), {})
+tension peaks of initial game 583
+(array([10, 46, 64, 80], dtype=int64), {})
+tension peaks of initial game 584
+(array([10, 46, 71], dtype=int64), {})
+tension peaks of initial game 585
+(array([10, 44, 73, 83], dtype=int64), {})
+tension peaks of initial game 586
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 587
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 588
+(array([  9,  36,  63,  77,  90, 100], dtype=int64), {})
+tension peaks of initial game 589
+(array([10, 21, 36, 55, 94], dtype=int64), {})
+tension peaks of initial game 590
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 591
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 592
+(array([10, 22, 55, 96], dtype=int64), {})
+tension peaks of initial game 593
+(array([ 10,  21,  36,  55,  99, 109], dtype=int64), {})
+tension peaks of initial game 594
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 595
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 596
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 597
+(array([ 10,  46,  59,  78, 100], dtype=int64), {})
+tension peaks of initial game 598
+(array([ 10,  46,  61,  81, 100, 111, 127, 151, 163, 175, 190, 217, 258,
+       271, 283, 302, 343, 370], dtype=int64), {})
+tension peaks of initial game 599
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 600
+(array([ 10,  37,  47,  64,  79,  91, 103, 127, 144, 154, 174, 193, 262,
+       307, 325, 337, 351, 380, 423], dtype=int64), {})
+tension peaks of initial game 601
+(array([ 10,  44,  72,  82, 103], dtype=int64), {})
+tension peaks of initial game 602
+(array([ 10,  21,  36,  55,  90, 109], dtype=int64), {})
+tension peaks of initial game 603
+(array([ 10,  46,  78, 100, 111], dtype=int64), {})
+tension peaks of initial game 604
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 605
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 606
+(array([10, 37, 73, 84], dtype=int64), {})
+tension peaks of initial game 607
+(array([ 10,  37,  66,  81,  91, 109], dtype=int64), {})
+tension peaks of initial game 608
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 609
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 610
+(array([ 10,  46,  64,  82,  91, 110], dtype=int64), {})
+tension peaks of initial game 611
+(array([10, 46, 64, 82, 94], dtype=int64), {})
+tension peaks of initial game 612
+(array([ 10,  21,  36,  55, 108], dtype=int64), {})
+tension peaks of initial game 613
+(array([10, 46, 64, 76], dtype=int64), {})
+tension peaks of initial game 614
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 615
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 616
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 617
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 618
+(array([10, 37, 73, 85], dtype=int64), {})
+tension peaks of initial game 619
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 620
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 621
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 622
+(array([10, 37, 73, 92], dtype=int64), {})
+tension peaks of initial game 623
+(array([10, 37, 73, 93], dtype=int64), {})
+tension peaks of initial game 624
+(array([ 10,  46,  59,  78,  97, 109, 121, 142, 162, 172, 186, 199, 236],
+      dtype=int64), {})
+tension peaks of initial game 625
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 626
+(array([10, 46, 69], dtype=int64), {})
+tension peaks of initial game 627
+(array([ 10,  46,  58,  97, 109], dtype=int64), {})
+tension peaks of initial game 628
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 629
+(array([ 10,  46,  55,  90, 109], dtype=int64), {})
+tension peaks of initial game 630
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 631
+(array([10, 46, 77], dtype=int64), {})
+tension peaks of initial game 632
+(array([ 10,  37,  73,  86, 110], dtype=int64), {})
+tension peaks of initial game 633
+(array([ 10,  21,  36,  55,  97, 118, 153, 172], dtype=int64), {})
+tension peaks of initial game 634
+(array([10, 46, 63, 73], dtype=int64), {})
+tension peaks of initial game 635
+(array([10, 37, 72, 82], dtype=int64), {})
+tension peaks of initial game 636
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 637
+(array([10, 37, 60, 73], dtype=int64), {})
+tension peaks of initial game 638
+(array([10, 37, 64, 81], dtype=int64), {})
+tension peaks of initial game 639
+(array([ 10,  46,  71,  82, 102], dtype=int64), {})
+tension peaks of initial game 640
+(array([ 10,  21,  36,  55,  81, 107], dtype=int64), {})
+tension peaks of initial game 641
+(array([10, 46, 59, 78, 98], dtype=int64), {})
+tension peaks of initial game 642
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 643
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 644
+(array([ 10,  37,  64,  79,  91, 103, 127, 145], dtype=int64), {})
+tension peaks of initial game 645
+(array([ 10,  46,  64,  78,  91, 101], dtype=int64), {})
+tension peaks of initial game 646
+(array([ 9, 36, 72], dtype=int64), {})
+tension peaks of initial game 647
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 648
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 649
+(array([10, 37, 73, 83], dtype=int64), {})
+tension peaks of initial game 650
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 651
+(array([10, 37, 73, 93], dtype=int64), {})
+tension peaks of initial game 652
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 653
+(array([ 10,  22,  55, 109], dtype=int64), {})
+tension peaks of initial game 654
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 655
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 656
+(array([  9,  36,  62,  72, 105, 180, 217, 281], dtype=int64), {})
+tension peaks of initial game 657
+(array([10, 46, 64, 73], dtype=int64), {})
+tension peaks of initial game 658
+(array([10, 46, 73, 83], dtype=int64), {})
+tension peaks of initial game 659
+(array([ 10,  21,  36,  55, 101], dtype=int64), {})
+tension peaks of initial game 660
+(array([ 10,  46,  64,  79,  91, 103, 122], dtype=int64), {})
+tension peaks of initial game 661
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 662
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 663
+(array([10, 37, 71, 82, 94], dtype=int64), {})
+tension peaks of initial game 664
+(array([ 10,  44,  73,  85, 109], dtype=int64), {})
+tension peaks of initial game 665
+(array([ 10,  21,  36,  55,  78, 102], dtype=int64), {})
+tension peaks of initial game 666
+(array([10, 37, 47, 64, 73, 93], dtype=int64), {})
+tension peaks of initial game 667
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 668
+(array([ 10,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of initial game 669
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 670
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 671
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 672
+(array([ 10,  46,  64,  80,  91, 104], dtype=int64), {})
+tension peaks of initial game 673
+(array([10, 46, 73, 85], dtype=int64), {})
+tension peaks of initial game 674
+(array([ 10,  21,  36,  55,  91, 109], dtype=int64), {})
+tension peaks of initial game 675
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 676
+(array([10, 45, 73], dtype=int64), {})
+tension peaks of initial game 677
+(array([ 10,  37,  64,  79,  91, 102], dtype=int64), {})
+tension peaks of initial game 678
+(array([10, 37, 64, 80], dtype=int64), {})
+tension peaks of initial game 679
+(array([ 10,  46,  64,  82, 102], dtype=int64), {})
+tension peaks of initial game 680
+(array([ 10,  21,  36,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 681
+(array([ 10,  37,  64,  79,  91, 103, 122], dtype=int64), {})
+tension peaks of initial game 682
+(array([10, 46, 60, 73, 86], dtype=int64), {})
+tension peaks of initial game 683
+(array([10, 44, 72, 82], dtype=int64), {})
+tension peaks of initial game 684
+(array([ 9, 36, 71, 81], dtype=int64), {})
+tension peaks of initial game 685
+(array([ 9, 36, 72], dtype=int64), {})
+tension peaks of initial game 686
+(array([ 10,  22,  55, 108], dtype=int64), {})
+tension peaks of initial game 687
+(array([ 10,  46,  64,  80,  91, 104], dtype=int64), {})
+tension peaks of initial game 688
+(array([ 10,  21,  36,  55,  90, 118, 156, 175], dtype=int64), {})
+tension peaks of initial game 689
+(array([ 10,  21,  36,  55,  90, 118, 151, 172, 181, 226], dtype=int64), {})
+tension peaks of initial game 690
+(array([10, 21, 36, 55, 97], dtype=int64), {})
+tension peaks of initial game 691
+(array([10, 21, 36, 55, 97], dtype=int64), {})
+tension peaks of initial game 692
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 693
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 694
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 695
+(array([10, 44, 63, 73], dtype=int64), {})
+tension peaks of initial game 696
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 697
+(array([10, 45, 73, 85], dtype=int64), {})
+tension peaks of initial game 698
+(array([ 10,  21,  36,  55, 100, 118], dtype=int64), {})
+tension peaks of initial game 699
+(array([10, 46, 71], dtype=int64), {})
+tension peaks of initial game 700
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 701
+(array([ 10,  21,  36,  55, 100, 127, 145], dtype=int64), {})
+tension peaks of initial game 702
+(array([ 10,  46,  71,  82, 102], dtype=int64), {})
+tension peaks of initial game 703
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 704
+(array([10, 21, 36, 55, 96], dtype=int64), {})
+tension peaks of initial game 705
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 706
+(array([ 9, 36, 72], dtype=int64), {})
+tension peaks of initial game 707
+(array([ 10,  22,  55,  91, 101, 127, 154, 164, 183], dtype=int64), {})
+tension peaks of initial game 708
+(array([10, 46, 63, 73], dtype=int64), {})
+tension peaks of initial game 709
+(array([ 10,  43,  55, 100, 118], dtype=int64), {})
+tension peaks of initial game 710
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 711
+(array([10, 22, 55, 97], dtype=int64), {})
+tension peaks of initial game 712
+(array([ 10,  21,  36,  55,  67,  87, 100, 111, 127, 142, 154], dtype=int64), {})
+tension peaks of initial game 713
+(array([10, 37, 73, 92], dtype=int64), {})
+tension peaks of initial game 714
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 715
+(array([ 10,  21,  36,  55, 100, 111], dtype=int64), {})
+tension peaks of initial game 716
+(array([10, 37, 64, 78], dtype=int64), {})
+tension peaks of initial game 717
+(array([ 10,  46,  71,  82, 103], dtype=int64), {})
+tension peaks of initial game 718
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 719
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 720
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 721
+(array([ 10,  37,  64,  80,  91, 104, 129, 145], dtype=int64), {})
+tension peaks of initial game 722
+(array([10, 45, 71], dtype=int64), {})
+tension peaks of initial game 723
+(array([ 10,  22,  42,  55,  90, 116, 142, 161, 181, 250], dtype=int64), {})
+tension peaks of initial game 724
+(array([10, 46, 64, 80], dtype=int64), {})
+tension peaks of initial game 725
+(array([ 10,  46,  64,  80,  91, 109], dtype=int64), {})
+tension peaks of initial game 726
+(array([ 10,  21,  36,  55,  79, 118, 152, 172, 197, 208, 235, 244, 316,
+       343, 370, 427], dtype=int64), {})
+tension peaks of initial game 727
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 728
+(array([10, 37, 60, 73], dtype=int64), {})
+tension peaks of initial game 729
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 730
+(array([ 10,  46,  58, 100], dtype=int64), {})
+tension peaks of initial game 731
+(array([ 10,  21,  36,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of initial game 732
+(array([10, 37, 70], dtype=int64), {})
+tension peaks of initial game 733
+(array([ 10,  46,  64,  80,  91, 103], dtype=int64), {})
+tension peaks of initial game 734
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 735
+(array([10, 41, 62, 73], dtype=int64), {})
+tension peaks of initial game 736
+(array([10, 46, 55, 95], dtype=int64), {})
+tension peaks of initial game 737
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 738
+(array([10, 46, 64, 81, 91], dtype=int64), {})
+tension peaks of initial game 739
+(array([ 10,  45,  73,  83, 103], dtype=int64), {})
+tension peaks of initial game 740
+(array([ 10,  21,  36,  55,  79, 109], dtype=int64), {})
+tension peaks of initial game 741
+(array([10, 37, 69], dtype=int64), {})
+tension peaks of initial game 742
+(array([10, 46, 64, 76], dtype=int64), {})
+tension peaks of initial game 743
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 744
+(array([ 10,  46,  78, 100, 113], dtype=int64), {})
+tension peaks of initial game 745
+(array([ 10,  37,  64,  81,  91, 109], dtype=int64), {})
+tension peaks of initial game 746
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 747
+(array([ 10,  46,  62, 100, 110, 127, 144], dtype=int64), {})
+tension peaks of initial game 748
+(array([10, 46, 73, 83], dtype=int64), {})
+tension peaks of initial game 749
+(array([ 9, 36, 45, 67], dtype=int64), {})
+tension peaks of initial game 750
+(array([10, 37, 67, 82], dtype=int64), {})
+tension peaks of initial game 751
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 752
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 753
+(array([10, 46, 70], dtype=int64), {})
+tension peaks of initial game 754
+(array([10, 45, 73], dtype=int64), {})
+tension peaks of initial game 755
+(array([ 10,  41,  64,  79,  91, 102], dtype=int64), {})
+tension peaks of initial game 756
+(array([10, 37, 48, 64, 82], dtype=int64), {})
+tension peaks of initial game 757
+(array([ 10,  37,  64,  78,  91, 101, 121], dtype=int64), {})
+tension peaks of initial game 758
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 759
+(array([ 10,  46,  55,  96, 109, 126, 152, 163, 190, 213, 262, 271, 316,
+       334, 361], dtype=int64), {})
+tension peaks of initial game 760
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 761
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 762
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 763
+(array([ 10,  22,  55, 107], dtype=int64), {})
+tension peaks of initial game 764
+(array([ 10,  21,  36,  55,  91, 101, 121], dtype=int64), {})
+tension peaks of initial game 765
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 766
+(array([10, 37, 64, 79], dtype=int64), {})
+tension peaks of initial game 767
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 768
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 769
+(array([10, 37, 73, 91], dtype=int64), {})
+tension peaks of initial game 770
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 771
+(array([10, 46, 64, 76], dtype=int64), {})
+tension peaks of initial game 772
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 773
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 774
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 775
+(array([10, 46, 63, 73, 92], dtype=int64), {})
+tension peaks of initial game 776
+(array([ 10,  44,  55, 100, 110], dtype=int64), {})
+tension peaks of initial game 777
+(array([10, 37, 65, 82], dtype=int64), {})
+tension peaks of initial game 778
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 779
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 780
+(array([10, 37, 65, 81], dtype=int64), {})
+tension peaks of initial game 781
+(array([ 10,  43,  73,  83, 103], dtype=int64), {})
+tension peaks of initial game 782
+(array([ 10,  21,  36,  55, 100, 127, 154, 166, 190, 225, 244], dtype=int64), {})
+tension peaks of initial game 783
+(array([10, 46, 64, 81], dtype=int64), {})
+tension peaks of initial game 784
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 785
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 786
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 787
+(array([ 10,  46,  64,  82,  92, 112, 131, 145], dtype=int64), {})
+tension peaks of initial game 788
+(array([ 10,  21,  36,  55,  90, 109], dtype=int64), {})
+tension peaks of initial game 789
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 790
+(array([10, 37, 73, 92], dtype=int64), {})
+tension peaks of initial game 791
+(array([ 10,  21,  36,  55, 100, 127, 154, 165, 185], dtype=int64), {})
+tension peaks of initial game 792
+(array([ 10,  21,  36,  55,  90, 100, 120], dtype=int64), {})
+tension peaks of initial game 793
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 794
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 795
+(array([ 10,  46,  60,  80,  99, 109, 127, 154], dtype=int64), {})
+tension peaks of initial game 796
+(array([10, 45, 70, 82], dtype=int64), {})
+tension peaks of initial game 797
+(array([ 10,  21,  36,  55, 109], dtype=int64), {})
+tension peaks of initial game 798
+(array([10, 44, 70], dtype=int64), {})
+tension peaks of initial game 799
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 800
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 801
+(array([10, 37, 66, 82], dtype=int64), {})
+tension peaks of initial game 802
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 803
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 804
+(array([10, 37, 71], dtype=int64), {})
+tension peaks of initial game 805
+(array([ 10,  46,  58, 100], dtype=int64), {})
+tension peaks of initial game 806
+(array([ 10,  46,  64,  78,  91, 102], dtype=int64), {})
+tension peaks of initial game 807
+(array([ 10,  21,  36,  55,  96, 116, 154, 165, 190, 244], dtype=int64), {})
+tension peaks of initial game 808
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 809
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 810
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 811
+(array([ 10,  46,  73,  84, 103], dtype=int64), {})
+tension peaks of initial game 812
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 813
+(array([ 10,  46,  64,  82, 102], dtype=int64), {})
+tension peaks of initial game 814
+(array([ 10,  21,  36,  55,  80, 105], dtype=int64), {})
+tension peaks of initial game 815
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 816
+(array([10, 46, 61, 73], dtype=int64), {})
+tension peaks of initial game 817
+(array([10, 50, 95], dtype=int64), {})
+tension peaks of initial game 818
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 819
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 820
+(array([10, 46, 73, 91], dtype=int64), {})
+tension peaks of initial game 821
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 822
+(array([ 10,  46,  61,  81, 100, 111, 127, 145], dtype=int64), {})
+tension peaks of initial game 823
+(array([10, 46, 64, 78], dtype=int64), {})
+tension peaks of initial game 824
+(array([10, 41, 68], dtype=int64), {})
+tension peaks of initial game 825
+(array([10, 37, 65, 80], dtype=int64), {})
+tension peaks of initial game 826
+(array([10, 46, 72], dtype=int64), {})
+tension peaks of initial game 827
+(array([ 10,  46,  64,  80,  91, 109, 128, 145, 155], dtype=int64), {})
+tension peaks of initial game 828
+(array([10, 44, 71, 82], dtype=int64), {})
+tension peaks of initial game 829
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 830
+(array([ 9, 36, 63, 80], dtype=int64), {})
+tension peaks of initial game 831
+(array([10, 45, 73, 84], dtype=int64), {})
+tension peaks of initial game 832
+(array([ 10,  37,  64,  80,  91, 104, 129, 145], dtype=int64), {})
+tension peaks of initial game 833
+(array([10, 44, 73, 92], dtype=int64), {})
+tension peaks of initial game 834
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 835
+(array([ 10,  37,  73,  83, 109], dtype=int64), {})
+tension peaks of initial game 836
+(array([ 10,  21,  36,  55,  88, 109], dtype=int64), {})
+tension peaks of initial game 837
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 838
+(array([ 10,  37,  62,  73, 105, 172, 190, 217, 228, 248, 268, 289, 343,
+       370], dtype=int64), {})
+tension peaks of initial game 839
+(array([10, 46, 64], dtype=int64), {})
+tension peaks of initial game 840
+(array([ 10,  46,  57,  99, 109], dtype=int64), {})
+tension peaks of initial game 841
+(array([10, 37, 73, 83], dtype=int64), {})
+tension peaks of initial game 842
+(array([ 10,  21,  36,  55, 100, 110], dtype=int64), {})
+tension peaks of initial game 843
+(array([10, 46, 64, 75], dtype=int64), {})
+tension peaks of initial game 844
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 845
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 846
+(array([ 10,  37,  64,  79,  91, 102], dtype=int64), {})
+tension peaks of initial game 847
+(array([10, 46, 73, 85], dtype=int64), {})
+tension peaks of initial game 848
+(array([10, 21, 36, 55, 93], dtype=int64), {})
+tension peaks of initial game 849
+(array([10, 46, 64, 73], dtype=int64), {})
+tension peaks of initial game 850
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 851
+(array([ 10,  46,  73,  82, 101], dtype=int64), {})
+tension peaks of initial game 852
+(array([ 10,  21,  36,  55, 103, 129, 144, 154], dtype=int64), {})
+tension peaks of initial game 853
+(array([10, 46, 73, 85], dtype=int64), {})
+tension peaks of initial game 854
+(array([ 10,  21,  36,  55,  90, 100], dtype=int64), {})
+tension peaks of initial game 855
+(array([10, 46, 62, 73, 91], dtype=int64), {})
+tension peaks of initial game 856
+(array([ 10,  21,  36,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of initial game 857
+(array([10, 45, 73], dtype=int64), {})
+tension peaks of initial game 858
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 859
+(array([10, 37, 70], dtype=int64), {})
+tension peaks of initial game 860
+(array([10, 46, 73, 84], dtype=int64), {})
+tension peaks of initial game 861
+(array([ 9, 36, 72, 81], dtype=int64), {})
+tension peaks of initial game 862
+(array([ 9, 36, 67], dtype=int64), {})
+tension peaks of initial game 863
+(array([ 10,  44,  72,  82, 100], dtype=int64), {})
+tension peaks of initial game 864
+(array([10, 45, 73], dtype=int64), {})
+tension peaks of initial game 865
+(array([ 10,  44,  55,  92, 112], dtype=int64), {})
+tension peaks of initial game 866
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 867
+(array([ 10,  44,  73,  82, 101], dtype=int64), {})
+tension peaks of initial game 868
+(array([ 10,  21,  36,  55,  81, 113, 159, 181, 199, 226], dtype=int64), {})
+tension peaks of initial game 869
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 870
+(array([10, 37, 48, 64, 75], dtype=int64), {})
+tension peaks of initial game 871
+(array([ 9, 36, 71], dtype=int64), {})
+tension peaks of initial game 872
+(array([ 10,  46,  73, 110], dtype=int64), {})
+tension peaks of initial game 873
+(array([10, 21, 36, 55, 94], dtype=int64), {})
+tension peaks of initial game 874
+(array([10, 37, 65, 82], dtype=int64), {})
+tension peaks of initial game 875
+(array([ 10,  46,  59,  78, 100], dtype=int64), {})
+tension peaks of initial game 876
+(array([10, 43, 73, 91], dtype=int64), {})
+tension peaks of initial game 877
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 878
+(array([10, 45, 73, 86], dtype=int64), {})
+tension peaks of initial game 879
+(array([10, 37, 66, 82], dtype=int64), {})
+tension peaks of initial game 880
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 881
+(array([10, 37, 73, 92], dtype=int64), {})
+tension peaks of initial game 882
+(array([ 10,  21,  36,  55,  81, 109], dtype=int64), {})
+tension peaks of initial game 883
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 884
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 885
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 886
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 887
+(array([ 10,  22,  55, 100, 113], dtype=int64), {})
+tension peaks of initial game 888
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 889
+(array([ 9, 36], dtype=int64), {})
+tension peaks of initial game 890
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 891
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 892
+(array([10, 44, 73, 95], dtype=int64), {})
+tension peaks of initial game 893
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 894
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 895
+(array([10, 37, 47, 64, 80], dtype=int64), {})
+tension peaks of initial game 896
+(array([10, 46, 62, 73], dtype=int64), {})
+tension peaks of initial game 897
+(array([10, 43, 70], dtype=int64), {})
+tension peaks of initial game 898
+(array([ 10,  22,  55,  81, 107], dtype=int64), {})
+tension peaks of initial game 899
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 900
+(array([10, 37, 60, 73, 86], dtype=int64), {})
+tension peaks of initial game 901
+(array([ 10,  46,  58,  96, 109], dtype=int64), {})
+tension peaks of initial game 902
+(array([ 10,  37,  73,  82, 103], dtype=int64), {})
+tension peaks of initial game 903
+(array([ 10,  21,  36,  55, 100, 119], dtype=int64), {})
+tension peaks of initial game 904
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 905
+(array([ 10,  22,  55, 100, 122], dtype=int64), {})
+tension peaks of initial game 906
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 907
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 908
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 909
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 910
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 911
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 912
+(array([10, 37, 64, 81], dtype=int64), {})
+tension peaks of initial game 913
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 914
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 915
+(array([ 10,  22,  55,  66,  81, 104, 127, 154, 165, 190, 235], dtype=int64), {})
+tension peaks of initial game 916
+(array([ 10,  21,  36,  55,  97, 118, 141, 160, 172, 193, 212, 250, 343,
+       400], dtype=int64), {})
+tension peaks of initial game 917
+(array([10, 46, 64, 73], dtype=int64), {})
+tension peaks of initial game 918
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 919
+(array([10, 43, 73], dtype=int64), {})
+tension peaks of initial game 920
+(array([10, 37, 64, 80], dtype=int64), {})
+tension peaks of initial game 921
+(array([ 10,  46,  60,  79, 100], dtype=int64), {})
+tension peaks of initial game 922
+(array([10, 46, 71], dtype=int64), {})
+tension peaks of initial game 923
+(array([10, 37, 70], dtype=int64), {})
+tension peaks of initial game 924
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 925
+(array([10, 37, 72], dtype=int64), {})
+tension peaks of initial game 926
+(array([ 10,  22,  42,  55, 109, 127, 152, 163, 182], dtype=int64), {})
+tension peaks of initial game 927
+(array([ 10,  21,  36,  55,  78, 102], dtype=int64), {})
+tension peaks of initial game 928
+(array([ 10,  46,  60,  81, 100, 109, 127, 145], dtype=int64), {})
+tension peaks of initial game 929
+(array([ 10,  46,  57, 100, 120], dtype=int64), {})
+tension peaks of initial game 930
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 931
+(array([ 10,  37,  66,  82,  91, 110], dtype=int64), {})
+tension peaks of initial game 932
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 933
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 934
+(array([10, 46, 64, 77], dtype=int64), {})
+tension peaks of initial game 935
+(array([10, 46, 64, 81, 91], dtype=int64), {})
+tension peaks of initial game 936
+(array([ 10,  21,  36,  55,  80, 108, 118, 162, 181], dtype=int64), {})
+tension peaks of initial game 937
+(array([10, 37, 73, 92], dtype=int64), {})
+tension peaks of initial game 938
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 939
+(array([10, 37, 64, 82], dtype=int64), {})
+tension peaks of initial game 940
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 941
+(array([10, 36], dtype=int64), {})
+tension peaks of initial game 942
+(array([10, 46, 56, 96], dtype=int64), {})
+tension peaks of initial game 943
+(array([ 10,  21,  36,  55,  89, 109], dtype=int64), {})
+tension peaks of initial game 944
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 945
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 946
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 947
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 948
+(array([  9,  36,  72,  83, 102], dtype=int64), {})
+tension peaks of initial game 949
+(array([ 10,  21,  36,  55, 109, 127, 145], dtype=int64), {})
+tension peaks of initial game 950
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 951
+(array([ 10,  46,  59,  78,  97, 109, 127, 145, 156], dtype=int64), {})
+tension peaks of initial game 952
+(array([ 10,  46,  58,  78, 100, 120], dtype=int64), {})
+tension peaks of initial game 953
+(array([10, 45, 71], dtype=int64), {})
+tension peaks of initial game 954
+(array([ 10,  46,  64,  80,  91, 104], dtype=int64), {})
+tension peaks of initial game 955
+(array([ 10,  37,  64,  79,  91, 103], dtype=int64), {})
+tension peaks of initial game 956
+(array([10, 46, 64, 82], dtype=int64), {})
+tension peaks of initial game 957
+(array([10, 37, 64, 82, 94], dtype=int64), {})
+tension peaks of initial game 958
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 959
+(array([ 10,  46,  64,  79,  91, 103, 122], dtype=int64), {})
+tension peaks of initial game 960
+(array([ 10,  21,  36,  55,  80, 105], dtype=int64), {})
+tension peaks of initial game 961
+(array([10, 37, 64, 80], dtype=int64), {})
+tension peaks of initial game 962
+(array([ 10,  46,  73,  84, 103], dtype=int64), {})
+tension peaks of initial game 963
+(array([ 10,  21,  55, 100, 127, 149, 175, 196, 220, 240, 262, 307, 325],
+      dtype=int64), {})
+tension peaks of initial game 964
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 965
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 966
+(array([10, 46, 64, 73], dtype=int64), {})
+tension peaks of initial game 967
+(array([ 10,  46,  73,  86, 109], dtype=int64), {})
+tension peaks of initial game 968
+(array([10, 21, 36, 55, 95], dtype=int64), {})
+tension peaks of initial game 969
+(array([ 10,  21,  36,  55,  78, 108], dtype=int64), {})
+tension peaks of initial game 970
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 971
+(array([10, 37, 66, 82, 94], dtype=int64), {})
+tension peaks of initial game 972
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 973
+(array([ 10,  22,  55, 100], dtype=int64), {})
+tension peaks of initial game 974
+(array([ 10,  37,  64,  80,  91, 109], dtype=int64), {})
+tension peaks of initial game 975
+(array([ 10,  46,  62,  73, 110], dtype=int64), {})
+tension peaks of initial game 976
+(array([ 10,  21,  36,  55, 100, 121], dtype=int64), {})
+tension peaks of initial game 977
+(array([ 10,  21,  36,  55, 100, 122], dtype=int64), {})
+tension peaks of initial game 978
+(array([10, 45, 69], dtype=int64), {})
+tension peaks of initial game 979
+(array([10, 37, 60, 73, 85], dtype=int64), {})
+tension peaks of initial game 980
+(array([10, 37, 67, 82], dtype=int64), {})
+tension peaks of initial game 981
+(array([10, 46, 60, 73, 95], dtype=int64), {})
+tension peaks of initial game 982
+(array([ 10,  46,  61,  81, 104, 127, 154, 164, 190, 235], dtype=int64), {})
+tension peaks of initial game 983
+(array([ 9, 42, 72, 92], dtype=int64), {})
+tension peaks of initial game 984
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 985
+(array([10, 46, 73, 83], dtype=int64), {})
+tension peaks of initial game 986
+(array([ 9, 35], dtype=int64), {})
+tension peaks of initial game 987
+(array([10, 46, 73, 84], dtype=int64), {})
+tension peaks of initial game 988
+(array([10, 37, 64, 79], dtype=int64), {})
+tension peaks of initial game 989
+(array([10, 46, 64, 74], dtype=int64), {})
+tension peaks of initial game 990
+(array([10, 46, 73], dtype=int64), {})
+tension peaks of initial game 991
+(array([10, 37, 65, 79, 91], dtype=int64), {})
+tension peaks of initial game 992
+(array([10, 37, 69], dtype=int64), {})
+tension peaks of initial game 993
+(array([ 10,  22,  55, 104], dtype=int64), {})
+tension peaks of initial game 994
+(array([ 10,  45,  77, 101], dtype=int64), {})
+tension peaks of initial game 995
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of initial game 996
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 997
+(array([10, 37, 73], dtype=int64), {})
+tension peaks of initial game 998
+(array([ 10,  37,  64,  78,  91, 102, 121], dtype=int64), {})
+tension peaks of initial game 999
+(array([10, 37, 73, 86], dtype=int64), {})
+tension peaks of initial game 1000
+(array([10, 37], dtype=int64), {})
+tension peaks of initial game 1001
+(array([], dtype=int64), {})
+tension peaks of final game 0
+(array([], dtype=int64), {})
+tension peaks of final game 1
+(array([  9,  23,  47,  63,  87,  99, 135], dtype=int64), {})
+tension peaks of final game 2
+(array([ 10,  23,  47,  63,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 3
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 4
+(array([ 10,  23,  47,  63,  89, 100], dtype=int64), {})
+tension peaks of final game 5
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 6
+(array([10, 27, 55, 66, 81, 91], dtype=int64), {})
+tension peaks of final game 7
+(array([ 10,  41,  60,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 8
+(array([ 10,  23,  49,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 9
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 10
+(array([ 10,  21,  36,  55, 100, 132, 145], dtype=int64), {})
+tension peaks of final game 11
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 12
+(array([ 10,  41,  60,  87, 100], dtype=int64), {})
+tension peaks of final game 13
+(array([ 10,  37,  46,  61,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 14
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 15
+(array([10, 21, 44, 55, 90], dtype=int64), {})
+tension peaks of final game 16
+(array([10, 21, 46, 62, 87], dtype=int64), {})
+tension peaks of final game 17
+(array([10, 37, 50, 64, 89], dtype=int64), {})
+tension peaks of final game 18
+(array([ 10,  21,  46,  61,  87, 100], dtype=int64), {})
+tension peaks of final game 19
+(array([10, 37, 49, 64, 88], dtype=int64), {})
+tension peaks of final game 20
+(array([10, 21, 46, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 21
+(array([10, 21, 36, 55, 65, 86], dtype=int64), {})
+tension peaks of final game 22
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 23
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 24
+(array([10, 21, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 25
+(array([ 10,  21,  46,  61, 100], dtype=int64), {})
+tension peaks of final game 26
+(array([ 10,  48,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 27
+(array([ 10,  34,  55,  64,  81,  91, 110, 136], dtype=int64), {})
+tension peaks of final game 28
+(array([10, 23, 49, 64, 90], dtype=int64), {})
+tension peaks of final game 29
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 30
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 31
+(array([ 10,  24,  52,  64,  91, 103, 136], dtype=int64), {})
+tension peaks of final game 32
+(array([10, 24, 48, 64, 88], dtype=int64), {})
+tension peaks of final game 33
+(array([ 10,  21,  36,  55, 100], dtype=int64), {})
+tension peaks of final game 34
+(array([10, 37, 47, 64, 74, 94], dtype=int64), {})
+tension peaks of final game 35
+(array([ 10,  21,  46,  63, 100], dtype=int64), {})
+tension peaks of final game 36
+(array([10, 37, 64, 78], dtype=int64), {})
+tension peaks of final game 37
+(array([10, 41, 60, 85], dtype=int64), {})
+tension peaks of final game 38
+(array([  9,  36,  45,  60,  79,  99, 135], dtype=int64), {})
+tension peaks of final game 39
+(array([10, 23, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 40
+(array([ 10,  21,  46,  62,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 41
+(array([ 10,  27,  51,  91, 101], dtype=int64), {})
+tension peaks of final game 42
+(array([  9,  36,  46,  61,  80,  99, 135], dtype=int64), {})
+tension peaks of final game 43
+(array([ 10,  23,  48,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 44
+(array([10, 48, 63, 90], dtype=int64), {})
+tension peaks of final game 45
+(array([ 10,  21,  46,  61,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 46
+(array([ 10,  26,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 47
+(array([ 10,  25,  44,  55,  89, 100], dtype=int64), {})
+tension peaks of final game 48
+(array([10, 37, 48, 64, 89], dtype=int64), {})
+tension peaks of final game 49
+(array([ 10,  37,  47,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 50
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 51
+(array([ 10,  53, 100, 136], dtype=int64), {})
+tension peaks of final game 52
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 53
+(array([ 10,  24,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 54
+(array([ 10,  35,  55,  64,  80,  91, 111], dtype=int64), {})
+tension peaks of final game 55
+(array([10, 37], dtype=int64), {})
+tension peaks of final game 56
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 57
+(array([10, 33, 54, 64], dtype=int64), {})
+tension peaks of final game 58
+(array([ 10,  22,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 59
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 60
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 61
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 62
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 63
+(array([ 10,  21,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 64
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 65
+(array([ 10,  26,  51,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 66
+(array([ 10,  26,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 67
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 68
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 69
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 70
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 71
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 72
+(array([ 10,  42,  55,  67, 100, 136], dtype=int64), {})
+tension peaks of final game 73
+(array([ 10,  26,  52,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 74
+(array([ 10,  23,  48,  64,  95, 136], dtype=int64), {})
+tension peaks of final game 75
+(array([10, 25, 49, 64, 89], dtype=int64), {})
+tension peaks of final game 76
+(array([ 10,  21,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of final game 77
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 78
+(array([ 10,  25,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 79
+(array([ 10,  23,  48,  64,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 80
+(array([ 10,  37,  46,  61,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 81
+(array([10, 23, 47, 64, 91], dtype=int64), {})
+tension peaks of final game 82
+(array([ 10,  21,  47,  63,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 83
+(array([ 10,  23,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 84
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 85
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 86
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 87
+(array([10, 23, 42, 55, 66, 85], dtype=int64), {})
+tension peaks of final game 88
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 89
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 90
+(array([ 10,  21,  36,  55,  65,  84, 104], dtype=int64), {})
+tension peaks of final game 91
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 92
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 93
+(array([10, 37, 50, 64, 74, 94], dtype=int64), {})
+tension peaks of final game 94
+(array([ 10,  21,  36,  55,  66,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 95
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 96
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 97
+(array([10, 24, 49, 64, 90], dtype=int64), {})
+tension peaks of final game 98
+(array([ 10,  21,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 99
+(array([10, 23, 47, 63, 90], dtype=int64), {})
+tension peaks of final game 100
+(array([ 10,  41,  60,  85, 109], dtype=int64), {})
+tension peaks of final game 101
+(array([ 10,  21,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 102
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 103
+(array([ 10,  23,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 104
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 105
+(array([10, 24, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 106
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 107
+(array([10, 24, 52, 91], dtype=int64), {})
+tension peaks of final game 108
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 109
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 110
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 111
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 112
+(array([10, 41, 64, 91], dtype=int64), {})
+tension peaks of final game 113
+(array([ 10,  37,  47,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 114
+(array([10, 25, 49, 68, 93], dtype=int64), {})
+tension peaks of final game 115
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 116
+(array([ 10,  21,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of final game 117
+(array([10, 21, 46, 61, 86], dtype=int64), {})
+tension peaks of final game 118
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 119
+(array([ 10,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 120
+(array([ 10,  37,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 121
+(array([ 10,  21,  47,  62,  89, 100], dtype=int64), {})
+tension peaks of final game 122
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 123
+(array([ 10,  23,  50,  91, 100], dtype=int64), {})
+tension peaks of final game 124
+(array([10, 37, 48, 64, 75], dtype=int64), {})
+tension peaks of final game 125
+(array([ 9, 35], dtype=int64), {})
+tension peaks of final game 126
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 127
+(array([ 10,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 128
+(array([ 10,  23,  48,  64,  91, 101], dtype=int64), {})
+tension peaks of final game 129
+(array([ 9, 36, 46, 61, 80, 99], dtype=int64), {})
+tension peaks of final game 130
+(array([ 10,  25,  50, 100, 136], dtype=int64), {})
+tension peaks of final game 131
+(array([10, 23, 48, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 132
+(array([10, 37, 47, 64, 74], dtype=int64), {})
+tension peaks of final game 133
+(array([ 10,  37,  47,  63,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 134
+(array([10, 48, 64, 95], dtype=int64), {})
+tension peaks of final game 135
+(array([ 10,  24,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 136
+(array([ 10,  23,  42,  55,  66,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 137
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 138
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 139
+(array([10, 21, 36, 55, 65, 84], dtype=int64), {})
+tension peaks of final game 140
+(array([ 10,  21,  46,  61,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 141
+(array([ 10,  33,  52,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 142
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 143
+(array([10, 44, 55, 87], dtype=int64), {})
+tension peaks of final game 144
+(array([ 10,  21,  36,  55,  65,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 145
+(array([ 10,  23,  47,  62,  73, 110], dtype=int64), {})
+tension peaks of final game 146
+(array([ 10,  21,  47,  64,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 147
+(array([10, 23, 42, 55, 66, 85], dtype=int64), {})
+tension peaks of final game 148
+(array([ 10,  24,  43,  55, 100, 128, 145], dtype=int64), {})
+tension peaks of final game 149
+(array([10, 23, 50, 90], dtype=int64), {})
+tension peaks of final game 150
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 151
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 152
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 153
+(array([ 10,  23,  47,  63,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 154
+(array([ 10,  23,  44,  55,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 155
+(array([10, 25, 44, 55, 87], dtype=int64), {})
+tension peaks of final game 156
+(array([10, 41, 61, 73, 86], dtype=int64), {})
+tension peaks of final game 157
+(array([10, 41, 61, 73], dtype=int64), {})
+tension peaks of final game 158
+(array([10, 37], dtype=int64), {})
+tension peaks of final game 159
+(array([ 10,  22,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 160
+(array([ 10,  23,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 161
+(array([ 10,  37,  48,  62, 100, 136], dtype=int64), {})
+tension peaks of final game 162
+(array([10, 25, 44, 55, 87], dtype=int64), {})
+tension peaks of final game 163
+(array([ 10,  21,  47,  63,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 164
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 165
+(array([10, 41, 61, 73, 91], dtype=int64), {})
+tension peaks of final game 166
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 167
+(array([10, 24, 43, 55, 68, 87], dtype=int64), {})
+tension peaks of final game 168
+(array([10, 21, 46, 62, 86], dtype=int64), {})
+tension peaks of final game 169
+(array([ 10,  21,  46,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 170
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 171
+(array([ 10,  37,  46,  61,  89, 100], dtype=int64), {})
+tension peaks of final game 172
+(array([ 10,  23,  42,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 173
+(array([10, 44, 55, 91], dtype=int64), {})
+tension peaks of final game 174
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 175
+(array([ 10,  24,  49,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 176
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 177
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 178
+(array([ 10,  24,  48,  64,  87, 100], dtype=int64), {})
+tension peaks of final game 179
+(array([ 10,  24,  45,  55,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 180
+(array([10, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 181
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 182
+(array([ 10,  23,  47,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 183
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 184
+(array([ 10,  25,  50,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 185
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 186
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 187
+(array([10, 26, 51, 64, 95], dtype=int64), {})
+tension peaks of final game 188
+(array([ 10,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 189
+(array([ 10,  24,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 190
+(array([ 10,  26,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 191
+(array([ 10,  26,  51,  64,  91, 102], dtype=int64), {})
+tension peaks of final game 192
+(array([ 10,  37,  48,  63,  89, 100], dtype=int64), {})
+tension peaks of final game 193
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 194
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 195
+(array([ 10,  24,  49,  64,  91, 101], dtype=int64), {})
+tension peaks of final game 196
+(array([ 9, 36, 48, 62, 86, 99], dtype=int64), {})
+tension peaks of final game 197
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 198
+(array([ 10,  21,  46,  61,  87, 100], dtype=int64), {})
+tension peaks of final game 199
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 200
+(array([10, 21, 44, 55, 88], dtype=int64), {})
+tension peaks of final game 201
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 202
+(array([10, 23, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 203
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 204
+(array([ 10,  22,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 205
+(array([ 10,  21,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 206
+(array([10, 37, 46, 64, 90], dtype=int64), {})
+tension peaks of final game 207
+(array([10, 21, 36, 55, 65, 84], dtype=int64), {})
+tension peaks of final game 208
+(array([  9,  36,  45,  60,  84, 109], dtype=int64), {})
+tension peaks of final game 209
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 210
+(array([ 10,  37,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 211
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 212
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 213
+(array([ 10,  37,  46,  61,  85, 110], dtype=int64), {})
+tension peaks of final game 214
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 215
+(array([10, 21, 42, 55, 67, 86], dtype=int64), {})
+tension peaks of final game 216
+(array([10, 33, 53, 64, 76], dtype=int64), {})
+tension peaks of final game 217
+(array([10, 22, 44, 55, 95], dtype=int64), {})
+tension peaks of final game 218
+(array([  9,  36,  47,  61,  99, 135], dtype=int64), {})
+tension peaks of final game 219
+(array([ 10,  23,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 220
+(array([ 10,  24,  43,  55,  67,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 221
+(array([10, 23, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 222
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 223
+(array([ 10,  25,  44,  55,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 224
+(array([10, 26, 52, 91], dtype=int64), {})
+tension peaks of final game 225
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 226
+(array([ 10,  22,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 227
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 228
+(array([ 10,  22,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 229
+(array([ 10,  26,  45,  55,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 230
+(array([10, 25, 64, 91], dtype=int64), {})
+tension peaks of final game 231
+(array([10, 41, 62, 73, 92], dtype=int64), {})
+tension peaks of final game 232
+(array([10, 21, 46, 64, 91], dtype=int64), {})
+tension peaks of final game 233
+(array([ 10,  21,  36,  55,  65,  81, 100], dtype=int64), {})
+tension peaks of final game 234
+(array([ 10,  24,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 235
+(array([ 10,  25,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 236
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 237
+(array([10, 22, 47, 64, 90], dtype=int64), {})
+tension peaks of final game 238
+(array([10, 21, 47, 61, 73], dtype=int64), {})
+tension peaks of final game 239
+(array([10, 23, 42, 55, 66, 89], dtype=int64), {})
+tension peaks of final game 240
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 241
+(array([10, 37, 46, 68, 93], dtype=int64), {})
+tension peaks of final game 242
+(array([10, 21, 47, 61, 73, 86], dtype=int64), {})
+tension peaks of final game 243
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 244
+(array([10, 37, 46, 61, 90], dtype=int64), {})
+tension peaks of final game 245
+(array([ 10,  21,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 246
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 247
+(array([ 10,  23,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 248
+(array([ 10,  24,  49,  64,  91, 102, 136], dtype=int64), {})
+tension peaks of final game 249
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 250
+(array([ 10,  40,  67,  82,  93, 112], dtype=int64), {})
+tension peaks of final game 251
+(array([ 10,  37,  47,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 252
+(array([ 10,  21,  46,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 253
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 254
+(array([ 10,  27,  59,  79,  91, 103], dtype=int64), {})
+tension peaks of final game 255
+(array([ 10,  37,  47,  62,  73,  91, 110], dtype=int64), {})
+tension peaks of final game 256
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 257
+(array([10, 21, 46, 63, 87], dtype=int64), {})
+tension peaks of final game 258
+(array([ 10,  21,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 259
+(array([10, 23, 47, 64, 89], dtype=int64), {})
+tension peaks of final game 260
+(array([10, 41, 61, 73, 86], dtype=int64), {})
+tension peaks of final game 261
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 262
+(array([ 10,  24,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 263
+(array([10, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 264
+(array([ 10,  21,  36,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 265
+(array([ 10,  37,  48,  64,  75, 101], dtype=int64), {})
+tension peaks of final game 266
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 267
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 268
+(array([ 10,  25,  50,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 269
+(array([10, 25, 49, 68, 93], dtype=int64), {})
+tension peaks of final game 270
+(array([ 10,  21,  43,  55,  67,  89, 100], dtype=int64), {})
+tension peaks of final game 271
+(array([ 10,  49,  64,  95, 136], dtype=int64), {})
+tension peaks of final game 272
+(array([ 10,  25,  44,  55,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 273
+(array([ 10,  27,  50,  90, 100], dtype=int64), {})
+tension peaks of final game 274
+(array([10, 23, 47, 64, 89], dtype=int64), {})
+tension peaks of final game 275
+(array([10, 37, 47, 61, 86], dtype=int64), {})
+tension peaks of final game 276
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 277
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 278
+(array([ 10,  37,  46,  61,  85, 110], dtype=int64), {})
+tension peaks of final game 279
+(array([ 10,  21,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of final game 280
+(array([ 10,  21,  46,  64,  78,  91, 101], dtype=int64), {})
+tension peaks of final game 281
+(array([ 9, 36, 47, 63, 88, 99], dtype=int64), {})
+tension peaks of final game 282
+(array([ 10,  23,  47,  63,  88, 100], dtype=int64), {})
+tension peaks of final game 283
+(array([ 10,  22,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 284
+(array([10, 21, 46, 62, 88], dtype=int64), {})
+tension peaks of final game 285
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 286
+(array([10, 21, 46, 63, 91], dtype=int64), {})
+tension peaks of final game 287
+(array([ 10,  21,  46,  61,  86, 110], dtype=int64), {})
+tension peaks of final game 288
+(array([ 10,  21,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 289
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 290
+(array([10, 23, 47, 62, 73], dtype=int64), {})
+tension peaks of final game 291
+(array([ 10,  21,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 292
+(array([ 10,  37,  46,  61,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 293
+(array([10, 23, 47, 64, 75, 95], dtype=int64), {})
+tension peaks of final game 294
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 295
+(array([10, 37, 47, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 296
+(array([ 10,  21,  36,  55,  65,  80, 100], dtype=int64), {})
+tension peaks of final game 297
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 298
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 299
+(array([ 10,  21,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 300
+(array([ 10,  25,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 301
+(array([ 10,  23,  47,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 302
+(array([10, 24, 43, 55, 68, 87], dtype=int64), {})
+tension peaks of final game 303
+(array([ 10,  21,  46,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 304
+(array([ 10,  36,  55,  82,  94, 113], dtype=int64), {})
+tension peaks of final game 305
+(array([ 10,  37,  48,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 306
+(array([ 10,  23,  48,  63,  89, 100], dtype=int64), {})
+tension peaks of final game 307
+(array([ 10,  37,  64,  91, 102], dtype=int64), {})
+tension peaks of final game 308
+(array([ 9, 36, 47, 63, 73, 94], dtype=int64), {})
+tension peaks of final game 309
+(array([ 10,  21,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 310
+(array([10, 48, 64, 74], dtype=int64), {})
+tension peaks of final game 311
+(array([ 10,  21,  46,  61, 100], dtype=int64), {})
+tension peaks of final game 312
+(array([10, 37, 49, 64, 95], dtype=int64), {})
+tension peaks of final game 313
+(array([ 9, 36, 46, 61, 80, 99], dtype=int64), {})
+tension peaks of final game 314
+(array([ 10,  21,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 315
+(array([ 10,  26,  45,  55,  95, 136], dtype=int64), {})
+tension peaks of final game 316
+(array([ 10,  37,  46,  61,  87, 100], dtype=int64), {})
+tension peaks of final game 317
+(array([ 10,  37,  49,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 318
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 319
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 320
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 321
+(array([ 10,  21,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of final game 322
+(array([ 10,  23,  47,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 323
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 324
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 325
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 326
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 327
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 328
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 329
+(array([10, 41, 62, 73], dtype=int64), {})
+tension peaks of final game 330
+(array([ 10,  41,  60,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 331
+(array([ 10,  24,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 332
+(array([ 10,  37,  46,  62, 100, 136], dtype=int64), {})
+tension peaks of final game 333
+(array([10, 23, 42, 55, 66, 85], dtype=int64), {})
+tension peaks of final game 334
+(array([ 10,  21,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of final game 335
+(array([ 10,  21,  46,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 336
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 337
+(array([ 10,  23,  49,  64,  95, 136], dtype=int64), {})
+tension peaks of final game 338
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 339
+(array([10, 23, 47, 62, 73, 93], dtype=int64), {})
+tension peaks of final game 340
+(array([ 10,  21,  47,  63,  91, 101], dtype=int64), {})
+tension peaks of final game 341
+(array([ 9, 36], dtype=int64), {})
+tension peaks of final game 342
+(array([ 10,  22,  47,  62,  89, 100], dtype=int64), {})
+tension peaks of final game 343
+(array([10, 23, 47, 62, 73], dtype=int64), {})
+tension peaks of final game 344
+(array([ 10,  27,  52,  64,  78,  91, 102, 136], dtype=int64), {})
+tension peaks of final game 345
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 346
+(array([ 10,  24,  43,  55,  67,  88, 100, 112], dtype=int64), {})
+tension peaks of final game 347
+(array([ 10,  42,  55,  68,  89, 100], dtype=int64), {})
+tension peaks of final game 348
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 349
+(array([10, 24, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 350
+(array([10, 21, 46, 62, 87], dtype=int64), {})
+tension peaks of final game 351
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 352
+(array([ 10,  23,  47,  62,  73, 110], dtype=int64), {})
+tension peaks of final game 353
+(array([10, 21, 46, 61, 86], dtype=int64), {})
+tension peaks of final game 354
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 355
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 356
+(array([ 10,  21,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 357
+(array([ 10,  23,  42,  55,  66,  89, 100], dtype=int64), {})
+tension peaks of final game 358
+(array([ 10,  23,  44,  55, 104, 124, 136], dtype=int64), {})
+tension peaks of final game 359
+(array([ 10,  23,  47,  64,  87, 100], dtype=int64), {})
+tension peaks of final game 360
+(array([10, 37, 48, 63, 87], dtype=int64), {})
+tension peaks of final game 361
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 362
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 363
+(array([10, 48, 62, 73, 91], dtype=int64), {})
+tension peaks of final game 364
+(array([ 10,  21,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 365
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 366
+(array([10, 26, 45, 55, 90], dtype=int64), {})
+tension peaks of final game 367
+(array([10, 21, 43, 55, 95], dtype=int64), {})
+tension peaks of final game 368
+(array([ 10,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 369
+(array([10, 25, 51, 64, 91], dtype=int64), {})
+tension peaks of final game 370
+(array([ 10,  41,  60,  88, 100], dtype=int64), {})
+tension peaks of final game 371
+(array([ 10,  24,  48,  64,  87, 100], dtype=int64), {})
+tension peaks of final game 372
+(array([ 10,  22,  55,  66,  81, 100], dtype=int64), {})
+tension peaks of final game 373
+(array([10, 21, 36, 55, 65, 84], dtype=int64), {})
+tension peaks of final game 374
+(array([ 9, 36, 46, 63, 75], dtype=int64), {})
+tension peaks of final game 375
+(array([ 9, 36, 46, 60, 86], dtype=int64), {})
+tension peaks of final game 376
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 377
+(array([10, 22, 55, 66, 90], dtype=int64), {})
+tension peaks of final game 378
+(array([ 10,  37,  47,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 379
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 380
+(array([ 10,  37,  64,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 381
+(array([ 10,  25,  50,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 382
+(array([ 10,  24,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 383
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 384
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 385
+(array([10, 25, 64, 74, 95], dtype=int64), {})
+tension peaks of final game 386
+(array([10, 21, 36, 55, 65, 86], dtype=int64), {})
+tension peaks of final game 387
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 388
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 389
+(array([ 10,  23,  47,  63,  88, 100], dtype=int64), {})
+tension peaks of final game 390
+(array([10, 23, 47, 64, 90], dtype=int64), {})
+tension peaks of final game 391
+(array([ 10,  21,  36,  55,  65,  87, 100], dtype=int64), {})
+tension peaks of final game 392
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 393
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 394
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 395
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 396
+(array([ 10,  23,  48,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 397
+(array([ 10,  24,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 398
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 399
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 400
+(array([10, 23, 52, 64, 75], dtype=int64), {})
+tension peaks of final game 401
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 402
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 403
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 404
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 405
+(array([ 10,  21,  36,  55,  65,  80, 100], dtype=int64), {})
+tension peaks of final game 406
+(array([ 10,  23,  49,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 407
+(array([10, 25, 44, 55, 95], dtype=int64), {})
+tension peaks of final game 408
+(array([ 9, 36], dtype=int64), {})
+tension peaks of final game 409
+(array([ 10,  41,  61,  73,  86, 109], dtype=int64), {})
+tension peaks of final game 410
+(array([ 10,  21,  46,  64,  91, 104, 136], dtype=int64), {})
+tension peaks of final game 411
+(array([ 10,  24,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 412
+(array([ 10,  27,  50,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 413
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 414
+(array([10, 25, 50, 64, 78, 91], dtype=int64), {})
+tension peaks of final game 415
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 416
+(array([ 10,  37,  46,  61, 100], dtype=int64), {})
+tension peaks of final game 417
+(array([ 10,  23,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 418
+(array([10, 37, 64, 77], dtype=int64), {})
+tension peaks of final game 419
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 420
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 421
+(array([ 10,  24,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 422
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 423
+(array([10, 37, 47, 62, 73, 92], dtype=int64), {})
+tension peaks of final game 424
+(array([ 10,  21,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 425
+(array([ 10,  27,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 426
+(array([ 10,  23,  47,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 427
+(array([ 10,  23,  42,  55,  66,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 428
+(array([10, 38, 64, 91], dtype=int64), {})
+tension peaks of final game 429
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 430
+(array([10, 22, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 431
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 432
+(array([10, 23, 47, 64, 90], dtype=int64), {})
+tension peaks of final game 433
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 434
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 435
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 436
+(array([ 10,  37,  49,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 437
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 438
+(array([ 10,  37,  47,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 439
+(array([10, 23, 48, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 440
+(array([ 10,  21,  36,  55,  65,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 441
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 442
+(array([10, 41, 61, 73, 86], dtype=int64), {})
+tension peaks of final game 443
+(array([ 10,  22,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 444
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 445
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 446
+(array([ 10,  24,  52,  91, 102, 136], dtype=int64), {})
+tension peaks of final game 447
+(array([ 10,  23,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 448
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 449
+(array([10, 25, 50, 64, 90], dtype=int64), {})
+tension peaks of final game 450
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 451
+(array([10, 21, 46, 60, 73], dtype=int64), {})
+tension peaks of final game 452
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 453
+(array([ 10,  23,  48,  64,  91, 102, 136], dtype=int64), {})
+tension peaks of final game 454
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 455
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 456
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 457
+(array([10, 37, 46, 61, 88], dtype=int64), {})
+tension peaks of final game 458
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 459
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 460
+(array([ 10,  23,  53,  91, 102], dtype=int64), {})
+tension peaks of final game 461
+(array([ 9, 36, 46, 61, 80, 99], dtype=int64), {})
+tension peaks of final game 462
+(array([10, 21, 46, 61, 73, 85], dtype=int64), {})
+tension peaks of final game 463
+(array([ 10,  41,  62,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 464
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 465
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 466
+(array([10, 23, 48, 64, 82], dtype=int64), {})
+tension peaks of final game 467
+(array([10, 41, 60, 85], dtype=int64), {})
+tension peaks of final game 468
+(array([ 10,  23,  47,  63,  88, 100], dtype=int64), {})
+tension peaks of final game 469
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 470
+(array([ 10,  25,  59,  80,  91, 104], dtype=int64), {})
+tension peaks of final game 471
+(array([ 10,  37,  48,  62,  89, 100], dtype=int64), {})
+tension peaks of final game 472
+(array([ 10,  24,  43,  55,  67,  87, 100], dtype=int64), {})
+tension peaks of final game 473
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 474
+(array([ 10,  26,  50, 100, 136], dtype=int64), {})
+tension peaks of final game 475
+(array([10, 37, 50, 64, 89], dtype=int64), {})
+tension peaks of final game 476
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 477
+(array([10, 22, 47, 62, 87], dtype=int64), {})
+tension peaks of final game 478
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 479
+(array([ 10,  25,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 480
+(array([10, 23, 48, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 481
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 482
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 483
+(array([10, 23, 47, 64, 89], dtype=int64), {})
+tension peaks of final game 484
+(array([10, 21, 46, 61, 86], dtype=int64), {})
+tension peaks of final game 485
+(array([ 10,  24,  43,  55,  67,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 486
+(array([10, 48, 63, 88], dtype=int64), {})
+tension peaks of final game 487
+(array([ 10,  21,  46,  61,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 488
+(array([ 10,  26,  51,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 489
+(array([ 10,  24,  43,  55,  67,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 490
+(array([ 10,  49,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 491
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 492
+(array([ 10,  23,  47,  64,  91, 101], dtype=int64), {})
+tension peaks of final game 493
+(array([  9,  36,  46,  61,  80,  99, 125, 135, 170, 180, 199, 216, 261,
+       315, 342], dtype=int64), {})
+tension peaks of final game 494
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 495
+(array([ 10,  21,  47,  63,  89, 100], dtype=int64), {})
+tension peaks of final game 496
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 497
+(array([10, 23, 47, 62, 73], dtype=int64), {})
+tension peaks of final game 498
+(array([10, 21, 46, 60, 73], dtype=int64), {})
+tension peaks of final game 499
+(array([ 10,  22,  47,  63,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 500
+(array([10, 23, 48, 64, 91], dtype=int64), {})
+tension peaks of final game 501
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 502
+(array([ 10,  37,  49,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 503
+(array([ 10,  25,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 504
+(array([ 10,  27,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 505
+(array([10, 24, 43, 55, 91], dtype=int64), {})
+tension peaks of final game 506
+(array([ 10,  37,  47,  61,  87, 100], dtype=int64), {})
+tension peaks of final game 507
+(array([ 10,  21,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 508
+(array([ 10,  23,  42,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 509
+(array([ 10,  23,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 510
+(array([ 10,  23,  48,  64,  91, 100], dtype=int64), {})
+tension peaks of final game 511
+(array([ 9, 47, 62, 88, 99], dtype=int64), {})
+tension peaks of final game 512
+(array([10, 37, 48, 63, 91], dtype=int64), {})
+tension peaks of final game 513
+(array([10, 25, 49, 68, 93], dtype=int64), {})
+tension peaks of final game 514
+(array([ 10,  21,  49,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 515
+(array([10, 23, 64, 91], dtype=int64), {})
+tension peaks of final game 516
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 517
+(array([ 10,  23,  47,  64,  87, 100], dtype=int64), {})
+tension peaks of final game 518
+(array([ 10,  42,  55,  67,  87, 100], dtype=int64), {})
+tension peaks of final game 519
+(array([ 10,  37,  46,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 520
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 521
+(array([ 10,  21,  36,  55,  65,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 522
+(array([ 10,  24,  49,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 523
+(array([ 10,  23,  47,  63,  88, 100], dtype=int64), {})
+tension peaks of final game 524
+(array([10, 21, 46, 62, 88], dtype=int64), {})
+tension peaks of final game 525
+(array([10, 41, 62, 73, 95], dtype=int64), {})
+tension peaks of final game 526
+(array([10, 21, 46, 63, 88], dtype=int64), {})
+tension peaks of final game 527
+(array([10, 21, 46, 61, 86], dtype=int64), {})
+tension peaks of final game 528
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 529
+(array([ 10,  22,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 530
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 531
+(array([ 10,  23,  47,  63,  88, 100], dtype=int64), {})
+tension peaks of final game 532
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 533
+(array([ 10,  24,  52, 100, 136], dtype=int64), {})
+tension peaks of final game 534
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 535
+(array([ 10,  23,  48,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 536
+(array([ 10,  24,  43,  55,  67,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 537
+(array([10, 42, 55, 67, 89], dtype=int64), {})
+tension peaks of final game 538
+(array([ 10,  37,  47,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 539
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 540
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 541
+(array([10, 36, 55, 65, 81, 91], dtype=int64), {})
+tension peaks of final game 542
+(array([ 9, 36, 45, 62, 72, 92], dtype=int64), {})
+tension peaks of final game 543
+(array([ 10,  21,  36,  55,  81, 105, 118, 130, 149], dtype=int64), {})
+tension peaks of final game 544
+(array([ 10,  23,  47,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 545
+(array([ 10,  23,  47,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 546
+(array([ 10,  23,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 547
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 548
+(array([ 10,  23,  48,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 549
+(array([ 10,  37,  48,  63, 100], dtype=int64), {})
+tension peaks of final game 550
+(array([10, 37, 50, 64, 74, 95], dtype=int64), {})
+tension peaks of final game 551
+(array([10, 21, 47, 62, 87], dtype=int64), {})
+tension peaks of final game 552
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 553
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 554
+(array([ 10,  23,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 555
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 556
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 557
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 558
+(array([10, 24, 48, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 559
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 560
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 561
+(array([ 10,  23,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 562
+(array([10, 37, 64, 78], dtype=int64), {})
+tension peaks of final game 563
+(array([ 10,  22,  46,  62,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 564
+(array([ 10,  24,  43,  55,  68,  88, 100], dtype=int64), {})
+tension peaks of final game 565
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 566
+(array([ 10,  24,  43,  55,  67,  88, 100], dtype=int64), {})
+tension peaks of final game 567
+(array([ 10,  37,  46,  62,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 568
+(array([ 10,  25,  51,  91, 100], dtype=int64), {})
+tension peaks of final game 569
+(array([  9,  47,  62,  86,  99, 135], dtype=int64), {})
+tension peaks of final game 570
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 571
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 572
+(array([ 10,  24,  49,  64,  91, 101], dtype=int64), {})
+tension peaks of final game 573
+(array([ 9, 36, 46, 63, 86, 99], dtype=int64), {})
+tension peaks of final game 574
+(array([ 10,  37,  46,  62,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 575
+(array([ 10,  33,  53,  64,  78,  91, 101], dtype=int64), {})
+tension peaks of final game 576
+(array([ 9, 36, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 577
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 578
+(array([ 10,  21,  36,  55,  65,  80, 100], dtype=int64), {})
+tension peaks of final game 579
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 580
+(array([ 10,  25,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 581
+(array([ 10,  23,  42,  55,  66,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 582
+(array([ 10,  37,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 583
+(array([ 10,  37,  48,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 584
+(array([ 10,  37,  48,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 585
+(array([ 10,  21,  46,  61,  86, 110], dtype=int64), {})
+tension peaks of final game 586
+(array([10, 21, 46, 62, 88], dtype=int64), {})
+tension peaks of final game 587
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 588
+(array([10, 23, 47, 62, 73], dtype=int64), {})
+tension peaks of final game 589
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 590
+(array([10, 24, 43, 55, 67, 90], dtype=int64), {})
+tension peaks of final game 591
+(array([ 10,  21,  47,  63,  89, 100], dtype=int64), {})
+tension peaks of final game 592
+(array([ 10,  24,  54,  64,  78,  91, 103], dtype=int64), {})
+tension peaks of final game 593
+(array([ 10,  37,  47,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 594
+(array([ 10,  21,  46,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 595
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 596
+(array([ 10,  23,  47,  64,  95, 136], dtype=int64), {})
+tension peaks of final game 597
+(array([ 10,  26,  45,  55,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 598
+(array([ 10,  52, 100, 136], dtype=int64), {})
+tension peaks of final game 599
+(array([ 10,  23,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 600
+(array([ 10,  37,  46,  62,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 601
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 602
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 603
+(array([ 10,  24,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 604
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 605
+(array([10, 37, 47, 64, 73, 94], dtype=int64), {})
+tension peaks of final game 606
+(array([ 10,  21,  46,  61,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 607
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 608
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 609
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 610
+(array([ 10,  24,  43,  55,  67,  88, 100], dtype=int64), {})
+tension peaks of final game 611
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 612
+(array([ 10,  25,  44,  55,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 613
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 614
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 615
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 616
+(array([ 10,  23,  47,  63,  90, 100], dtype=int64), {})
+tension peaks of final game 617
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 618
+(array([ 10,  23,  47,  63,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 619
+(array([ 10,  24,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 620
+(array([ 10,  23,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 621
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 622
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 623
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 624
+(array([10, 21, 36, 55, 66, 85], dtype=int64), {})
+tension peaks of final game 625
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 626
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 627
+(array([10, 23, 47, 64, 91], dtype=int64), {})
+tension peaks of final game 628
+(array([10, 21, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 629
+(array([ 10,  21,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 630
+(array([ 10,  23,  52, 100, 136], dtype=int64), {})
+tension peaks of final game 631
+(array([ 10,  37,  46,  61,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 632
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 633
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 634
+(array([10, 37, 46, 61, 88], dtype=int64), {})
+tension peaks of final game 635
+(array([10, 21, 46, 60, 73, 85], dtype=int64), {})
+tension peaks of final game 636
+(array([10, 21, 36, 55, 65, 86], dtype=int64), {})
+tension peaks of final game 637
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 638
+(array([10, 37, 64, 90], dtype=int64), {})
+tension peaks of final game 639
+(array([10, 37, 47, 63, 88], dtype=int64), {})
+tension peaks of final game 640
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 641
+(array([10, 24, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 642
+(array([10, 21, 46, 61, 90], dtype=int64), {})
+tension peaks of final game 643
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 644
+(array([ 10,  24,  48,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 645
+(array([10, 24, 43, 55, 67, 89], dtype=int64), {})
+tension peaks of final game 646
+(array([ 10,  21,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 647
+(array([ 10,  21,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 648
+(array([ 10,  23,  42,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 649
+(array([ 10,  23,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 650
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 651
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 652
+(array([ 10,  26,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 653
+(array([ 10,  26,  52,  91, 103], dtype=int64), {})
+tension peaks of final game 654
+(array([ 10,  37,  47,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 655
+(array([10, 23, 47, 63, 88], dtype=int64), {})
+tension peaks of final game 656
+(array([ 10,  41,  60,  79, 100], dtype=int64), {})
+tension peaks of final game 657
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 658
+(array([ 10,  23,  47,  63,  88, 100], dtype=int64), {})
+tension peaks of final game 659
+(array([ 10,  21,  47,  63,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 660
+(array([ 10,  23,  42,  55,  66,  85, 110], dtype=int64), {})
+tension peaks of final game 661
+(array([ 10,  21,  46,  61,  87, 100], dtype=int64), {})
+tension peaks of final game 662
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 663
+(array([ 10,  22,  53,  64,  81,  91, 111], dtype=int64), {})
+tension peaks of final game 664
+(array([10, 37, 47, 64, 80], dtype=int64), {})
+tension peaks of final game 665
+(array([10, 22, 46, 61, 73, 85], dtype=int64), {})
+tension peaks of final game 666
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 667
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 668
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 669
+(array([ 10,  24,  43,  55,  67,  88, 100], dtype=int64), {})
+tension peaks of final game 670
+(array([10, 37, 49, 63, 88], dtype=int64), {})
+tension peaks of final game 671
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 672
+(array([ 10,  21,  46,  63, 100], dtype=int64), {})
+tension peaks of final game 673
+(array([ 10,  23,  42,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 674
+(array([ 10,  21,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 675
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 676
+(array([ 10,  37,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 677
+(array([10, 37, 46, 64, 90], dtype=int64), {})
+tension peaks of final game 678
+(array([10, 37, 46, 62, 73, 92], dtype=int64), {})
+tension peaks of final game 679
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 680
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 681
+(array([10, 23, 47, 64, 89], dtype=int64), {})
+tension peaks of final game 682
+(array([ 10,  21,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of final game 683
+(array([10, 21, 50, 64, 75], dtype=int64), {})
+tension peaks of final game 684
+(array([10, 21, 46, 64, 89], dtype=int64), {})
+tension peaks of final game 685
+(array([10, 21, 46, 60, 73, 85], dtype=int64), {})
+tension peaks of final game 686
+(array([ 10,  41,  60,  79, 100], dtype=int64), {})
+tension peaks of final game 687
+(array([ 10,  23,  47,  64,  76, 100], dtype=int64), {})
+tension peaks of final game 688
+(array([ 10,  21,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 689
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 690
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 691
+(array([ 10,  21,  46,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 692
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 693
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 694
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 695
+(array([ 10,  27,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 696
+(array([ 10,  23,  42,  55,  66, 100], dtype=int64), {})
+tension peaks of final game 697
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 698
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 699
+(array([10, 23, 47, 68, 93], dtype=int64), {})
+tension peaks of final game 700
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 701
+(array([ 10,  24,  64,  91, 100], dtype=int64), {})
+tension peaks of final game 702
+(array([ 9, 36, 46, 61, 80, 99], dtype=int64), {})
+tension peaks of final game 703
+(array([ 10,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 704
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 705
+(array([10, 23, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 706
+(array([ 10,  21,  36,  55,  65,  84, 104], dtype=int64), {})
+tension peaks of final game 707
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 708
+(array([ 10,  37,  49,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 709
+(array([ 10,  23,  42,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 710
+(array([10, 22, 47, 68], dtype=int64), {})
+tension peaks of final game 711
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 712
+(array([10, 22, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 713
+(array([ 10,  41,  60,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 714
+(array([ 10,  37,  49,  64,  87, 100], dtype=int64), {})
+tension peaks of final game 715
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 716
+(array([ 10,  25,  50,  64,  91, 102], dtype=int64), {})
+tension peaks of final game 717
+(array([  9,  36,  46,  63,  88,  99, 135], dtype=int64), {})
+tension peaks of final game 718
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 719
+(array([10, 37, 48, 68, 93], dtype=int64), {})
+tension peaks of final game 720
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 721
+(array([10, 26, 51, 64, 76], dtype=int64), {})
+tension peaks of final game 722
+(array([ 10,  37,  49,  64,  87, 100], dtype=int64), {})
+tension peaks of final game 723
+(array([10, 37, 50, 64, 89], dtype=int64), {})
+tension peaks of final game 724
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 725
+(array([ 10,  21,  47,  62, 100, 136], dtype=int64), {})
+tension peaks of final game 726
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 727
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 728
+(array([ 10,  23,  47,  64,  74, 100], dtype=int64), {})
+tension peaks of final game 729
+(array([ 10,  21,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 730
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 731
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 732
+(array([ 10,  25,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 733
+(array([ 10,  27,  52, 100, 136], dtype=int64), {})
+tension peaks of final game 734
+(array([10, 24, 43, 55, 67, 86], dtype=int64), {})
+tension peaks of final game 735
+(array([10, 21, 36, 55, 65, 84], dtype=int64), {})
+tension peaks of final game 736
+(array([ 10,  23,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 737
+(array([ 10,  23,  47,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 738
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 739
+(array([ 10,  22,  55,  66,  81, 100], dtype=int64), {})
+tension peaks of final game 740
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 741
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 742
+(array([ 10,  23,  47,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 743
+(array([ 10,  24,  43,  55,  67,  90, 100], dtype=int64), {})
+tension peaks of final game 744
+(array([ 10,  51,  91, 100], dtype=int64), {})
+tension peaks of final game 745
+(array([ 9, 36, 46, 61, 80, 99], dtype=int64), {})
+tension peaks of final game 746
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 747
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 748
+(array([ 10,  24,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 749
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 750
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 751
+(array([10, 21, 46, 60, 73, 85], dtype=int64), {})
+tension peaks of final game 752
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 753
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 754
+(array([10, 24, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 755
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 756
+(array([ 10,  25,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 757
+(array([10, 25, 51, 64, 91], dtype=int64), {})
+tension peaks of final game 758
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 759
+(array([10, 23, 48, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 760
+(array([ 10,  41,  63, 100], dtype=int64), {})
+tension peaks of final game 761
+(array([10, 21, 46, 60, 73, 85], dtype=int64), {})
+tension peaks of final game 762
+(array([ 10,  41,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 763
+(array([ 10,  23,  42,  55,  66,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 764
+(array([ 10,  25,  44,  55,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 765
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 766
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 767
+(array([ 10,  23,  51,  64,  91, 100, 136], dtype=int64), {})
+tension peaks of final game 768
+(array([ 10,  37,  46,  61,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 769
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 770
+(array([10, 24, 43, 55, 67, 86], dtype=int64), {})
+tension peaks of final game 771
+(array([10, 21, 46, 62, 88], dtype=int64), {})
+tension peaks of final game 772
+(array([ 10,  21,  36,  55,  65,  80, 100], dtype=int64), {})
+tension peaks of final game 773
+(array([ 10,  24,  43,  55,  68,  88, 100], dtype=int64), {})
+tension peaks of final game 774
+(array([10, 26, 53, 64, 76], dtype=int64), {})
+tension peaks of final game 775
+(array([ 10,  22,  46,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 776
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 777
+(array([ 10,  37,  47,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 778
+(array([10, 34, 54, 64, 79, 91], dtype=int64), {})
+tension peaks of final game 779
+(array([  9,  36,  45,  63,  90, 101], dtype=int64), {})
+tension peaks of final game 780
+(array([10, 37], dtype=int64), {})
+tension peaks of final game 781
+(array([10, 22, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 782
+(array([ 10,  21,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 783
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 784
+(array([10, 42, 55, 67, 88], dtype=int64), {})
+tension peaks of final game 785
+(array([ 10,  21,  36,  55,  79,  98, 118, 127, 143, 163], dtype=int64), {})
+tension peaks of final game 786
+(array([ 10,  21,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 787
+(array([ 10,  24,  45,  55,  90, 100], dtype=int64), {})
+tension peaks of final game 788
+(array([ 10,  24,  51, 100, 136], dtype=int64), {})
+tension peaks of final game 789
+(array([ 10,  23,  47,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 790
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 791
+(array([10, 37, 47, 64, 74], dtype=int64), {})
+tension peaks of final game 792
+(array([ 9, 36, 45, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 793
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 794
+(array([ 10,  23,  44,  55,  88, 100], dtype=int64), {})
+tension peaks of final game 795
+(array([ 10,  21,  36,  55,  65,  80, 100], dtype=int64), {})
+tension peaks of final game 796
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 797
+(array([10, 37, 50, 64], dtype=int64), {})
+tension peaks of final game 798
+(array([10, 37, 48, 63, 73, 93], dtype=int64), {})
+tension peaks of final game 799
+(array([10, 21, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 800
+(array([ 10,  21,  46,  60,  73,  85, 104], dtype=int64), {})
+tension peaks of final game 801
+(array([ 10,  23,  48,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 802
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 803
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 804
+(array([ 10,  21,  36,  55,  65,  84, 104], dtype=int64), {})
+tension peaks of final game 805
+(array([10, 25, 64, 91], dtype=int64), {})
+tension peaks of final game 806
+(array([ 10,  37,  49,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 807
+(array([ 10,  37,  46,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 808
+(array([ 10,  23,  47,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 809
+(array([ 10,  37,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 810
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 811
+(array([10, 21, 46, 61, 86], dtype=int64), {})
+tension peaks of final game 812
+(array([10, 37, 48, 63, 87], dtype=int64), {})
+tension peaks of final game 813
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 814
+(array([10, 41, 64, 89], dtype=int64), {})
+tension peaks of final game 815
+(array([10, 21, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 816
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 817
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 818
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 819
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 820
+(array([10, 37, 64], dtype=int64), {})
+tension peaks of final game 821
+(array([ 10,  25,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 822
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 823
+(array([10, 25, 52, 91], dtype=int64), {})
+tension peaks of final game 824
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 825
+(array([ 10,  24,  49,  64,  91, 100, 136], dtype=int64), {})
+tension peaks of final game 826
+(array([ 10,  24,  50,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 827
+(array([10, 23, 44, 55, 89], dtype=int64), {})
+tension peaks of final game 828
+(array([10, 41, 60, 79, 99], dtype=int64), {})
+tension peaks of final game 829
+(array([ 10,  37,  49,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 830
+(array([10, 21, 46, 61, 86], dtype=int64), {})
+tension peaks of final game 831
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 832
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 833
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 834
+(array([ 10,  24,  45,  55,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 835
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 836
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 837
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 838
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 839
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 840
+(array([ 10,  23,  42,  55,  66,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 841
+(array([10, 37, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 842
+(array([ 10,  37,  47,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 843
+(array([ 10,  37,  46,  64,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 844
+(array([ 10,  23,  47,  63,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 845
+(array([ 10,  26,  64,  91, 101], dtype=int64), {})
+tension peaks of final game 846
+(array([ 9, 36, 48, 63, 86, 99], dtype=int64), {})
+tension peaks of final game 847
+(array([10, 21, 36, 55, 66, 85], dtype=int64), {})
+tension peaks of final game 848
+(array([10, 26, 45, 55, 95], dtype=int64), {})
+tension peaks of final game 849
+(array([10, 24, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 850
+(array([ 10,  21,  43,  55,  91, 102], dtype=int64), {})
+tension peaks of final game 851
+(array([10, 37, 48, 62, 87], dtype=int64), {})
+tension peaks of final game 852
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 853
+(array([10, 37, 64], dtype=int64), {})
+tension peaks of final game 854
+(array([10, 22, 48, 63, 89], dtype=int64), {})
+tension peaks of final game 855
+(array([10, 21, 46, 61, 86], dtype=int64), {})
+tension peaks of final game 856
+(array([10, 26, 45, 55, 88], dtype=int64), {})
+tension peaks of final game 857
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 858
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 859
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 860
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 861
+(array([ 10,  23,  47,  64,  91, 102, 136], dtype=int64), {})
+tension peaks of final game 862
+(array([ 10,  24,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 863
+(array([ 10,  24,  50,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 864
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 865
+(array([10, 37, 49, 63, 91], dtype=int64), {})
+tension peaks of final game 866
+(array([10, 21, 46, 63, 73, 93], dtype=int64), {})
+tension peaks of final game 867
+(array([10, 41, 62, 89], dtype=int64), {})
+tension peaks of final game 868
+(array([10, 41, 61, 73, 95], dtype=int64), {})
+tension peaks of final game 869
+(array([10, 21, 46, 63, 87], dtype=int64), {})
+tension peaks of final game 870
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 871
+(array([10, 23, 47, 62, 73], dtype=int64), {})
+tension peaks of final game 872
+(array([ 10,  41,  60,  81, 100], dtype=int64), {})
+tension peaks of final game 873
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 874
+(array([ 10,  24,  52,  91, 103], dtype=int64), {})
+tension peaks of final game 875
+(array([ 10,  37,  47,  61,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 876
+(array([ 10,  23,  47,  64,  88, 100, 136], dtype=int64), {})
+tension peaks of final game 877
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 878
+(array([ 10,  23,  47,  64,  87, 100], dtype=int64), {})
+tension peaks of final game 879
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 880
+(array([ 10,  24,  49,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 881
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 882
+(array([ 10,  24,  49,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 883
+(array([ 10,  26,  45,  55,  89, 100], dtype=int64), {})
+tension peaks of final game 884
+(array([ 10,  23,  48,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 885
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 886
+(array([10, 23, 48, 63, 90], dtype=int64), {})
+tension peaks of final game 887
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 888
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 889
+(array([ 10,  25,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 890
+(array([ 10,  24,  55,  65,  82,  91, 110], dtype=int64), {})
+tension peaks of final game 891
+(array([10, 37], dtype=int64), {})
+tension peaks of final game 892
+(array([ 10,  22,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 893
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 894
+(array([ 10,  21,  46,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 895
+(array([ 10,  24,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 896
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 897
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 898
+(array([ 10,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 899
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 900
+(array([10, 23, 47, 64, 89], dtype=int64), {})
+tension peaks of final game 901
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 902
+(array([ 10,  21,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 903
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 904
+(array([10, 24, 50, 64], dtype=int64), {})
+tension peaks of final game 905
+(array([ 10,  22,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 906
+(array([ 10,  21,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 907
+(array([ 10,  24,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 908
+(array([10, 37, 49, 63, 89], dtype=int64), {})
+tension peaks of final game 909
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 910
+(array([ 10,  41,  60,  80, 100, 136], dtype=int64), {})
+tension peaks of final game 911
+(array([10, 23, 47, 68, 93], dtype=int64), {})
+tension peaks of final game 912
+(array([ 10,  21,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 913
+(array([10, 23, 48, 63, 73, 92], dtype=int64), {})
+tension peaks of final game 914
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 915
+(array([ 10,  25,  50,  64,  95, 136], dtype=int64), {})
+tension peaks of final game 916
+(array([10, 23, 48, 64, 91], dtype=int64), {})
+tension peaks of final game 917
+(array([ 10,  21,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 918
+(array([ 10,  39,  64,  79,  91, 103, 136], dtype=int64), {})
+tension peaks of final game 919
+(array([ 10,  25,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 920
+(array([ 10,  23,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 921
+(array([10, 23, 42, 55, 66, 88], dtype=int64), {})
+tension peaks of final game 922
+(array([10, 21, 36, 55, 66, 85], dtype=int64), {})
+tension peaks of final game 923
+(array([ 10,  23,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 924
+(array([10, 23, 47, 63, 89], dtype=int64), {})
+tension peaks of final game 925
+(array([10, 21, 46, 61, 87], dtype=int64), {})
+tension peaks of final game 926
+(array([ 10,  41,  60,  85, 109], dtype=int64), {})
+tension peaks of final game 927
+(array([ 10,  21,  46,  61,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 928
+(array([ 10,  37,  47,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 929
+(array([ 10,  37,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 930
+(array([10, 24, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 931
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 932
+(array([ 10,  24,  49,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 933
+(array([10, 37, 64, 77], dtype=int64), {})
+tension peaks of final game 934
+(array([ 10,  37,  64,  90, 100], dtype=int64), {})
+tension peaks of final game 935
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 936
+(array([ 10,  23,  47,  63, 100], dtype=int64), {})
+tension peaks of final game 937
+(array([10, 25, 52, 91], dtype=int64), {})
+tension peaks of final game 938
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 939
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 940
+(array([10, 37, 48, 63, 87], dtype=int64), {})
+tension peaks of final game 941
+(array([ 10,  21,  46,  62,  88, 100], dtype=int64), {})
+tension peaks of final game 942
+(array([10, 37, 46, 61, 85], dtype=int64), {})
+tension peaks of final game 943
+(array([10, 22, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 944
+(array([ 10,  21,  44,  55,  88, 100], dtype=int64), {})
+tension peaks of final game 945
+(array([ 10,  23,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 946
+(array([10, 23, 47, 62, 73], dtype=int64), {})
+tension peaks of final game 947
+(array([ 10,  21,  36,  55,  65,  80, 100], dtype=int64), {})
+tension peaks of final game 948
+(array([ 10,  23,  42,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 949
+(array([ 10,  23,  48,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 950
+(array([10, 23, 47, 64, 89], dtype=int64), {})
+tension peaks of final game 951
+(array([10, 21, 46, 62, 87], dtype=int64), {})
+tension peaks of final game 952
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 953
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 954
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 955
+(array([ 10,  49,  64,  90, 100, 136], dtype=int64), {})
+tension peaks of final game 956
+(array([10, 23, 47, 64, 89], dtype=int64), {})
+tension peaks of final game 957
+(array([ 10,  21,  46,  61,  86, 110], dtype=int64), {})
+tension peaks of final game 958
+(array([ 10,  21,  36,  55,  66,  87, 100], dtype=int64), {})
+tension peaks of final game 959
+(array([ 10,  37,  46,  61,  80, 100], dtype=int64), {})
+tension peaks of final game 960
+(array([ 10,  22,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 961
+(array([ 10,  37,  47,  62,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 962
+(array([ 10,  24,  49,  64,  89, 100], dtype=int64), {})
+tension peaks of final game 963
+(array([10, 37, 49, 63, 88], dtype=int64), {})
+tension peaks of final game 964
+(array([10, 36], dtype=int64), {})
+tension peaks of final game 965
+(array([ 10,  22,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 966
+(array([10, 23, 47, 63, 87], dtype=int64), {})
+tension peaks of final game 967
+(array([ 10,  21,  46,  61,  81, 100, 136], dtype=int64), {})
+tension peaks of final game 968
+(array([ 10,  24,  45,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 969
+(array([ 10,  23,  42,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 970
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 971
+(array([ 10,  37,  64,  91, 101], dtype=int64), {})
+tension peaks of final game 972
+(array([ 9, 36, 46, 63, 90], dtype=int64), {})
+tension peaks of final game 973
+(array([ 10,  21,  47,  63,  87, 100], dtype=int64), {})
+tension peaks of final game 974
+(array([ 10,  37,  47,  62,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 975
+(array([ 10,  23,  47,  64,  91, 101, 136], dtype=int64), {})
+tension peaks of final game 976
+(array([ 10,  37,  47,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 977
+(array([ 10,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 978
+(array([ 10,  25,  44,  55, 100, 127, 142], dtype=int64), {})
+tension peaks of final game 979
+(array([10, 37, 47, 63, 73], dtype=int64), {})
+tension peaks of final game 980
+(array([ 10,  21,  46,  62,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 981
+(array([10, 25, 64, 74, 94], dtype=int64), {})
+tension peaks of final game 982
+(array([ 10,  21,  36,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 983
+(array([ 10,  24,  52, 100, 136], dtype=int64), {})
+tension peaks of final game 984
+(array([10, 23, 48, 64, 90], dtype=int64), {})
+tension peaks of final game 985
+(array([10, 41, 61, 73, 92], dtype=int64), {})
+tension peaks of final game 986
+(array([ 10,  21,  47,  64,  89, 100, 136], dtype=int64), {})
+tension peaks of final game 987
+(array([ 10,  24,  44,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 988
+(array([10, 23, 42, 55, 66, 85], dtype=int64), {})
+tension peaks of final game 989
+(array([ 10,  23,  50, 100, 136], dtype=int64), {})
+tension peaks of final game 990
+(array([ 10,  23,  47,  63,  87, 100, 136], dtype=int64), {})
+tension peaks of final game 991
+(array([ 10,  23,  48,  64,  88, 100], dtype=int64), {})
+tension peaks of final game 992
+(array([10, 33, 54, 64, 80, 91], dtype=int64), {})
+tension peaks of final game 993
+(array([ 9, 47, 63, 87, 99], dtype=int64), {})
+tension peaks of final game 994
+(array([10, 37, 46, 61, 88], dtype=int64), {})
+tension peaks of final game 995
+(array([ 10,  21,  46,  62,  81, 100], dtype=int64), {})
+tension peaks of final game 996
+(array([10, 24, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 997
+(array([ 10,  22,  43,  55, 100, 136], dtype=int64), {})
+tension peaks of final game 998
+(array([ 10,  37,  64,  75, 101], dtype=int64), {})
+tension peaks of final game 999
+(array([ 10,  21,  47,  62,  95, 136], dtype=int64), {})
+tension peaks of final game 1000
+(array([10, 24, 49, 64, 91], dtype=int64), {})
+tension peaks of final game 1001
+(array([], dtype=int64), {})

@@ -1,0 +1,4 @@
+change in peaks
+WilcoxonResult(statistic=165109.0, pvalue=0.002373279554401567)
+change in tension
+WilcoxonResult(statistic=28625.5, pvalue=0.06803287362769497)
