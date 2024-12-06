@@ -22,7 +22,7 @@ public class FSMAgent : MonoBehaviour
 
     // Actions
     public enum Action { Up, Down, Left, Right};
-
+    private bool waitingForAction = false;
     public int action = 0;
 
     //Speed modifier
@@ -42,10 +42,12 @@ public class FSMAgent : MonoBehaviour
         //Pathing Logic
         if (movingTowardTarget)
         {
-            if ((target - GetPosition()).sqrMagnitude < 0.0001f)
+            if ((target - GetPosition()).sqrMagnitude < 0.008f)
             {
                 movingTowardTarget = false;
                 SetPosition(target);
+                // Now we know we're in the center of a node!
+                waitingForAction = true;
 
                 if (path.Length > pathIndex+1)
                 {
@@ -69,6 +71,8 @@ public class FSMAgent : MonoBehaviour
                     if (!ObstacleHandler.Instance.CheckPointOnPath(potentialNewPosition, new Vector2(GetPosition().x, GetPosition().y)))
                     {
                         movingTowardTarget = false;
+                        // Now we know we're in the center of a node!
+                        waitingForAction = true;
                     }
                     else
                     {
@@ -134,6 +138,16 @@ public class FSMAgent : MonoBehaviour
     public virtual bool TookIllegalAction()
     {
         return false;
+    }
+
+    public bool WaitingForAction()
+    {
+        return waitingForAction;
+    }
+
+    public void ResumeAction()
+    {
+        waitingForAction = false;
     }
 
     //Set target location and begin pathing towards the target

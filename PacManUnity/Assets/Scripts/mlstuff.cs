@@ -10,7 +10,9 @@ public class mlstuff : Agent
     public GameHandler.State state;
 
     [SerializeField] private bool demonstration;
+    [SerializeField] private int maxEpisodes = 0;
 
+    private int episodes;
 
     void Start()
     {
@@ -26,15 +28,8 @@ public class mlstuff : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        sensor.AddObservation(state.agentPosition);
-        sensor.AddObservation(state.ghostPosition);
-        sensor.AddObservation(state.score);
-        sensor.AddObservation(state.pelletPositions.Length);
-        sensor.AddObservation(state.gameOver);
-        sensor.AddObservation(state.wallUp);
-        sensor.AddObservation(state.wallDown);
-        sensor.AddObservation(state.wallLeft);
-        sensor.AddObservation(state.wallRight);
+        sensor.AddObservation(state.agentPositionIndex);
+        sensor.AddObservation(state.ghostPositionIndex);
         //for(int i = 0; i < state.pelletPositions.Length; i++)
         //{
         //sensor.AddObservation(state.pelletPositions[i]);
@@ -66,15 +61,24 @@ public class mlstuff : Agent
         gameHandler.UpdateState();
         reward = gameHandler.currReward;
         state = gameHandler.GetState();
-        AddReward(reward);
+        if (state.waitingForAction)
+        {
+            AddReward(reward);
+            RequestDecision();
+        }
         if(state.gameOver == true || gameHandler.timestep>= 60000)
         {
             // Add this back when we start trying with final reward.
             // AddReward(reward);
             EndEpisode();
+            episodes += 1;
+            // End after a certain number of episodes.
+            if (maxEpisodes != 0 && episodes >= maxEpisodes)
+            {
+                print("Reached max episodes");
+                // Quit the game.
+                Academy.Instance.Dispose();
+            }
         }
-        
-        //print(state);
-
     }
 }

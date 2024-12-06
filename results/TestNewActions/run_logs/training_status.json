@@ -1,0 +1,65 @@
+{
+    "joe": {
+        "checkpoints": [
+            {
+                "steps": 21120,
+                "file_path": "results\\TestNewActions\\joe\\joe-21120.onnx",
+                "reward": -4363094.500244141,
+                "creation_time": 1732816333.9326549,
+                "auxillary_file_paths": [
+                    "results\\TestNewActions\\joe\\joe-21120.pt"
+                ]
+            },
+            {
+                "steps": 354321,
+                "file_path": "results\\TestNewActions\\joe\\joe-354321.onnx",
+                "reward": -2499965.2299804688,
+                "creation_time": 1732821573.9055936,
+                "auxillary_file_paths": [
+                    "results\\TestNewActions\\joe\\joe-354321.pt"
+                ]
+            },
+            {
+                "steps": 499989,
+                "file_path": "results\\TestNewActions\\joe\\joe-499989.onnx",
+                "reward": -6026710.666503906,
+                "creation_time": 1732824972.5717018,
+                "auxillary_file_paths": [
+                    "results\\TestNewActions\\joe\\joe-499989.pt"
+                ]
+            },
+            {
+                "steps": 999949,
+                "file_path": "results\\TestNewActions\\joe\\joe-999949.onnx",
+                "reward": -2064364.6380615234,
+                "creation_time": 1732833786.3450437,
+                "auxillary_file_paths": [
+                    "results\\TestNewActions\\joe\\joe-999949.pt"
+                ]
+            },
+            {
+                "steps": 1000013,
+                "file_path": "results\\TestNewActions\\joe\\joe-1000013.onnx",
+                "reward": -2064364.6380615234,
+                "creation_time": 1732833786.3743904,
+                "auxillary_file_paths": [
+                    "results\\TestNewActions\\joe\\joe-1000013.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000013,
+            "file_path": "results\\TestNewActions\\joe.onnx",
+            "reward": -2064364.6380615234,
+            "creation_time": 1732833786.3743904,
+            "auxillary_file_paths": [
+                "results\\TestNewActions\\joe\\joe-1000013.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}

@@ -12,6 +12,10 @@ public class PacmanInfo : MonoBehaviour
 
     private Vector3 startPosition;
 
+    // Make a callback that we can subscribe to for when we reset.
+    public delegate void ResetCallback();
+    public event ResetCallback OnReset;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -45,5 +49,7 @@ public class PacmanInfo : MonoBehaviour
     {
         transform.position = startPosition;
         prevLocation = startPosition;
+        // Trigger a reset event.
+        OnReset();
     }
 }

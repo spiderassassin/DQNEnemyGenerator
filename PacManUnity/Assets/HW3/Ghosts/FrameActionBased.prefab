@@ -118,7 +118,6 @@ GameObject:
   - component: {fileID: 564417674664047552}
   - component: {fileID: 7722539002204972820}
   - component: {fileID: 2875959489050938173}
-  - component: {fileID: 2949616900070866553}
   m_Layer: 0
   m_Name: FrameActionBased
   m_TagString: Untagged
@@ -243,6 +242,8 @@ MonoBehaviour:
   agent: {fileID: 506166469099225113}
   gameHandler: {fileID: 0}
   reward: 0
+  demonstration: 0
+  maxEpisodes: 1000
 --- !u!114 &2875959489050938173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 13
+    VectorObservationSize: 2
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 0
@@ -274,18 +275,3 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
---- !u!114 &2949616900070866553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6712184599910977976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  DecisionStep: 1
-  TakeActionsBetweenDecisions: 1
