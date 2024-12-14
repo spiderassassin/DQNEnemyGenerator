@@ -1,0 +1,15 @@
+python evaluator.py results_evaluation/new/shasta_model_1/5
+python evaluator.py results_evaluation/new_1/shasta_model_1/5
+python evaluator.py results_evaluation/new_2/shasta_model_1/5
+python evaluator.py results_evaluation/new_3/shasta_model_1/5
+python evaluator.py results_evaluation/new_4/shasta_model_1/5
+python evaluator.py results_evaluation/new/shasta_model_1/10
+python evaluator.py results_evaluation/new_1/shasta_model_1/10
+python evaluator.py results_evaluation/new_2/shasta_model_1/10
+python evaluator.py results_evaluation/new_3/shasta_model_1/10
+python evaluator.py results_evaluation/new_4/shasta_model_1/10
+python evaluator.py results_evaluation/new/shasta_model_1/15
+python evaluator.py results_evaluation/new_1/shasta_model_1/15
+python evaluator.py results_evaluation/new_2/shasta_model_1/15
+python evaluator.py results_evaluation/new_3/shasta_model_1/15
+python evaluator.py results_evaluation/new_4/shasta_model_1/15
