@@ -3,6 +3,7 @@ import sys
 import os
 import csv
 import matplotlib.pyplot as plt
+import numpy as np
 
 def peaks(text, results, directory):
     infos = ["time", "pellets", "tension", "distance", "reward"]
@@ -42,7 +43,13 @@ def peaks(text, results, directory):
 
     text2.close()
     text.write("change in peaks\n")
-    text.write(str(scipy.stats.wilcoxon(numPeaks["before"], numPeaks["after"])))
+    text.write(str(scipy.stats.wilcoxon(numPeaks["before"], numPeaks["after"], alternative="less")))
+    text.write("\n")
+    text.write("mean before: ")
+    text.write(str(np.mean(numPeaks["before"])))
+    text.write("\n")
+    text.write("mean after: ")
+    text.write(str(np.mean(numPeaks["after"])))
     text.write("\n")
 
 def change(text, results, directory):
@@ -79,7 +86,7 @@ def change(text, results, directory):
         plt.clf()
 
         text.write("change in " + info + "\n")
-        text.write(str(scipy.stats.wilcoxon(before[info], after[info])))
+        text.write(str(scipy.stats.wilcoxon(before[info], after[info], alternative="less")))
         text.write("\n")
 
 def gatherResults(directory):
