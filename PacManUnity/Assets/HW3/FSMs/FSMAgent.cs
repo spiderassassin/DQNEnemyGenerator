@@ -130,6 +130,7 @@ public class FSMAgent : MonoBehaviour
     //Set target location and begin pathing towards the target
     public void SetTarget(Vector3 _target, float duration = -1)
     {
+        print("x");
         GraphNode closestStart = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(GetPosition());
         GraphNode closestGoal = HW3NavigationHandler.Instance.NodeHandler.ClosestNode(_target);
         path = HW3NavigationHandler.Instance.PathFinder.CalculatePath(closestStart, closestGoal);
