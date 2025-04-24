@@ -9,14 +9,14 @@ ITERATIONS = 10
 def main():
     results_dir = f"results_evaluation/rlc_results/{time.strftime('%Y-%m-%d_%H-%M-%S')}"
     for i in range(ITERATIONS):
+        print(f"Iteration {i + 1}/{ITERATIONS}")
         for ft_steps in [5, 10, 15]:
-            print(f"Iteration {i + 1}/{ITERATIONS}")
             results_path = f"{results_dir}/trial_{i + 1}/{ft_steps}"
             source = "results/TestNewActions1"
             destination = "results/EvaluationRun"
 
             # Make a clean copy of the run folder.
-            shutil.rmtree(destination)
+            shutil.rmtree(destination, ignore_errors=True)
             shutil.copytree(source, destination)
 
             # First evaluation.
