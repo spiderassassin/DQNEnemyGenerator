@@ -78,6 +78,7 @@ public class mlstuff : Agent
                 print("Reached max episodes");
                 // Quit the game.
                 Academy.Instance.Dispose();
+                Application.Quit();
             }
         }
     }
