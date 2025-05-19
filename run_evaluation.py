@@ -4,7 +4,7 @@ import glob
 import os
 import time
 
-ITERATIONS = 10
+ITERATIONS = 15
 
 def main():
     results_dir = f"results_evaluation/rlc_results/{time.strftime('%Y-%m-%d_%H-%M-%S')}"
@@ -29,7 +29,7 @@ def main():
                 "--quality-level=0",
                 "--width=512",
                 "--height=512",
-                "--torch-device=cpu",
+                "--torch-device=cuda",
                 "--max-lifetime-restarts=0",
                 "--resume",
                 "--inference"
@@ -54,7 +54,7 @@ def main():
                 "--quality-level=0",
                 "--width=512",
                 "--height=512",
-                "--torch-device=cpu",
+                "--torch-device=cuda",
                 "--max-lifetime-restarts=0",
                 "--resume",
             ]
@@ -78,7 +78,7 @@ def main():
                 "--quality-level=0",
                 "--width=512",
                 "--height=512",
-                "--torch-device=cpu",
+                "--torch-device=cuda",
                 "--max-lifetime-restarts=0",
                 "--resume",
                 "--inference"
