@@ -1,0 +1,6 @@
+change in peaks
+WilcoxonResult(statistic=np.float64(224317.5), pvalue=np.float64(0.9999999995117014))
+mean before: 4.374251497005988
+mean after: 3.7465069860279443
+change in tension
+WilcoxonResult(statistic=np.float64(13924.5), pvalue=np.float64(0.5726069135382053))
