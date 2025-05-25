@@ -103,16 +103,16 @@ public class GameHandler: MonoBehaviour
             // currReward += GhostManager.Instance.GhostsInPlay[0].TookIllegalAction() ? -1 : 0;
 
             // Now check if the agent hasn't been in tension for a while.
-            timeSinceLastTension += 1;
-            if (path.Length < Config.TENSION_DISTANCE)
-            {
-                timeSinceLastTension = 0;
-            }
-            else if (timeSinceLastTension > Config.TENSION_TIMEOUT)
-            {
-                currReward += -10000000;
-                Time.timeScale = 0;
-            }
+            // timeSinceLastTension += 1;
+            // if (path.Length < Config.TENSION_DISTANCE)
+            // {
+            //     timeSinceLastTension = 0;
+            // }
+            // else if (timeSinceLastTension > Config.TENSION_TIMEOUT)
+            // {
+            //     currReward += -10000000;
+            //     Time.timeScale = 0;
+            // }
         }
 
         // Update the reward if game is over.
