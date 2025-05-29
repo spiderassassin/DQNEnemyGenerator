@@ -70,7 +70,8 @@ if __name__ == "__main__":
     x = [0, 5, 10, 15]
     y = [mean_0, mean_5, mean_10, mean_15]
     yerr = [std_0, std_5, std_10, std_15]
-    plt.errorbar(x, y, yerr=yerr, fmt='o-', capsize=5)  # Use 'o-' to connect points with a line
+    plt.plot(x, y, 'o-')
+    plt.fill_between(x, np.array(y) - np.array(yerr), np.array(y) + np.array(yerr), alpha=0.2)
     plt.title("Ghost Agent Learning Curve")
     plt.xlabel("Fine-tuning Steps")
     plt.ylabel("Average Reward")
